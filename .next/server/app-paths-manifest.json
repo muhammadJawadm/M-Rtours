@@ -1,0 +1,8 @@
+{
+  "/(innerpage)/Umrah-packages/page": "app/(innerpage)/Umrah-packages/page.js",
+  "/(innerpage)/UmrahDetail/[id]/page": "app/(innerpage)/UmrahDetail/[id]/page.js",
+  "/api/send-email/route": "app/api/send-email/route.js",
+  "/api/submit-booking/route": "app/api/submit-booking/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/home2/page": "app/home2/page.js"
+}
