@@ -5,7 +5,7 @@ import Choose1 from '../../Components/Choose/Choose1';
 import Counter4 from '../../Components/Counter/Counter4';
 import Team1 from '../../Components/Team/Team1';
 import Testimonial3 from '../../Components/Testimonial/Testimonial3';
-import Instagram2 from '../../Components/Instagram/Instagram2';
+// import Instagram2 from '../../Components/Instagram/Instagram2';
 
 const page = () => {
   return (
