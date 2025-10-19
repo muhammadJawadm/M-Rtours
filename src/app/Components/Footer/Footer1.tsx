@@ -133,7 +133,7 @@ const Footer1 = () => {
                                         <i className="bi bi-geo-alt-fill"></i>
                                         </div>
                                         <div className="content">
-                                            <h6>MRtours UK — London Office<br/>
+                                            <h6>140 high road E18 2QS London<br/>
                                                 United Kingdom
                                             </h6>
                                         </div>
@@ -154,8 +154,8 @@ const Footer1 = () => {
                                        </div>
                                        <div className="content">
                                            <h6>
-                                               <a href="tel:+256214203215">+44 (0) 20 1234 5678 </a> <br/>
-                                               <a href="tel:+10987654321">+44 (0) 20 1234 5678 </a>
+                                               <a href="tel:+256214203215">+44 7517 240405 </a> <br/>
+                                               {/* <a href="tel:+10987654321">+44 7517 240405 </a> */}
                                            </h6>
                                        </div>
                                    </div>
