@@ -304,7 +304,7 @@ const BeatPriceFeatures = () => {
                     <div className="section-header">
                         <h2 className="section-title">Why Choose Us?</h2>
                         <p className="section-subtitle">
-                            We don't just match prices - we deliver exceptional value with premium services that make your journey unforgettable
+                            We don&apos;t just match prices - we deliver exceptional value with premium services that make your journey unforgettable
                         </p>
                     </div>
 

@@ -112,7 +112,7 @@ export default function BeatMyQuoteForm() {
           console.warn("Email sent to server but there was an issue delivering it:", emailResult.message);
         }
       } catch (emailError) {
-        // Log email error but don't fail the overall submission since Firestore succeeded
+        // Log email error but don&apos;t fail the overall submission since Firestore succeeded
         console.error("Error sending email notification:", emailError);
       }
 
