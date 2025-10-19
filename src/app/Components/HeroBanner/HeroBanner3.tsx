@@ -282,7 +282,8 @@ const HeroBanner3 = () => {
                             {/* Display success/error message */}
                             {submitMessage && (
                                 <div className={`alert ${submitMessage.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`}>
-                                    {submitMessage.text}
+                                    {/* Fix for unescaped apostrophe */}
+                                    {submitMessage.text.replace(/'/g, "&apos;")}
                                 </div>
                             )}
                             
