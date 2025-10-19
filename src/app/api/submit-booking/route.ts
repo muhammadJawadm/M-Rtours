@@ -87,7 +87,7 @@ export async function POST(request: Request) {
           body: JSON.stringify({
             formType: 'umrahBooking',
             ...bookingData,
-            firebaseId
+            firebaseId: firestoreId // Fix: provide the value explicitly
           })
         });
         
