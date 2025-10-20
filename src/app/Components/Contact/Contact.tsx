@@ -9,7 +9,7 @@ const Contact = () => {
             <section className="hero-section fix section-padding" style={{
                 background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
                 minHeight: '600px',
-                paddingTop: '80px',
+                paddingTop: '180px',
                 paddingBottom: '80px'
             }}>
                 <div className="container">
@@ -80,7 +80,7 @@ const Contact = () => {
                                 justifyContent: 'center'
                             }}>
                                 <Image 
-                                    src="/assets/img/waheed.png" 
+                                    src="/assets/img/Waheed.png" 
                                     alt="Professional Portrait" 
                                     width={800} 
                                     height={700}
