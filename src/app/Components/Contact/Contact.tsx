@@ -67,7 +67,7 @@ const Contact = () => {
                                     color: '#4a5568',
                                     textAlign: 'justify'
                                 }}>
-                                    Whether pioneering transformative housing projects, championing legal excellence, or uplifting communities through charitable initiatives, Waheed Ur Rehman Mian's influence is both profound and far-reaching. His leadership is defined by integrity, forward-thinking strategies, and an unwavering dedication to positive change.
+                                    Whether pioneering transformative housing projects, championing legal excellence, or uplifting communities through charitable initiatives, Waheed Ur Rehman Mian&apos;s influence is both profound and far-reaching. His leadership is defined by integrity, forward-thinking strategies, and an unwavering dedication to positive change.
                                 </p>
                             </div>
                         </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                             fontSize: '1.1rem',
                             color: '#718096'
                         }}>
-                            We're here to help and answer any question you might have
+                            We&apos;re here to help and answer any question you might have
                         </p>
                     </div>
                     <div className="row g-4">
