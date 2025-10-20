@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/assets/custom.css"],"sourcesContent":["/* Header button color overrides */\r\n.cs_nav .cs_nav_list > li > a {\r\n  color: #000 !important;\r\n}\r\n\r\n.cs_nav .cs_nav_list > li > a:hover {\r\n  color: #000 !important;\r\n}\r\n\r\n.header_style_2_3 .cs_nav .cs_nav_list > li > a,\r\n.header_style_2_3 .cs_nav .cs_nav_list > li > a:hover {\r\n  color: #000 !important;\r\n}\r\n\r\n.header_style_3 .cs_nav .cs_nav_list > li > a,\r\n.header_style_3 .cs_nav .cs_nav_list > li > a:hover {\r\n  color: #000 !important;\r\n}\r\n\r\n.header_style_2_0.header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list>li>a,\r\n.header_style_2_1.header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list>li>a {\r\n  color: #000 !important;\r\n}\r\n\r\n.cs_main_header_right .search-trigger {\r\n  color: #000 !important;\r\n}\r\n\r\n.theme-btn {\r\n  color: #000 !important;\r\n}\r\n\r\n/* Ensure dropdown menu items also have black text */\r\n.cs_nav .cs_nav_list .submenu li a {\r\n  color: #000 !important;\r\n}\r\n"],"names":[],"mappings":"AACA"}}]
+}

@@ -1,0 +1,6 @@
+/* [project]/src/app/assets/custom.css [app-client] (css) */
+.cs_nav .cs_nav_list > li > a, .cs_nav .cs_nav_list > li > a:hover, .header_style_2_3 .cs_nav .cs_nav_list > li > a, .header_style_2_3 .cs_nav .cs_nav_list > li > a:hover, .header_style_3 .cs_nav .cs_nav_list > li > a, .header_style_3 .cs_nav .cs_nav_list > li > a:hover, .header_style_2_0.header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list > li > a, .header_style_2_1.header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list > li > a, .cs_main_header_right .search-trigger, .theme-btn, .cs_nav .cs_nav_list .submenu li a {
+  color: #000 !important;
+}
+
+/*# sourceMappingURL=src_app_assets_custom_css_f9ee138c._.single.css.map*/
