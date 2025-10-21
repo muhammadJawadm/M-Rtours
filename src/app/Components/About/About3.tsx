@@ -47,13 +47,13 @@ const About3 = () => {
                         <div className="col-lg-6">
                             <div className="about-content">
                                 <div className="section-title">
-                                    <span className="sub-title wow fadeInUp">About / Plan Your Journey </span>
+                                    <span className="sub-title wow fadeInUp">Your Pilgrimage, Our Promise</span>
                                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
                                         Plan Your Spiritual Journey with Ease 
                                     </h2>
                                 </div>
                                 <p className="wow fadeInUp" data-wow-delay=".5s">
-                                    At MRtours, we are dedicated to making your Umrah and Hajj journeys from the UK seamless, comfortable and spiritually enriching. With years of experience and personalised packages (3★–5★), we handle flights, visas, transfers and hotel bookings so you can focus on the blessings of the journey.
+                                    At MR Tours, we are dedicated to making your Umrah and Hajj journeys from the UK seamless, comfortable, and spiritually enriching. With years of experience and personalized packages (3★–5★), we handle flights, visas, transfers, and hotel bookings so you can focus on the blessings of the journey.
                                 </p>
 
                                 {/* Item 1 */}
@@ -63,10 +63,9 @@ const About3 = () => {
                                             <Image src="/assets/img/icon/13.svg" alt="icon" width={37} height={41} />
                                         </div>
                                         <div className="content">
-                                            <h4>Set Travel Plan</h4>
+                                            <h4>Ready to begin?</h4>
                                             <p>
-                                                Choose from flexible Umrah &amp; Hajj packages <br />
-                                                designed for families, groups, and individuals.
+                                                Customize Your Package &amp; today and let us <br /> craft your perfect pilgrimage.
                                             </p>
                                         </div>
                                     </div>

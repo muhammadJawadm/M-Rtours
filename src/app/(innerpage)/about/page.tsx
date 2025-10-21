@@ -3,17 +3,16 @@ import BreadCumb from '../../Components/Common/BreadCumb';
 import About2 from '../../Components/About/About2';
 import Choose1 from '../../Components/Choose/Choose1';
 import Counter4 from '../../Components/Counter/Counter4';
-import Team1 from '../../Components/Team/Team1';
 import Testimonial3 from '../../Components/Testimonial/Testimonial3';
 // import Instagram2 from '../../Components/Instagram/Instagram2';
 
 const page = () => {
   return (
     <div>
-            <BreadCumb
+            {/* <BreadCumb
                 bgimg="/assets/img/about/About us header.png"
                 Title="About Us"
-            ></BreadCumb>  
+            ></BreadCumb>   */}
             <About2></About2>   
             <Choose1></Choose1> 
             {/* <Counter4></Counter4> */}

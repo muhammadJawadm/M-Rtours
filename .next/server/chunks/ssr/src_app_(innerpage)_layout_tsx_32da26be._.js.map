@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/muham/Desktop/Couresera%20Learning/gotur-nextjs-package/new%20theme/turmet-nextjs/src/app/%28innerpage%29/layout.tsx"],"sourcesContent":["import React from 'react';\r\nimport Header2 from '../Components/Header/Header2';\r\nimport Footer1 from '../Components/Footer/Footer1';\r\nimport Header1 from '../Components/Header/Header1';\r\n\r\nconst DefalultLayout = ({ children }) => {\r\n    return (\r\n        <div className='main-page-area'>\r\n            <Header1></Header1>\r\n            {children}\r\n            <Footer1></Footer1>\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default DefalultLayout;"],"names":[],"mappings":";;;;AAEA;AACA;;;;AAEA,MAAM,iBAAiB,CAAC,EAAE,QAAQ,EAAE;IAChC,qBACI,8OAAC;QAAI,WAAU;;0BACX,8OAAC,8IAAA,CAAA,UAAO;;;;;YACP;0BACD,8OAAC,8IAAA,CAAA,UAAO;;;;;;;;;;;AAGpB;uCAEe","debugId":null}}]
+}

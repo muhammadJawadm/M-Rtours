@@ -13,7 +13,7 @@ export default function Header1({ variant } : any ) {
   const pathname = usePathname();
   
   // Check if current page is contact page
-  const isContactPage = pathname === '/contact' || pathname === '/contact/';
+  const isContactPage = pathname === '/contact' || pathname === '/contact/'||pathname === '/about';
 
   useEffect(() => {
     const handleScroll = () => {

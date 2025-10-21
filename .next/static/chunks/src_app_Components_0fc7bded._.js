@@ -920,19 +920,19 @@ function Header1({ variant }) {
         prevScrollPos
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-f78b3a2b3971df54",
+        className: "jsx-ed8d9cd9a426c0ce",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "jsx-f78b3a2b3971df54" + " " + `cs_site_header header_style_2 header_style_2_0 cs_style_1 header_sticky_style1 ${variant ? variant : ''} cs_sticky_header cs_site_header_full_width ${mobileToggle ? 'cs_mobile_toggle_active' : ''} ${isSticky ? isSticky : ''} ${isContactPage ? 'contact-header' : ''}`,
+                className: "jsx-ed8d9cd9a426c0ce" + " " + `cs_site_header header_style_2 header_style_2_0 cs_style_1 header_sticky_style1 ${variant ? variant : ''} cs_sticky_header cs_site_header_full_width ${mobileToggle ? 'cs_mobile_toggle_active' : ''} ${isSticky ? isSticky : ''} ${isContactPage ? 'contact-header' : ''}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-f78b3a2b3971df54" + " " + "cs_main_header",
+                    className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-f78b3a2b3971df54" + " " + "container-fluid",
+                        className: "jsx-ed8d9cd9a426c0ce" + " " + "container-fluid",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-f78b3a2b3971df54" + " " + "cs_main_header_in",
+                            className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header_in",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-f78b3a2b3971df54" + " " + "cs_main_header_left",
+                                    className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header_left",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         className: "cs_site_branding",
                                         href: "/",
@@ -957,15 +957,15 @@ function Header1({ variant }) {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-f78b3a2b3971df54" + " " + "cs_main_header_center",
+                                    className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header_center",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-f78b3a2b3971df54" + " " + `cs_nav cs_primary_font fw-medium ${isContactPage ? 'contact-nav' : ''}`,
+                                        className: "jsx-ed8d9cd9a426c0ce" + " " + `cs_nav cs_primary_font fw-medium ${isContactPage ? 'contact-nav' : ''}`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 onClick: ()=>setMobileToggle(!mobileToggle),
-                                                className: "jsx-f78b3a2b3971df54" + " " + ((mobileToggle ? 'cs-munu_toggle cs_teggle_active' : 'cs-munu_toggle') || ""),
+                                                className: "jsx-ed8d9cd9a426c0ce" + " " + ((mobileToggle ? 'cs-munu_toggle cs_teggle_active' : 'cs-munu_toggle') || ""),
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-f78b3a2b3971df54"
+                                                    className: "jsx-ed8d9cd9a426c0ce"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
                                                     lineNumber: 65,
@@ -1016,30 +1016,30 @@ function Header1({ variant }) {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-f78b3a2b3971df54" + " " + `search-wrap ${searchToggle ? 'active' : ''}`,
+                className: "jsx-ed8d9cd9a426c0ce" + " " + `search-wrap ${searchToggle ? 'active' : ''}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-f78b3a2b3971df54" + " " + "search-inner",
+                    className: "jsx-ed8d9cd9a426c0ce" + " " + "search-inner",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                             onClick: ()=>setSearchToggle(!searchToggle),
                             id: "search-close",
-                            className: "jsx-f78b3a2b3971df54" + " " + "bi bi-x-lg search-close"
+                            className: "jsx-ed8d9cd9a426c0ce" + " " + "bi bi-x-lg search-close"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
                             lineNumber: 77,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-f78b3a2b3971df54" + " " + "search-cell",
+                            className: "jsx-ed8d9cd9a426c0ce" + " " + "search-cell",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                 method: "get",
-                                className: "jsx-f78b3a2b3971df54",
+                                className: "jsx-ed8d9cd9a426c0ce",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-f78b3a2b3971df54" + " " + "search-field-holder",
+                                    className: "jsx-ed8d9cd9a426c0ce" + " " + "search-field-holder",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "search",
                                         placeholder: "Search...",
-                                        className: "jsx-f78b3a2b3971df54" + " " + "main-search-input"
+                                        className: "jsx-ed8d9cd9a426c0ce" + " " + "main-search-input"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
                                         lineNumber: 81,
@@ -1072,7 +1072,7 @@ function Header1({ variant }) {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "f78b3a2b3971df54",
+                id: "ed8d9cd9a426c0ce",
                 children: ".contact-header .cs_nav .cs_nav_list>li>a,.contact-header .cs_nav .cs_nav_list>li>a:hover{color:#000!important}.contact-nav .cs_nav_list .submenu li a{color:var(--header)!important}.contact-header.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{color:#000!important}"
             }, void 0, false, void 0, this)
         ]

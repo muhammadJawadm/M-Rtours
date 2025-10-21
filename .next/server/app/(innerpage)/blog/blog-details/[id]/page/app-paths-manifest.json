@@ -1,0 +1,3 @@
+{
+  "/(innerpage)/blog/blog-details/[id]/page": "app/(innerpage)/blog/blog-details/[id]/page.js"
+}

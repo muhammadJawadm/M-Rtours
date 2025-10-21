@@ -125,6 +125,7 @@ __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
@@ -132,28 +133,41 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
+;
 const Faq1 = ()=>{
     _s();
     const faqContent = [
         {
-            title: 'How do I book a tour with MRtours?',
-            content: 'Book online or contact our UK office. We’ll confirm availability, process payment and handle visas and flights.'
+            title: 'What is an Umrah package?',
+            content: 'An Umrah package is your all-in-one solution for a seamless pilgrimage. It bundles flights, accommodations, visas, and transfers, saving you time and money while ensuring a spiritually enriching experience.'
         },
         {
-            title: 'What payment methods are accepted?',
-            content: 'Major debit/credit cards, bank transfers and PayPal for secure payment.'
+            title: 'Is booking an Umrah package more cost-effective?',
+            content: 'Yes, bundling your travel, accommodation, and services often unlocks exclusive deals unavailable when booking separately. MR Tours\' packages not only save you money but also simplify planning, letting you focus on your spiritual journey.'
         },
         {
-            title: 'Can I customize my travel itinerary?',
-            content: 'Yes — choose your dates, hotel type (3★–5★), and add transfers or guided services.'
+            title: 'When is the best time to book an Umrah package?',
+            content: 'Your heart\'s call to Makkah and Madinah can be answered any time of year with MR Tours. We offer tailored packages for every season: spring serenity, summer vibrancy, autumn tranquility, or winter peace. Explore our monthly offerings, including January to December Umrah packages, Ramadan specials, and last-minute deals for spontaneous pilgrims. Book early for peak seasons like Ramadan or school holidays, or opt for off-peak months like Muharram, Safar, or Rajab for budget-friendly options. Join our mailing list for exclusive deals and updates!'
         },
         {
-            title: 'What if I need to cancel or change dates?',
-            content: 'Cancellation policies vary by package — contact us ASAP and we’ll guide you through options and rescheduling.'
+            title: 'When is the cheapest time to perform Umrah from the UK?',
+            content: 'The most affordable Umrah packages are typically available during off-peak months like January, May, September, or November, offering lower prices and quieter holy sites. Booking early for peak periods like Ramadan or December ensures great value. Flexible travelers can snag last-minute deals for added savings. MR Tours provides ATOL-protected packages with competitive pricing year-round; contact us to find the perfect deal for you.'
         },
         {
-            title: 'Do you run Hajj packages for 2025?',
-            content: 'Yes — limited Hajj packages 2025 UK departures are available. Enquire early to secure your place. '
+            title: 'How can I book an Umrah package with a low deposit?',
+            content: 'Booking with MR Tours is simple and stress-free via our website, where you\'ll find the latest packages, early bird offers, and flexible payment plans. Start with a low deposit from just £50 per person, pay in installments up to four weeks before departure, and enjoy tailored itineraries with flights, hotels, visas, and 24/7 support. Our ATOL and ABTA-protected bookings ensure peace of mind for solo travelers, families, or groups.'
+        },
+        {
+            title: 'Where can I find the best value Umrah packages with flexible payments?',
+            content: 'MR Tours\' website is your go-to for affordable, high-value Umrah packages. From budget-friendly 3-star to luxurious 5-star options, we offer departures from major UK airports, low deposits, and easy monthly payments. Explore family, group, or solo packages, including last-minute and seasonal offers. Our user-friendly site makes planning effortless; select your travel dates and let us guide you to the sacred cities.'
+        },
+        {
+            title: 'Is an all-inclusive Umrah package worth it?',
+            content: 'Absolutely. All-inclusive packages cover accommodation, meals, and transfers, freeing you to focus on worship without logistical worries. This smart, budget-friendly option minimizes distractions and maximizes your spiritual experience, leaving room for Ziyarat visits or personal reflection.'
+        },
+        {
+            title: 'Why choose MR Tours for your Umrah or Hajj journey?',
+            content: 'MR Tours is trusted by thousands of UK pilgrims for seamless, affordable, and spiritually fulfilling journeys. With flexible payment plans, low deposits from £50, tailored packages for all budgets, and expert guidance, we ensure every step is hassle-free. Enjoy exclusive perks like hotel upgrades and ATOL-protected bookings. Start your sacred journey with MR Tours today.'
         }
     ];
     const accordionContentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -177,10 +191,10 @@ const Faq1 = ()=>{
         firstItemOpen
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "faq-section section-padding pt-0 fix",
+        className: "jsx-4a89741767e10e2c" + " " + "faq-section section-padding pt-0 fix",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "left-shape float-bob-y",
+                className: "jsx-4a89741767e10e2c" + " " + "left-shape float-bob-y",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: "/assets/img/tree-shape-2.png",
                     alt: "img",
@@ -188,66 +202,67 @@ const Faq1 = ()=>{
                     height: 241
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                    lineNumber: 37,
-                    columnNumber: 18
+                    lineNumber: 64,
+                    columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                lineNumber: 36,
+                lineNumber: 63,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container",
+                className: "jsx-4a89741767e10e2c" + " " + "container",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "faq-wrapper",
+                    className: "jsx-4a89741767e10e2c" + " " + "faq-wrapper",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "row g-4",
+                        className: "jsx-4a89741767e10e2c" + " " + "row g-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col-lg-6",
+                                className: "jsx-4a89741767e10e2c" + " " + "col-lg-5",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "faq-content",
+                                    className: "jsx-4a89741767e10e2c" + " " + "faq-content",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "section-title",
+                                            className: "jsx-4a89741767e10e2c" + " " + "section-title",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "sub-title wow fadeInUp",
-                                                    children: "Choose Your Place"
+                                                    className: "jsx-4a89741767e10e2c" + " " + "sub-title wow fadeInUp",
+                                                    children: "Got Questions?"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 45,
+                                                    lineNumber: 72,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                    className: "wow fadeInUp wow",
                                                     "data-wow-delay": ".3s",
-                                                    children: "Frequently Asked Questions"
+                                                    className: "jsx-4a89741767e10e2c" + " " + "wow fadeInUp wow",
+                                                    children: "Still Feeling Confused? Explore Our FAQs"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 48,
+                                                    lineNumber: 75,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 44,
+                                            lineNumber: 71,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "mt-3 mt-mb-0 wow fadeInUp wow",
                                             "data-wow-delay": ".5s",
-                                            children: "We are not just another agency – we are your digital growth partners. With years of industry experience and a passion for innovation, our team isdedicated to delivering measurable results propel your business forward."
+                                            className: "jsx-4a89741767e10e2c" + " " + "mt-3 mt-mb-0 wow fadeInUp wow",
+                                            children: "Find answers to common questions our customers ask about planning their Umrah and Hajj journeys with MR Tours."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 79,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "faq-list wow fadeInUp wow",
                                             "data-wow-delay": ".7s",
+                                            className: "jsx-4a89741767e10e2c" + " " + "faq-list wow fadeInUp wow",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "jsx-4a89741767e10e2c",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                             src: "/assets/img/icon/15.svg",
@@ -256,17 +271,18 @@ const Faq1 = ()=>{
                                                             height: 12
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 57,
-                                                            columnNumber: 42
+                                                            lineNumber: 84,
+                                                            columnNumber: 41
                                                         }, this),
-                                                        "Top quality service"
+                                                        "ATOL & ABTA Protected"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 56,
+                                                    lineNumber: 83,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "jsx-4a89741767e10e2c",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                             src: "/assets/img/icon/15.svg",
@@ -275,131 +291,177 @@ const Faq1 = ()=>{
                                                             height: 12
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 61,
-                                                            columnNumber: 42
+                                                            lineNumber: 88,
+                                                            columnNumber: 41
                                                         }, this),
-                                                        "Most Adventure Tour Ever"
+                                                        "24/7 Support During Your Journey"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 60,
+                                                    lineNumber: 87,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 82,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            "data-wow-delay": ".9s",
+                                            className: "jsx-4a89741767e10e2c" + " " + "contact-cta mt-4 wow fadeInUp wow",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "jsx-4a89741767e10e2c",
+                                                    children: "Have more questions? Contact us or call"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                    lineNumber: 93,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "jsx-4a89741767e10e2c",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "tel:+441234567890",
+                                                        className: "jsx-4a89741767e10e2c",
+                                                        children: "+44 123 456 7890"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                        lineNumber: 94,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                    lineNumber: 94,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "jsx-4a89741767e10e2c",
+                                                    children: "for personalized assistance."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                    lineNumber: 95,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                            lineNumber: 92,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 70,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                lineNumber: 42,
+                                lineNumber: 69,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col-lg-6",
+                                className: "jsx-4a89741767e10e2c" + " " + "col-lg-7",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "faq-items",
+                                    className: "jsx-4a89741767e10e2c" + " " + "faq-items",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "faq-accordion",
+                                        className: "jsx-4a89741767e10e2c" + " " + "faq-accordion",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "accordion",
                                             id: "accordion",
+                                            className: "jsx-4a89741767e10e2c" + " " + "accordion",
                                             children: faqContent.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: `accordion-item mb-3 wow fadeInUp ${index === openItemIndex ? "active" : ""}`,
                                                     "data-wow-delay": ".1s",
+                                                    className: "jsx-4a89741767e10e2c" + " " + `accordion-item mb-3 wow fadeInUp ${index === openItemIndex ? "active" : ""}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
                                                             onClick: ()=>handleItemClick(index),
-                                                            className: "accordion-header",
+                                                            className: "jsx-4a89741767e10e2c" + " " + "accordion-header",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                className: "accordion-button collapsed",
                                                                 type: "button",
                                                                 "data-bs-toggle": "collapse",
                                                                 "data-bs-target": "#faq1",
                                                                 "aria-expanded": "true",
                                                                 "aria-controls": "faq1",
+                                                                className: "jsx-4a89741767e10e2c" + " " + "accordion-button collapsed",
                                                                 children: item.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                                lineNumber: 74,
+                                                                lineNumber: 106,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 73,
+                                                            lineNumber: 105,
                                                             columnNumber: 45
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             ref: accordionContentRef,
                                                             id: "faq1",
-                                                            className: "accordion-collapse collapse",
                                                             "data-bs-parent": "#accordion",
+                                                            className: "jsx-4a89741767e10e2c" + " " + "accordion-collapse collapse",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "accordion-body",
+                                                                className: "jsx-4a89741767e10e2c" + " " + "accordion-body",
                                                                 children: item.content
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                                lineNumber: 79,
+                                                                lineNumber: 111,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 78,
+                                                            lineNumber: 110,
                                                             columnNumber: 45
                                                         }, this)
                                                     ]
                                                 }, index, true, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 104,
                                                     columnNumber: 41
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 70,
+                                            lineNumber: 102,
                                             columnNumber: 37
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 101,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 100,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                lineNumber: 67,
+                                lineNumber: 99,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                        lineNumber: 41,
+                        lineNumber: 68,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                    lineNumber: 40,
+                    lineNumber: 67,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                lineNumber: 39,
+                lineNumber: 66,
                 columnNumber: 13
-            }, this)
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                id: "4a89741767e10e2c",
+                children: ".contact-cta.jsx-4a89741767e10e2c{background:#f8f9fa;border-left:4px solid #28aae2;border-radius:8px;padding:1.5rem;box-shadow:0 4px 15px #0000000d}.contact-cta.jsx-4a89741767e10e2c p.jsx-4a89741767e10e2c{color:#555;margin-bottom:.5rem}.contact-cta.jsx-4a89741767e10e2c h4.jsx-4a89741767e10e2c{margin-bottom:.5rem;font-size:1.5rem;font-weight:700}.contact-cta.jsx-4a89741767e10e2c h4.jsx-4a89741767e10e2c a.jsx-4a89741767e10e2c{color:#28aae2;text-decoration:none;transition:all .3s}.contact-cta.jsx-4a89741767e10e2c h4.jsx-4a89741767e10e2c a.jsx-4a89741767e10e2c:hover{color:#1d8bb8}@media (width<=992px){.faq-content.jsx-4a89741767e10e2c{margin-bottom:2rem}}"
+            }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-        lineNumber: 35,
+        lineNumber: 62,
         columnNumber: 9
     }, this);
 };

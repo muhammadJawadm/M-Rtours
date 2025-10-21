@@ -6,6 +6,7 @@ import parse from 'html-react-parser';
 import Link from 'next/link';
 
 interface FormData {
+    packageType: string;
     departureDate: string;
     departureCity: string;
     travelers: string;
@@ -13,24 +14,55 @@ interface FormData {
     fullName: string;
     phone: string;
     email: string;
+    specificPackage: string;
+}
+
+interface FormErrors {
+    packageType?: string;
+    departureDate?: string;
+    departureCity?: string;
+    travelers?: string;
+    nights?: string;
+    fullName?: string;
+    phone?: string;
+    email?: string;
+    specificPackage?: string;
 }
 
 const HeroBanner3 = () => {
     const sliderRef = useRef(null);
     const [formData, setFormData] = useState<FormData>({
+        packageType: '',
         departureDate: '',
         departureCity: '',
         travelers: '1',
         nights: '1',
         fullName: '',
         phone: '',
-        email: ''
+        email: '',
+        specificPackage: ''
     });
+    const [formErrors, setFormErrors] = useState<FormErrors>({});
     const [isPlaying, setIsPlaying] = useState(false);
     const [videoButton, setVideoButton] = useState('play');
     const [videoButtonImage, setVideoButtonImage] = useState('/assets/img/svg/play-icon.svg');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitMessage, setSubmitMessage] = useState<{text: string, type: 'success' | 'error'} | null>(null);
+
+   // UK Cities for dropdown
+   const ukCities = [
+        "London", "Birmingham", "Manchester", "Glasgow", "Leeds", 
+        "Liverpool", "Newcastle", "Sheffield", "Bristol", "Edinburgh",
+        "Leicester", "Bradford", "Cardiff", "Belfast", "Coventry",
+        "Nottingham", "Stoke-on-Trent", "Wolverhampton", "Plymouth", "Derby"
+   ];
+
+   // Package types based on selected package category
+   const packageOptions = {
+       "umrah": ["Umrah Gold Package", "Umrah Silver Package", "Umrah Bronze Package", "Umrah Economy Package", "Umrah VIP Package", "Umrah Deluxe Package"],
+       "hajj": ["Hajj VIP Package", "Hajj Deluxe Package", "Hajj Standard Package", "Hajj Economy Package"],
+       "other": ["Holy Sites Tour", "Medina Visit", "Combined Package"]
+   };
 
    const heroContent = [
   {
@@ -62,11 +94,82 @@ const HeroBanner3 = () => {
             ...prev,
             [name]: value
         }));
+        
+        // Clear error when field is updated
+        if (formErrors[name as keyof FormErrors]) {
+            setFormErrors(prev => ({
+                ...prev,
+                [name]: undefined
+            }));
+        }
+
+        // Reset specific package if package type changes
+        if (name === 'packageType') {
+            setFormData(prev => ({
+                ...prev,
+                specificPackage: ''
+            }));
+        }
+    };
+
+    const validateForm = (): boolean => {
+        const errors: FormErrors = {};
+        let isValid = true;
+
+        // Required field validation
+        if (!formData.packageType) {
+            errors.packageType = "Please select a package type";
+            isValid = false;
+        }
+
+        if (!formData.specificPackage) {
+            errors.specificPackage = "Please select a specific package";
+            isValid = false;
+        }
+
+        if (!formData.departureDate) {
+            errors.departureDate = "Please select a departure date";
+            isValid = false;
+        }
+
+        if (!formData.departureCity) {
+            errors.departureCity = "Please select a departure city";
+            isValid = false;
+        }
+
+        if (!formData.fullName) {
+            errors.fullName = "Please enter your full name";
+            isValid = false;
+        }
+
+        if (!formData.phone) {
+            errors.phone = "Please enter your phone number";
+            isValid = false;
+        } else if (!/^[\d\s+()-]{10,15}$/.test(formData.phone)) {
+            errors.phone = "Please enter a valid phone number";
+            isValid = false;
+        }
+
+        if (!formData.email) {
+            errors.email = "Please enter your email";
+            isValid = false;
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            errors.email = "Please enter a valid email address";
+            isValid = false;
+        }
+
+        setFormErrors(errors);
+        return isValid;
     };
 
     const handleSubmit = async (): Promise<void> => {
         // Clear any previous messages
         setSubmitMessage(null);
+        
+        // Validate form before submitting
+        if (!validateForm()) {
+            return;
+        }
         
         try {
             setIsSubmitting(true);
@@ -91,13 +194,15 @@ const HeroBanner3 = () => {
                 
                 // Reset form after successful submission
                 setFormData({
+                    packageType: '',
                     departureDate: '',
                     departureCity: '',
                     travelers: '1',
                     nights: '1',
                     fullName: '',
                     phone: '',
-                    email: ''
+                    email: '',
+                    specificPackage: ''
                 });
             } else {
                 // API returned an error
@@ -257,8 +362,8 @@ const HeroBanner3 = () => {
                                                         {item.content}
                                                     </p>
                                                     <div className="about-button" data-animation="fadeInUp" data-delay="1.8s">
-                                                        <Link href="/Umrah-packages" className="theme-btn">View Packages<i className="bi bi-arrow-right"></i></Link>
-                                                        <Link href="/Hajj-packages" className="theme-btn style-2">Plan Your Journey<i className="bi bi-arrow-right"></i></Link>
+                                                        <Link href="/Umrah-packages" className="theme-btn">View Umrah Packages<i className="bi bi-arrow-right"></i></Link>
+                                                        <Link href="/Hajj-packages" className="theme-btn style-2">Plan Your Hajj Journey<i className="bi bi-arrow-right"></i></Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -282,67 +387,11 @@ const HeroBanner3 = () => {
                             {/* Display success/error message */}
                             {submitMessage && (
                                 <div className={`alert ${submitMessage.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`}>
-                                    {/* Fix for unescaped apostrophe */}
                                     {submitMessage.text.replace(/'/g, "&apos;")}
                                 </div>
                             )}
                             
-                            {/* First Row */}
-                            <div className="form-grid">
-                                <div className="form-field">
-                                    <input
-                                        type="date"
-                                        name="departureDate"
-                                        value={formData.departureDate}
-                                        onChange={handleInputChange}
-                                        placeholder="Departure Date"
-                                        className="form-input"
-                                        style={{width: '90%', color: 'black'} }
-                                        required
-                                    />
-                                </div>
-                                <div className="form-field">
-                                    <input
-                                        type="text"
-                                        name="departureCity"
-                                        value={formData.departureCity}
-                                        onChange={handleInputChange}
-                                        placeholder="Departure City"
-                                        className="form-input"
-                                        required
-                                    />
-                                </div>
-                                <div className="form-field">
-                                    <select
-                                        name="travelers"
-                                        value={formData.travelers}
-                                        onChange={handleInputChange}
-                                        className="form-input"
-                                        required
-                                    >
-                                        <option value="">Travelers</option>
-                                        {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
-                                            <option key={num} value={num}>{num} {num === 1 ? 'Traveler' : 'Travelers'}</option>
-                                        ))}
-                                    </select>
-                                </div>
-                                <div className="form-field">
-                                    <select
-                                        name="nights"
-                                        value={formData.nights}
-                                        onChange={handleInputChange}
-                                        className="form-input"
-                                        required
-                                    >
-                                        <option value="">Nights</option>
-                                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 21].map(num => (
-                                            <option key={num} value={num}>{num} {num === 1 ? 'Night' : 'Nights'}</option>
-                                        ))}
-                                    </select>
-                                </div>
-                            </div>
-
-                            {/* Second Row */}
+                            {/* First Row - Personal Information */}
                             <div className="form-grid">
                                 <div className="form-field">
                                     <input
@@ -351,9 +400,10 @@ const HeroBanner3 = () => {
                                         value={formData.fullName}
                                         onChange={handleInputChange}
                                         placeholder="Full Name"
-                                        className="form-input"
+                                        className={`form-input ${formErrors.fullName ? 'error' : ''}`}
                                         required
                                     />
+                                    {formErrors.fullName && <span className="error-message">{formErrors.fullName}</span>}
                                 </div>
                                 <div className="form-field">
                                     <input
@@ -362,9 +412,10 @@ const HeroBanner3 = () => {
                                         value={formData.phone}
                                         onChange={handleInputChange}
                                         placeholder="Phone"
-                                        className="form-input"
+                                        className={`form-input ${formErrors.phone ? 'error' : ''}`}
                                         required
                                     />
+                                    {formErrors.phone && <span className="error-message">{formErrors.phone}</span>}
                                 </div>
                                 <div className="form-field">
                                     <input
@@ -373,11 +424,88 @@ const HeroBanner3 = () => {
                                         value={formData.email}
                                         onChange={handleInputChange}
                                         placeholder="Email"
-                                        className="form-input"
+                                        className={`form-input ${formErrors.email ? 'error' : ''}`}
                                         required
                                     />
+                                    {formErrors.email && <span className="error-message">{formErrors.email}</span>}
                                 </div>
                                 <div className="form-field">
+                                    <select
+                                        name="packageType"
+                                        value={formData.packageType}
+                                        onChange={handleInputChange}
+                                        className={`form-input ${formErrors.packageType ? 'error' : ''}`}
+                                        required
+                                    >
+                                        <option value="">Select Service</option>
+                                        <option value="umrah">Book Your Umrah</option>
+                                        <option value="hajj">Book Your Hajj</option>
+                                    </select>
+                                    {formErrors.packageType && <span className="error-message">{formErrors.packageType}</span>}
+                                </div>
+                            </div>
+
+                            {/* Second Row - Travel Details and Submit */}
+                            <div className="form-grid travel-details-row">
+                                <div className="form-field">
+                                    <select
+                                        name="departureCity"
+                                        value={formData.departureCity}
+                                        onChange={handleInputChange}
+                                        className={`form-input ${formErrors.departureCity ? 'error' : ''}`}
+                                        required
+                                    >
+                                        <option value="">Select Departure City</option>
+                                        {ukCities.map((city, index) => (
+                                            <option key={index} value={city}>{city}</option>
+                                        ))}
+                                    </select>
+                                    {formErrors.departureCity && <span className="error-message">{formErrors.departureCity}</span>}
+                                </div>
+                                <div className="form-field">
+                                    <input
+                                        type="date"
+                                        name="departureDate"
+                                        value={formData.departureDate}
+                                        onChange={handleInputChange}
+                                        placeholder="Departure Date"
+                                        className={`form-input ${formErrors.departureDate ? 'error' : ''}`}
+                                        style={{color: 'black'} }
+                                        required
+                                    />
+                                    {formErrors.departureDate && <span className="error-message">{formErrors.departureDate}</span>}
+                                </div>
+                                <div className="form-field">
+                                    <select
+                                        name="travelers"
+                                        value={formData.travelers}
+                                        onChange={handleInputChange}
+                                        className={`form-input ${formErrors.travelers ? 'error' : ''}`}
+                                        required
+                                    >
+                                        <option value="">Travelers</option>
+                                        {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
+                                            <option key={num} value={num}>{num} {num === 1 ? 'Traveler' : 'Travelers'}</option>
+                                        ))}
+                                    </select>
+                                    {formErrors.travelers && <span className="error-message">{formErrors.travelers}</span>}
+                                </div>
+                                <div className="form-field">
+                                    <select
+                                        name="nights"
+                                        value={formData.nights}
+                                        onChange={handleInputChange}
+                                        className={`form-input ${formErrors.nights ? 'error' : ''}`}
+                                        required
+                                    >
+                                        <option value="">Nights</option>
+                                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 21].map(num => (
+                                            <option key={num} value={num}>{num} {num === 1 ? 'Night' : 'Nights'}</option>
+                                        ))}
+                                    </select>
+                                    {formErrors.nights && <span className="error-message">{formErrors.nights}</span>}
+                                </div>
+                                <div className="form-field button-field">
                                     <button
                                         onClick={handleSubmit}
                                         className="form-button"
@@ -540,10 +668,20 @@ const HeroBanner3 = () => {
                 }
                 .form-grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                    grid-template-columns: repeat(4, 1fr);
                     gap: 1.2rem;
                     margin-bottom: 1.5rem;
                 }
+                
+                .travel-details-row {
+                    grid-template-columns: repeat(5, 1fr);
+                }
+                
+                .button-field {
+                    display: flex;
+                    align-items: flex-start;
+                }
+                
                 .form-field {
                     width: 100%;
                 }
@@ -557,6 +695,10 @@ const HeroBanner3 = () => {
                     outline: none;
                     background: white;
                     color: #333;
+                }
+                .form-input.error {
+                    border-color: #dc3545;
+                    background-color: #fff8f8;
                 }
                 .form-input:focus {
                     border-color: #28AAE2;
@@ -584,8 +726,16 @@ const HeroBanner3 = () => {
                     transform: translateY(-2px);
                     box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2);
                 }
-
-                /* Responsive adjustments */
+                .error-message {
+                    color: #dc3545;
+                    font-size: 0.8rem;
+                    margin-top: 0.25rem;
+                    display: block;
+                }
+                .last-row {
+                    grid-template-columns: 2fr 1fr;
+                }
+                
                 @media (max-width: 1200px) {
                     .hero-content h1 {
                         font-size: 2.5rem;
@@ -600,6 +750,17 @@ const HeroBanner3 = () => {
                     }
                     .booking-form-wrapper {
                         margin-top: -70px;
+                    }
+                    .form-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    
+                    .travel-details-row {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    
+                    .button-field {
+                        grid-column: span 2;
                     }
                 }
                 @media (max-width: 900px) {

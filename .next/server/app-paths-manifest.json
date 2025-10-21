@@ -1,12 +1,14 @@
 {
   "/(innerpage)/Hajj-packages/page": "app/(innerpage)/Hajj-packages/page.js",
-  "/(innerpage)/HajjDetail/[id]/page": "app/(innerpage)/HajjDetail/[id]/page.js",
   "/(innerpage)/Umrah-packages/page": "app/(innerpage)/Umrah-packages/page.js",
   "/(innerpage)/about/page": "app/(innerpage)/about/page.js",
   "/(innerpage)/beatPrice/page": "app/(innerpage)/beatPrice/page.js",
+  "/(innerpage)/blog/blog-details/[id]/page": "app/(innerpage)/blog/blog-details/[id]/page.js",
   "/(innerpage)/blog/page": "app/(innerpage)/blog/page.js",
   "/(innerpage)/contact/page": "app/(innerpage)/contact/page.js",
+  "/(innerpage)/team/page": "app/(innerpage)/team/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/home/page": "app/home/page.js"
+  "/home/page": "app/home/page.js",
+  "/page": "app/page.js"
 }

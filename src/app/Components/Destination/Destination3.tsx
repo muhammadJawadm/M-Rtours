@@ -13,9 +13,9 @@ const Destination3 = () => {
             </div>
             <div className="container">
                 <div className="section-title text-center">
-                    <span className="sub-title wow fadeInUp">Top Destination</span>
+                    <span className="sub-title wow fadeInUp">Top Destinations</span>
                     <h2 className="wow fadeInUp wow" data-wow-delay=".3s">
-                        Most Popular Destinations
+                        Must-Visit Places
                     </h2>
                 </div>
                 <div className="new-top-destination-wrapper">
