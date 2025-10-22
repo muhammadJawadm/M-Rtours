@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Review {
   id: number;
@@ -17,7 +18,7 @@ const ClientReviews: React.FC = () => {
       name: "Zainab",
       location: "Bradford",
       packageDetails: "7 Nights, 5 Star Umrah Package",
-      image: "",
+      image: "/assets/img/avatar/avatar1.jpg", // Add default avatar path
       review: "When I saw the Ka'bah, my heart just broke open, and I cried like a child. MR Tours made it so easy, with a beautiful hotel right by the Haram and a team that felt like family. They guided me through my first Umrah with so much care. I found a peace I'll hold onto forever."
     },
     {
@@ -336,9 +337,9 @@ const ClientReviews: React.FC = () => {
           Voices of Our Pilgrims
         </h2>
         <p className="description">
-          At MR Tours, Umrah isn't just a trip; it's a journey that changes hearts. Our pilgrims share their stories below, 
-          filled with love, faith, and moments they'll never forget. These are real people who trusted us with their sacred Umrah, 
-          and we're honored to share their words.
+          At MR Tours, Umrah isn&apos;t just a trip; it&apos;s a journey that changes hearts. Our pilgrims share their stories below, 
+          filled with love, faith, and moments they&apos;ll never forget. These are real people who trusted us with their sacred Umrah, 
+          and we&apos;re honored to share their words.
         </p>
 
         <h3 className="section-title">Pilgrim Stories</h3>
@@ -346,11 +347,20 @@ const ClientReviews: React.FC = () => {
           {reviews.map((review) => (
             <div key={review.id} className="review-card">
               <div className="review-header">
-                <img 
-                  src={review.image}
-                  alt={review.name}
-                  className="avatar"
-                />
+                {review.image ? (
+                  <Image 
+                    src={review.image}
+                    alt={`${review.name} from ${review.location}`}
+                    width={64}
+                    height={64}
+                    className="avatar"
+                    style={{objectFit: 'cover', borderRadius: '50%'}}
+                  />
+                ) : (
+                  <div className="avatar-placeholder">
+                    {review.name.charAt(0)}
+                  </div>
+                )}
                 <div className="reviewer-info">
                   <h3 className="reviewer-name">
                     {review.name}
@@ -364,7 +374,7 @@ const ClientReviews: React.FC = () => {
                 </div>
               </div>
               <p className="review-text">
-                "{review.review}"
+                &quot;{review.review}&quot;
               </p>
             </div>
           ))}
@@ -372,7 +382,7 @@ const ClientReviews: React.FC = () => {
 
         <h3 className="section-title">What Our Pilgrims Love</h3>
         <p className="description" style={{ marginBottom: '36px' }}>
-          Here's what keeps them coming back:
+          Here&apos;s what keeps them coming back:
         </p>
         <div className="features-grid">
           {pilgrimLoves.map((feature) => (
