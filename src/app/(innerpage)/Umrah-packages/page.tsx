@@ -1,6 +1,6 @@
 import React from 'react';
 import BreadCumb from '../../Components/Common/BreadCumb';
-import Destination4 from '../../Components/Destination/Destination4';
+// import Destination4 from '../../Components/Destination/Destination4';
 // import Story1 from '../../Components/Story/Story1';
 import FeaturedTour1 from '../../Components/FeaturedTour/FeaturedTour1';
 import FeaturedFlight from '../../Components/Umrah-Package/UmrahPackages';
