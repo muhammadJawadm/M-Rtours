@@ -452,11 +452,15 @@ __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Common$2f$loadBackgroudImages$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/Components/Common/loadBackgroudImages.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-slick/lib/index.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 "use client";
+;
+;
 ;
 ;
 ;
@@ -506,288 +510,329 @@ const Testimonial3 = ()=>{
     };
     const testimonialContent = [
         {
-            img: '/assets/img/team/2.png',
-            subtitle: 'Web Designer',
-            title: 'Ayesha K., London',
-            content: 'Booking my Ramadan Umrah with MRtours was effortless. Everything from visa assistance to hotel transfers was handled professionally.'
+            name: 'Zainab',
+            location: 'Bradford',
+            packageDetails: '7 Nights, 5 Star Umrah Package',
+            content: 'Standing before the Ka\'bah, I felt a peace I\'d never known. MR Tours made it possible by handling every detail with care, from my flight to the luxurious hotel just steps from the Haram. Their team felt like family, guiding me through my first Umrah with kindness and patience. It was a moment of renewal I\'ll carry forever.'
         },
         {
-            img: '/assets/img/team/1.png',
-            subtitle: 'President of Sales',
-            title: 'Mohammed R., Manchester ',
-            content: 'Our family trip for Umrah 2025 exceeded expectations. The Haram-view rooms and private transport made our pilgrimage comfortable.'
+            name: 'Omar',
+            location: 'London',
+            packageDetails: '15 Nights, 3 Star Umrah Package',
+            content: 'As a father, I worried about bringing my young children on Umrah, but MR Tours turned my fears into joy. The affordable package allowed us to stay longer, praying together in Madinah. The staff\'s support, especially during our Ziyarat visits, made us feel safe and cared for. This journey bonded our family in faith.'
         },
         {
-            img: '/assets/img/team/3.png',
-            subtitle: 'Brooklyn Simmons',
-            title: 'Fatima S., Birmingham ',
-            content: 'I highly recommend MRtours for anyone travelling from the UK. Their team took care of all arrangements.'
+            name: 'Amina',
+            location: 'Birmingham',
+            packageDetails: '10 Nights, 4 Star Umrah Package',
+            content: 'After years of saving, I finally performed Umrah with my elderly mother. MR Tours\' team went above and beyond, ensuring her comfort with accessible transfers and a hotel close to the mosque. Seeing her smile as we prayed together was priceless. They made our dream a reality with such warmth.'
+        },
+        {
+            name: 'Yusuf',
+            location: 'Manchester',
+            packageDetails: '7 Nights, 3 Star Umrah Package',
+            content: 'I was nervous as a solo traveler, but MR Tours made me feel at home. Their guidance helped me navigate the rituals, and the budget-friendly package meant I could focus on my dua without financial stress. I left Makkah feeling lighter, renewed, and grateful for their support.'
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "testimonial-section section-padding fix bg-cover",
         "data-background": "/assets/img/testimonial/testimonial-bg.jpg",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "testimonial-wrapper-3",
+        className: "jsx-1aecdd7ff616f924" + " " + "testimonial-section section-padding fix bg-cover",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "jsx-1aecdd7ff616f924" + " " + "container",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "row g-4 align-items-center",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "col-lg-6 wow fadeInUp wow",
-                            "data-wow-delay": ".3s",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "testimonial-image",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/assets/img/testimonial/H2.png",
-                                    alt: "img",
-                                    width: 636,
-                                    height: 657
+                    className: "jsx-1aecdd7ff616f924" + " " + "testimonial-wrapper-3",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-1aecdd7ff616f924" + " " + "row g-4 align-items-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                "data-wow-delay": ".3s",
+                                className: "jsx-1aecdd7ff616f924" + " " + "col-lg-6 wow fadeInUp wow",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "jsx-1aecdd7ff616f924" + " " + "testimonial-image",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/assets/img/testimonial/H2.png",
+                                        alt: "img",
+                                        width: 636,
+                                        height: 657
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                        lineNumber: 89,
+                                        columnNumber: 33
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 88,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                lineNumber: 66,
+                                lineNumber: 87,
                                 columnNumber: 25
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                            lineNumber: 65,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "col-lg-6",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "testimonial-content",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "section-title",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "sub-title wow fadeInUp",
-                                                children: "Testimonial"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                lineNumber: 73,
-                                                columnNumber: 33
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "wow fadeInUp wow",
-                                                "data-wow-delay": ".2s",
-                                                children: "Pilgrims Love Traveling with MRtours"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                lineNumber: 76,
-                                                columnNumber: 33
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                        lineNumber: 72,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "swiper testimonial-slider3",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "swiper-wrapper",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                ref: sliderRef,
-                                                ...settings,
-                                                children: testimonialContent.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "swiper-slide",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "testimonial-card-items",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "client-info-items",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "client-info",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "client-image",
-                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                                        src: item.img,
-                                                                                        alt: "img",
-                                                                                        width: 60,
-                                                                                        height: 60
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                                        lineNumber: 89,
-                                                                                        columnNumber: 57
-                                                                                    }, this)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                                    lineNumber: 88,
-                                                                                    columnNumber: 53
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "content",
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-1aecdd7ff616f924" + " " + "col-lg-6",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "jsx-1aecdd7ff616f924" + " " + "testimonial-content",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-1aecdd7ff616f924" + " " + "section-title",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "jsx-1aecdd7ff616f924" + " " + "sub-title wow fadeInUp",
+                                                    children: "Testimonials"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                    lineNumber: 95,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                    "data-wow-delay": ".2s",
+                                                    className: "jsx-1aecdd7ff616f924" + " " + "wow fadeInUp wow",
+                                                    children: "What Our Pilgrims Say"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                    lineNumber: 98,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                            lineNumber: 94,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-1aecdd7ff616f924" + " " + "swiper testimonial-slider3",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-1aecdd7ff616f924" + " " + "swiper-wrapper",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    ref: sliderRef,
+                                                    ...settings,
+                                                    children: testimonialContent.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "jsx-1aecdd7ff616f924" + " " + "swiper-slide",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "jsx-1aecdd7ff616f924" + " " + "testimonial-card-items",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "jsx-1aecdd7ff616f924" + " " + "client-info-items",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "jsx-1aecdd7ff616f924" + " " + "client-info",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    className: "jsx-1aecdd7ff616f924" + " " + "content",
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                            children: item.title
-                                                                                        }, void 0, false, {
+                                                                                            className: "jsx-1aecdd7ff616f924",
+                                                                                            children: [
+                                                                                                item.name,
+                                                                                                ", ",
+                                                                                                item.location
+                                                                                            ]
+                                                                                        }, void 0, true, {
                                                                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                                            lineNumber: 92,
-                                                                                            columnNumber: 57
+                                                                                            lineNumber: 111,
+                                                                                            columnNumber: 69
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                            children: item.subtitle
+                                                                                            className: "jsx-1aecdd7ff616f924" + " " + "package-details",
+                                                                                            children: item.packageDetails
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                                            lineNumber: 95,
-                                                                                            columnNumber: 57
+                                                                                            lineNumber: 112,
+                                                                                            columnNumber: 69
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                                    lineNumber: 91,
-                                                                                    columnNumber: 53
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                            lineNumber: 87,
-                                                                            columnNumber: 49
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "icon",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                                                xmlns: "http://www.w3.org/2000/svg",
-                                                                                width: "50",
-                                                                                height: "37",
-                                                                                viewBox: "0 0 50 37",
-                                                                                fill: "none",
-                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                                    d: "M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z",
-                                                                                    fill: "#1CA8CB"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                                    lineNumber: 102,
-                                                                                    columnNumber: 57
+                                                                                    lineNumber: 110,
+                                                                                    columnNumber: 65
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                                lineNumber: 101,
-                                                                                columnNumber: 53
+                                                                                lineNumber: 109,
+                                                                                columnNumber: 61
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "jsx-1aecdd7ff616f924" + " " + "icon",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                                                    width: "50",
+                                                                                    height: "37",
+                                                                                    viewBox: "0 0 50 37",
+                                                                                    fill: "none",
+                                                                                    className: "jsx-1aecdd7ff616f924",
+                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                        d: "M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z",
+                                                                                        fill: "#1CA8CB",
+                                                                                        className: "jsx-1aecdd7ff616f924"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                                                        lineNumber: 117,
+                                                                                        columnNumber: 69
+                                                                                    }, this)
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                                                    lineNumber: 116,
+                                                                                    columnNumber: 65
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                                                lineNumber: 115,
+                                                                                columnNumber: 61
                                                                             }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                            lineNumber: 100,
-                                                                            columnNumber: 49
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                    lineNumber: 86,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    children: item.content
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                                    lineNumber: 106,
-                                                                    columnNumber: 45
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                                        lineNumber: 108,
+                                                                        columnNumber: 57
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "jsx-1aecdd7ff616f924" + " " + "testimonial-text",
+                                                                        children: [
+                                                                            '"',
+                                                                            item.content,
+                                                                            '"'
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                                        lineNumber: 121,
+                                                                        columnNumber: 57
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                                lineNumber: 107,
+                                                                columnNumber: 53
+                                                            }, this)
+                                                        }, i, false, {
                                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                            lineNumber: 85,
-                                                            columnNumber: 41
-                                                        }, this)
-                                                    }, i, false, {
-                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                        lineNumber: 84,
-                                                        columnNumber: 37
-                                                    }, this))
+                                                            lineNumber: 106,
+                                                            columnNumber: 49
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                    lineNumber: 104,
+                                                    columnNumber: 41
+                                                }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                lineNumber: 82,
-                                                columnNumber: 33
+                                                lineNumber: 103,
+                                                columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 102,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-1aecdd7ff616f924" + " " + "array-button",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: previous,
+                                                    className: "jsx-1aecdd7ff616f924" + " " + "array-prev",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "jsx-1aecdd7ff616f924" + " " + "bi bi-arrow-up"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                        lineNumber: 132,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                    lineNumber: 131,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: next,
+                                                    className: "jsx-1aecdd7ff616f924" + " " + "array-next",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "jsx-1aecdd7ff616f924" + " " + "bi bi-arrow-down"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                        lineNumber: 135,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                    lineNumber: 134,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                            lineNumber: 130,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-1aecdd7ff616f924" + " " + "testimonial-cta",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/reviews",
+                                                    className: "review-link",
+                                                    children: [
+                                                        "Read More Reviews ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                            className: "jsx-1aecdd7ff616f924" + " " + "bi bi-arrow-right"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                            lineNumber: 140,
+                                                            columnNumber: 59
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                    lineNumber: 139,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "jsx-1aecdd7ff616f924" + " " + "cta-text",
+                                                    children: "Discover why thousands choose MR Tours"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                                    lineNumber: 142,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                            lineNumber: 138,
                                             columnNumber: 33
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                        lineNumber: 80,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "array-button",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                onClick: previous,
-                                                className: "array-prev",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-arrow-up"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                    lineNumber: 118,
-                                                    columnNumber: 33
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                lineNumber: 117,
-                                                columnNumber: 33
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                onClick: next,
-                                                className: "array-next",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-arrow-down"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                    lineNumber: 121,
-                                                    columnNumber: 33
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                lineNumber: 120,
-                                                columnNumber: 33
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                        lineNumber: 116,
-                                        columnNumber: 29
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                                    lineNumber: 93,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                lineNumber: 71,
+                                lineNumber: 92,
                                 columnNumber: 25
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                            lineNumber: 70,
-                            columnNumber: 21
-                        }, this)
-                    ]
-                }, void 0, true, {
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
+                        lineNumber: 86,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                    lineNumber: 64,
+                    lineNumber: 85,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                lineNumber: 63,
+                lineNumber: 84,
                 columnNumber: 13
-            }, this)
-        }, void 0, false, {
-            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-            lineNumber: 62,
-            columnNumber: 9
-        }, this)
-    }, void 0, false, {
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                id: "1aecdd7ff616f924",
+                children: ".package-details.jsx-1aecdd7ff616f924{color:#1ca8cb;margin-top:4px;font-weight:500}.testimonial-text.jsx-1aecdd7ff616f924{color:#555;margin-top:20px;font-size:1rem;font-style:italic;line-height:1.75}.testimonial-cta.jsx-1aecdd7ff616f924{text-align:center;border-top:1px solid #eee;margin-top:30px;padding-top:20px}.review-link.jsx-1aecdd7ff616f924{color:#1ca8cb;margin-bottom:8px;font-size:1.1rem;font-weight:600;text-decoration:none;transition:all .3s;display:inline-block}.review-link.jsx-1aecdd7ff616f924:hover{color:#0d8ba8}.review-link.jsx-1aecdd7ff616f924 i.jsx-1aecdd7ff616f924{margin-left:5px;font-size:.9rem;transition:transform .3s}.review-link.jsx-1aecdd7ff616f924:hover i.jsx-1aecdd7ff616f924{transform:translate(5px)}.cta-text.jsx-1aecdd7ff616f924{color:#777;margin:0;font-size:.9rem}@media (width<=992px){.testimonial-cta.jsx-1aecdd7ff616f924{margin-top:25px}}@media (width<=576px){.testimonial-text.jsx-1aecdd7ff616f924{font-size:.95rem}.review-link.jsx-1aecdd7ff616f924{font-size:1rem}}"
+            }, void 0, false, void 0, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-        lineNumber: 61,
+        lineNumber: 83,
         columnNumber: 9
     }, this);
 };
