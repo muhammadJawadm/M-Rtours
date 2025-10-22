@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
-import VideoModal from '../VideoModal/VideoModal';
+// import VideoModal from '../VideoModal/VideoModal';
 import Image from 'next/image';
 
 const About1 = () => {
@@ -118,11 +118,6 @@ const About1 = () => {
                 </div>
             </div>
 
-        <VideoModal
-            isTrue={toggle}
-            iframeSrc={iframeSrc}
-            handelClose={handelClose}        
-        ></VideoModal>
 
         </section>
     );
