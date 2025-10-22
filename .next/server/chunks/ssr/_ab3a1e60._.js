@@ -33,14 +33,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const About2 = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "about-section section-padding fix",
+        className: "about-section  fix",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "hero-section fix section-padding",
+                className: "hero-section fix ",
                 style: {
                     background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
                     minHeight: '600px',
-                    // paddingTop: '180px',
+                    paddingTop: '120px',
                     paddingBottom: '80px'
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -220,24 +220,24 @@ const About2 = ()=>{
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
                                                 lineNumber: 104,
-                                                columnNumber: 33
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "shape-image float-bob-y",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                     src: "/assets/img/about/We strived only 196.png",
                                                     alt: "img",
-                                                    width: 196,
-                                                    height: 109
+                                                    width: 250,
+                                                    height: 150
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                    lineNumber: 106,
-                                                    columnNumber: 37
+                                                    lineNumber: 112,
+                                                    columnNumber: 15
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 105,
-                                                columnNumber: 33
+                                                lineNumber: 111,
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "group-image float-bob-x",
@@ -248,13 +248,13 @@ const About2 = ()=>{
                                                     height: 50
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                    lineNumber: 109,
-                                                    columnNumber: 37
+                                                    lineNumber: 115,
+                                                    columnNumber: 15
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 108,
-                                                columnNumber: 33
+                                                lineNumber: 114,
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "about-image-2",
@@ -267,8 +267,8 @@ const About2 = ()=>{
                                                         height: 411
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 112,
-                                                        columnNumber: 37
+                                                        lineNumber: 118,
+                                                        columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "plane-shape",
@@ -279,30 +279,30 @@ const About2 = ()=>{
                                                             height: 205
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                            lineNumber: 114,
-                                                            columnNumber: 41
+                                                            lineNumber: 126,
+                                                            columnNumber: 17
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 113,
-                                                        columnNumber: 37
+                                                        lineNumber: 125,
+                                                        columnNumber: 15
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 111,
-                                                columnNumber: 33
+                                                lineNumber: 117,
+                                                columnNumber: 13
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/About/About2.tsx",
                                         lineNumber: 103,
-                                        columnNumber: 29
+                                        columnNumber: 11
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/About/About2.tsx",
                                     lineNumber: 102,
-                                    columnNumber: 25
+                                    columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "col-lg-6",
@@ -314,35 +314,35 @@ const About2 = ()=>{
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "sub-title wow fadeInUp",
-                                                        children: "Get About Us"
+                                                        children: "About Us"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 122,
-                                                        columnNumber: 37
+                                                        lineNumber: 134,
+                                                        columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "wow fadeInUp wow",
                                                         "data-wow-delay": ".3s",
-                                                        children: "We Strive to Make Every Pilgrimage Truly Special"
+                                                        children: "Your Trusted Partner for Sacred Journeys"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 125,
-                                                        columnNumber: 37
+                                                        lineNumber: 135,
+                                                        columnNumber: 15
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 121,
-                                                columnNumber: 33
+                                                lineNumber: 133,
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "wow fadeInUp wow",
                                                 "data-wow-delay": ".5s",
-                                                children: "At MR Tours, our mission is simple , to make your sacred journey of Hajj and Umrah as smooth, meaningful, and worry-free as possible. With 20+ years of experience serving pilgrims across the UK, we provide trusted guidance, reliable travel support, and all-inclusive pilgrimage packages , from booking your flight to ensuring your safe return home."
+                                                children: "At MR Tours, we are dedicated to making your Hajj and Umrah pilgrimages from the UK truly special, seamless, and spiritually fulfilling. With over 20 years of experience serving pilgrims, we provide expert guidance and comprehensive support to ensure your journey is worry-free from start to finish."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 129,
-                                                columnNumber: 33
+                                                lineNumber: 139,
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "about-items wow fadeInUp wow",
@@ -360,61 +360,56 @@ const About2 = ()=>{
                                                                     height: 30
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                    lineNumber: 135,
-                                                                    columnNumber: 45
+                                                                    lineNumber: 149,
+                                                                    columnNumber: 19
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                lineNumber: 134,
-                                                                columnNumber: 41
+                                                                lineNumber: 148,
+                                                                columnNumber: 17
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                style: {
+                                                                    width: '100px'
+                                                                },
                                                                 className: "content",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                                    children: [
-                                                                        "Hassle-Free Booking",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                            fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                            lineNumber: 139,
-                                                                            columnNumber: 68
-                                                                        }, this),
-                                                                        "Experience"
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                    children: "Our Mission"
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                    lineNumber: 138,
-                                                                    columnNumber: 45
+                                                                    lineNumber: 152,
+                                                                    columnNumber: 19
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                lineNumber: 137,
-                                                                columnNumber: 41
+                                                                lineNumber: 151,
+                                                                columnNumber: 17
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 133,
-                                                        columnNumber: 37
+                                                        lineNumber: 147,
+                                                        columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            children: "Plan your Hajj or Umrah 2025 with ease complete packages with visa, flights, stay near Haram, and transport."
+                                                            children: "We simplify your pilgrimage so you can focus on faith. Our team ensures comfort, peace of mind, and a truly spiritual experience."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                            lineNumber: 144,
-                                                            columnNumber: 41
+                                                            lineNumber: 156,
+                                                            columnNumber: 17
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 143,
-                                                        columnNumber: 37
+                                                        lineNumber: 155,
+                                                        columnNumber: 15
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 132,
-                                                columnNumber: 33
+                                                lineNumber: 146,
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "about-items wow fadeInUp wow",
@@ -432,64 +427,56 @@ const About2 = ()=>{
                                                                     height: 30
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                    lineNumber: 151,
-                                                                    columnNumber: 45
+                                                                    lineNumber: 164,
+                                                                    columnNumber: 19
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                lineNumber: 150,
-                                                                columnNumber: 41
+                                                                lineNumber: 163,
+                                                                columnNumber: 17
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 style: {
-                                                                    marginRight: "-38px"
+                                                                    width: '100px'
                                                                 },
                                                                 className: "content",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                                    children: [
-                                                                        "Comprehensive Pilgrimage",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                            fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                            lineNumber: 155,
-                                                                            columnNumber: 73
-                                                                        }, this),
-                                                                        " Support"
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                    children: "Why MR Tours Stands Out"
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                    lineNumber: 154,
-                                                                    columnNumber: 45
+                                                                    lineNumber: 167,
+                                                                    columnNumber: 19
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                                lineNumber: 153,
-                                                                columnNumber: 41
+                                                                lineNumber: 166,
+                                                                columnNumber: 17
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 149,
-                                                        columnNumber: 37
+                                                        lineNumber: 162,
+                                                        columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            children: "We handle all logistics so you can focus on the spiritual purpose of your pilgrimage."
+                                                            children: "Hassle-free packages with flights, visas, and hotels near Haram. 20+ years of trusted service. Tailored plans for groups or individuals. 24/7 assistance and secure ATOL & ABTA bookings.  "
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                            lineNumber: 160,
-                                                            columnNumber: 41
+                                                            lineNumber: 171,
+                                                            columnNumber: 17
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 159,
-                                                        columnNumber: 37
+                                                        lineNumber: 170,
+                                                        columnNumber: 15
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 148,
-                                                columnNumber: 33
+                                                lineNumber: 161,
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/about",
@@ -501,41 +488,41 @@ const About2 = ()=>{
                                                         className: "bi bi-arrow-right"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                        lineNumber: 166,
-                                                        columnNumber: 126
+                                                        lineNumber: 180,
+                                                        columnNumber: 28
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/About/About2.tsx",
-                                                lineNumber: 166,
-                                                columnNumber: 33
+                                                lineNumber: 179,
+                                                columnNumber: 13
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/About/About2.tsx",
-                                        lineNumber: 120,
-                                        columnNumber: 29
+                                        lineNumber: 132,
+                                        columnNumber: 11
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/About/About2.tsx",
-                                    lineNumber: 119,
-                                    columnNumber: 25
+                                    lineNumber: 131,
+                                    columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/About/About2.tsx",
                             lineNumber: 101,
-                            columnNumber: 21
+                            columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/About/About2.tsx",
                         lineNumber: 100,
-                        columnNumber: 17
+                        columnNumber: 5
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/About/About2.tsx",
                     lineNumber: 99,
-                    columnNumber: 13
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/About/About2.tsx",

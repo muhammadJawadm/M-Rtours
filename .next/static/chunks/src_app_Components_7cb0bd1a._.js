@@ -40,13 +40,13 @@ const Choose1 = ()=>{
                     height: 244
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                    lineNumber: 16,
-                    columnNumber: 17
+                    lineNumber: 18,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                lineNumber: 15,
-                columnNumber: 13
+                lineNumber: 17,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "shape-2 float-bob-x",
@@ -57,13 +57,13 @@ const Choose1 = ()=>{
                     height: 459
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                    lineNumber: 19,
-                    columnNumber: 17
+                    lineNumber: 21,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                lineNumber: 18,
-                columnNumber: 13
+                lineNumber: 20,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container",
@@ -82,55 +82,58 @@ const Choose1 = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "sub-title wow fadeInUp",
-                                                    children: "Ready to Begin Your Spiritual Journey?"
+                                                    children: "Start Your Journey Today"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                    lineNumber: 27,
-                                                    columnNumber: 37
+                                                    lineNumber: 29,
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     className: "wow fadeInUp wow",
                                                     "data-wow-delay": ".2s",
-                                                    children: "Your Trusted Partner for Hajj & Umrah Travel"
+                                                    children: "MR Tours — Guiding You Every Step of the Way"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                    lineNumber: 30,
-                                                    columnNumber: 37
+                                                    lineNumber: 32,
+                                                    columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                            lineNumber: 26,
-                                            columnNumber: 33
+                                            lineNumber: 28,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "wow fadeInUp wow",
                                             "data-wow-delay": ".3s",
-                                            children: "As one of the best Hajj travel agencies in the UK, MR Tours has helped thousands of pilgrims fulfil their sacred duties with comfort, peace of mind, and complete support. Whether you’re planning group Umrah packages, family Hajj trips, or VIP Umrah packages, we ensure your journey is easy, meaningful, and spiritually enriching , from the moment you book until you return home."
+                                            children: "As one of the UK’s leading Hajj and Umrah travel agencies, MR Tours has helped countless pilgrims fulfill their sacred duties with ease. Whether it’s your first Umrah or a deluxe Hajj, we manage all logistics—from flights to premium accommodations—so you can focus on worship and reflection."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                            lineNumber: 34,
-                                            columnNumber: 33
+                                            lineNumber: 36,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "feature-area",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    style: {
+                                                        right: '370px'
+                                                    },
                                                     className: "line-shape",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         src: "/assets/img/line-shape.png",
                                                         alt: "img",
                                                         width: 1,
-                                                        height: 174
+                                                        height: 245
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                        lineNumber: 38,
-                                                        columnNumber: 41
+                                                        lineNumber: 45,
+                                                        columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                    lineNumber: 37,
-                                                    columnNumber: 37
+                                                    lineNumber: 44,
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "feature-items wow fadeInUp wow",
@@ -148,41 +151,47 @@ const Choose1 = ()=>{
                                                                         height: 40
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 43,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 51,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 42,
-                                                                    columnNumber: 41
+                                                                    lineNumber: 50,
+                                                                    columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "content",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
                                                                         children: [
-                                                                            "Most Fulfilling  ",
+                                                                            "Benefits of ",
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                                lineNumber: 47,
-                                                                                columnNumber: 66
+                                                                                lineNumber: 55,
+                                                                                columnNumber: 39
                                                                             }, this),
-                                                                            "Pilgrimage Experience"
+                                                                            " Choosing ",
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                                fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
+                                                                                lineNumber: 55,
+                                                                                columnNumber: 55
+                                                                            }, this),
+                                                                            " MR Tours"
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 46,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 54,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 45,
-                                                                    columnNumber: 41
+                                                                    lineNumber: 53,
+                                                                    columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                            lineNumber: 41,
-                                                            columnNumber: 37
+                                                            lineNumber: 49,
+                                                            columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                             className: "circle-icon",
@@ -192,46 +201,63 @@ const Choose1 = ()=>{
                                                                         className: "fa-solid fa-badge-check"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 54,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 61,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 53,
-                                                                    columnNumber: 41
+                                                                    lineNumber: 60,
+                                                                    columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         children: [
-                                                                            "Hajj & Umrah packages with flights, ",
+                                                                            "Seamless travel with flights, visas. ",
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                                lineNumber: 58,
-                                                                                columnNumber: 37
+                                                                                lineNumber: 65,
+                                                                                columnNumber: 64
                                                                             }, this),
-                                                                            " visas, stay near Haram, and transport—focus on faith."
+                                                                            "Hotels near holy sites.",
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                                fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
+                                                                                lineNumber: 66,
+                                                                                columnNumber: 50
+                                                                            }, this),
+                                                                            "Custom plans for every budget.",
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                                fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
+                                                                                lineNumber: 67,
+                                                                                columnNumber: 57
+                                                                            }, this),
+                                                                            "Spiritual support and exclusive perks.",
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                                fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
+                                                                                lineNumber: 68,
+                                                                                columnNumber: 65
+                                                                            }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 57,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 64,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 56,
-                                                                    columnNumber: 41
+                                                                    lineNumber: 63,
+                                                                    columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                            lineNumber: 52,
-                                                            columnNumber: 37
+                                                            lineNumber: 59,
+                                                            columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                    lineNumber: 40,
-                                                    columnNumber: 33
+                                                    lineNumber: 48,
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "feature-items wow fadeInUp wow",
@@ -245,45 +271,40 @@ const Choose1 = ()=>{
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                                         src: "/assets/img/icon/09.svg",
                                                                         alt: "img",
-                                                                        width: 29,
+                                                                        width: 40,
                                                                         height: 40
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 67,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 77,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 66,
-                                                                    columnNumber: 41
+                                                                    lineNumber: 76,
+                                                                    columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    style: {
+                                                                        width: '100px'
+                                                                    },
                                                                     className: "content",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                                        children: [
-                                                                            "Your Journey  ",
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                                lineNumber: 71,
-                                                                                columnNumber: 63
-                                                                            }, this),
-                                                                            "Starts Here"
-                                                                        ]
-                                                                    }, void 0, true, {
+                                                                        children: "Your Journey Starts Here"
+                                                                    }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 70,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 80,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 69,
-                                                                    columnNumber: 41
+                                                                    lineNumber: 79,
+                                                                    columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                            lineNumber: 65,
-                                                            columnNumber: 37
+                                                            lineNumber: 75,
+                                                            columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                             className: "circle-icon",
@@ -293,110 +314,96 @@ const Choose1 = ()=>{
                                                                         className: "fa-solid fa-badge-check"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 78,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 85,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 77,
-                                                                    columnNumber: 41
+                                                                    lineNumber: 84,
+                                                                    columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        style: {
-                                                                            marginLeft: "18px"
-                                                                        },
                                                                         children: [
-                                                                            "From first Umrah to luxury Hajj, ",
+                                                                            "MR Tours makes your pilgrimage easy ",
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                                lineNumber: 82,
-                                                                                columnNumber: 82
+                                                                                lineNumber: 89,
+                                                                                columnNumber: 63
                                                                             }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                style: {
-                                                                                    marginLeft: "18px"
-                                                                                },
-                                                                                children: "  MR Tours  makes your journey "
+                                                                            " and fulfilling. Call ",
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                children: "+44 7517 240405"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                                lineNumber: 83,
-                                                                                columnNumber: 49
+                                                                                lineNumber: 90,
+                                                                                columnNumber: 32
                                                                             }, this),
                                                                             " ",
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                                lineNumber: 83,
-                                                                                columnNumber: 122
+                                                                                lineNumber: 90,
+                                                                                columnNumber: 65
                                                                             }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                style: {
-                                                                                    marginLeft: "18px"
-                                                                                },
-                                                                                children: "guided and stress-free."
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                                lineNumber: 84,
-                                                                                columnNumber: 49
-                                                                            }, this)
+                                                                            " or  contact us to begin your journey."
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                        lineNumber: 81,
-                                                                        columnNumber: 45
+                                                                        lineNumber: 88,
+                                                                        columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                                    lineNumber: 80,
-                                                                    columnNumber: 40
+                                                                    lineNumber: 87,
+                                                                    columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                            lineNumber: 76,
-                                                            columnNumber: 37
+                                                            lineNumber: 83,
+                                                            columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                    lineNumber: 64,
-                                                    columnNumber: 33
+                                                    lineNumber: 74,
+                                                    columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                            lineNumber: 36,
-                                            columnNumber: 32
+                                            lineNumber: 43,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/contact",
                                             className: "theme-btn wow fadeInUp wow",
                                             "data-wow-delay": ".9s",
                                             children: [
-                                                "Contact US",
+                                                "Contact Us",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                     className: "bi bi-arrow-right"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                                    lineNumber: 91,
-                                                    columnNumber: 124
+                                                    lineNumber: 102,
+                                                    columnNumber: 29
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                            lineNumber: 91,
-                                            columnNumber: 32
+                                            lineNumber: 97,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                    lineNumber: 25,
-                                    columnNumber: 29
+                                    lineNumber: 27,
+                                    columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                lineNumber: 24,
-                                columnNumber: 25
+                                lineNumber: 26,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "col-lg-6",
@@ -409,40 +416,40 @@ const Choose1 = ()=>{
                                         height: 577
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                        lineNumber: 96,
-                                        columnNumber: 33
+                                        lineNumber: 109,
+                                        columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                    lineNumber: 95,
-                                    columnNumber: 29
+                                    lineNumber: 108,
+                                    columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                                lineNumber: 94,
-                                columnNumber: 25
+                                lineNumber: 107,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                        lineNumber: 23,
-                        columnNumber: 21
+                        lineNumber: 25,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                    lineNumber: 22,
-                    columnNumber: 17
+                    lineNumber: 24,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-                lineNumber: 21,
-                columnNumber: 13
+                lineNumber: 23,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
-        lineNumber: 14,
-        columnNumber: 9
+        lineNumber: 13,
+        columnNumber: 5
     }, this);
 };
 _s(Choose1, "OD7bBpZva5O2jO+Puf00hKivP7c=");
@@ -468,11 +475,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Common$2f$loadBackgroudImages$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/Components/Common/loadBackgroudImages.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-slick/lib/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
-;
 ;
 ;
 ;
@@ -776,41 +781,6 @@ const Testimonial3 = ()=>{
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
                                             lineNumber: 130,
-                                            columnNumber: 33
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-1aecdd7ff616f924" + " " + "testimonial-cta",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/reviews",
-                                                    className: "review-link",
-                                                    children: [
-                                                        "Read More Reviews ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                            className: "jsx-1aecdd7ff616f924" + " " + "bi bi-arrow-right"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                            lineNumber: 140,
-                                                            columnNumber: 59
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                    lineNumber: 139,
-                                                    columnNumber: 37
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "jsx-1aecdd7ff616f924" + " " + "cta-text",
-                                                    children: "Discover why thousands choose MR Tours"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                                    lineNumber: 142,
-                                                    columnNumber: 37
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/Components/Testimonial/Testimonial3.tsx",
-                                            lineNumber: 138,
                                             columnNumber: 33
                                         }, this)
                                     ]

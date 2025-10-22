@@ -22928,7 +22928,7 @@ p, span {
 
 .about-wrapper-2 .about-content .about-items {
   align-items: center;
-  gap: 150px;
+  gap: 120px;
   margin-top: 30px;
   display: flex;
 }
@@ -26220,7 +26220,7 @@ p, span {
 
 .feature-wrapper .feature-content .feature-area .feature-items {
   align-items: center;
-  gap: 100px;
+  gap: 70px;
   margin-top: 30px;
   display: flex;
 }

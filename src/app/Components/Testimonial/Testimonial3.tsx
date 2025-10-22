@@ -135,12 +135,12 @@ const Testimonial3 = () => {
                                         <i className="bi bi-arrow-down"></i>
                                     </button>
                                 </div>
-                                <div className="testimonial-cta">
+                                {/* <div className="testimonial-cta">
                                     <Link href="/reviews" className="review-link">
                                         Read More Reviews <i className="bi bi-arrow-right"></i>
                                     </Link>
                                     <p className="cta-text">Discover why thousands choose MR Tours</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

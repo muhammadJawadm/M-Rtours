@@ -182,6 +182,27 @@ const Blog4 = ()=>{
     _s();
     const [blogContent, setBlogContent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    // Default fallback image to use when a blog image is missing or invalid
+    const fallbackImage = "/assets/img/blog/placeholder.jpg";
+    // Helper function to validate image URLs
+    const isValidImageUrl = (url)=>{
+        if (!url) return false;
+        try {
+            // Check if it's an absolute URL
+            if (url.startsWith('http://') || url.startsWith('https://')) {
+                new URL(url);
+                return true;
+            }
+            // Check if it's a valid relative path starting with "/"
+            if (url.startsWith('/')) {
+                return true;
+            }
+            return false;
+        } catch (e) {
+            console.warn("Invalid image URL detected:", url);
+            return false;
+        }
+    };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Blog4.useEffect": ()=>{
             const fetchBlogs = {
@@ -193,9 +214,14 @@ const Blog4 = ()=>{
                         blogsSnapshot.forEach({
                             "Blog4.useEffect.fetchBlogs": (doc)=>{
                                 const data = doc.data();
+                                // Process and validate the image URL
+                                let imageUrl = data.image || '';
+                                if (!isValidImageUrl(imageUrl)) {
+                                    imageUrl = fallbackImage;
+                                }
                                 blogsData.push({
                                     id: doc.id,
-                                    img: data.img || '',
+                                    image: imageUrl,
                                     title: data.title?.trim() || data['title ']?.trim() || '',
                                     date: data.date || '',
                                     month: data.month?.trim() || data['month ']?.trim() || '',
@@ -205,6 +231,7 @@ const Blog4 = ()=>{
                             }
                         }["Blog4.useEffect.fetchBlogs"]);
                         setBlogContent(blogsData);
+                        console.log('Fetched blogs:', blogsData);
                     } catch (err) {
                         console.error('Error fetching blogs:', err);
                     } finally{
@@ -226,22 +253,22 @@ const Blog4 = ()=>{
                         children: "Loading blogs..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                        lineNumber: 59,
+                        lineNumber: 93,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                    lineNumber: 58,
+                    lineNumber: 92,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                lineNumber: 57,
+                lineNumber: 91,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-            lineNumber: 56,
+            lineNumber: 90,
             columnNumber: 7
         }, this);
     }
@@ -256,22 +283,22 @@ const Blog4 = ()=>{
                         children: "No blogs available at the moment."
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                        lineNumber: 71,
+                        lineNumber: 105,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                    lineNumber: 70,
+                    lineNumber: 104,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                lineNumber: 69,
+                lineNumber: 103,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-            lineNumber: 68,
+            lineNumber: 102,
             columnNumber: 7
         }, this);
     }
@@ -290,18 +317,23 @@ const Blog4 = ()=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "news-image",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: item.img,
+                                        src: item.image,
                                         alt: item.title,
                                         width: 416,
-                                        height: 347
+                                        height: 347,
+                                        onError: (e)=>{
+                                            // Fallback if image fails to load
+                                            const target = e.target;
+                                            target.src = fallbackImage;
+                                        }
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 120,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 119,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -318,13 +350,13 @@ const Blog4 = ()=>{
                                                             children: item.month
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                            lineNumber: 96,
+                                                            lineNumber: 135,
                                                             columnNumber: 34
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                    lineNumber: 95,
+                                                    lineNumber: 134,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -333,7 +365,7 @@ const Blog4 = ()=>{
                                                             className: "bi bi-person"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                            lineNumber: 99,
+                                                            lineNumber: 138,
                                                             columnNumber: 23
                                                         }, this),
                                                         "By ",
@@ -341,7 +373,7 @@ const Blog4 = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                    lineNumber: 98,
+                                                    lineNumber: 137,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -350,20 +382,20 @@ const Blog4 = ()=>{
                                                             className: "bi bi-tag-fill"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                            lineNumber: 103,
+                                                            lineNumber: 142,
                                                             columnNumber: 23
                                                         }, this),
                                                         item.category
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 141,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                            lineNumber: 94,
+                                            lineNumber: 133,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -372,12 +404,12 @@ const Blog4 = ()=>{
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 147,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 146,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -389,45 +421,45 @@ const Blog4 = ()=>{
                                                     className: "bi bi-arrow-right"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                                    lineNumber: 113,
+                                                    lineNumber: 152,
                                                     columnNumber: 31
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 151,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 132,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                            lineNumber: 84,
+                            lineNumber: 118,
                             columnNumber: 15
                         }, this)
                     }, item.id, false, {
                         fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                        lineNumber: 83,
+                        lineNumber: 117,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-                lineNumber: 81,
+                lineNumber: 115,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-            lineNumber: 80,
+            lineNumber: 114,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/Components/Blog/Blog4.tsx",
-        lineNumber: 79,
+        lineNumber: 113,
         columnNumber: 5
     }, this);
 };

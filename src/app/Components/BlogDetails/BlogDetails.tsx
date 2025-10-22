@@ -108,7 +108,7 @@ const BlogDetails = () => {
               {/* Featured Image */}
               <div className="blog-details-image">
                 <Image 
-                  src={`/${blog.img}`} 
+                  src={`${blog.img}`} 
                   alt={blog.title}
                   width={800}
                   height={500}

@@ -4,11 +4,11 @@ import React from 'react';
 
 const About2 = () => {
     return (
-        <section className="about-section section-padding fix">
-             <section className="hero-section fix section-padding" style={{
+        <section className="about-section  fix">
+             <section className="hero-section fix " style={{
                             background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
                             minHeight: '600px',
-                            // paddingTop: '180px',
+                             paddingTop: '120px',
                             paddingBottom: '80px'
                         }}>
                             <div className="container">
@@ -96,80 +96,96 @@ const About2 = () => {
                             </div>
                         </section>
 <section className="about-section section-padding fix">
-            <div className="container">
-                <div className="about-wrapper-2">
-                    <div className="row g-4">
-                        <div className="col-lg-6">
-                            <div className="about-image">
-                                <Image src="/assets/img/about/We strived only 329.png" className="wow img-custom-anim-left" alt="img" width={330} height={512}   />
-                                <div className="shape-image float-bob-y">
-                                    <Image src="/assets/img/about/We strived only 196.png" alt="img" width={196} height={109}   />
-                                </div>
-                                <div className="group-image float-bob-x">
-                                    <Image src="/assets/img/about/group.png" alt="img" width={170} height={50}   />
-                                </div>
-                                <div className="about-image-2">
-                                    <Image src="/assets/img/about/We strived only 299.png" className="wow img-custom-anim-top" alt="img" width={284} height={411}   />
-                                    <div className="plane-shape">
-                                        <Image src="/assets/img/about/plane-shape2.png" alt="img" width={370} height={205}   />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="about-content">
-                                <div className="section-title">
-                                    <span className="sub-title wow fadeInUp">
-                                        Get About Us
-                                    </span>
-                                    <h2 className="wow fadeInUp wow" data-wow-delay=".3s">
-                                        We Strive to Make Every Pilgrimage Truly Special
-                                    </h2>
-                                </div>
-                                <p className="wow fadeInUp wow" data-wow-delay=".5s">
-                                    At MR Tours, our mission is simple , to make your sacred journey of Hajj and Umrah as smooth, meaningful, and worry-free as possible. With 20+ years of experience serving pilgrims across the UK, we provide trusted guidance, reliable travel support, and all-inclusive pilgrimage packages , from booking your flight to ensuring your safe return home.
-                                </p>
-                                <div className="about-items wow fadeInUp wow" data-wow-delay=".3s">
-                                    <div className="about-icon-items">
-                                        <div className="icon">
-                                            <Image src="/assets/img/check.png" alt="img" width={34} height={30}   />
-                                        </div>
-                                        <div className="content">
-                                            <h5>
-                                                Hassle-Free Booking<br/>Experience
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div className="text">
-                                        <p>
-                                            Plan your Hajj or Umrah 2025 with ease complete packages with visa, flights, stay near Haram, and transport.</p>
-                                    </div>
-                                </div>
-                                <div className="about-items wow fadeInUp wow" data-wow-delay=".5s">
-                                    <div className="about-icon-items">
-                                        <div className="icon">
-                                            <Image src="/assets/img/check.png" alt="img" width={34} height={30}   />
-                                        </div>
-                                        <div style={{marginRight:"-38px"}} className="content">
-                                            <h5>
-                                                Comprehensive Pilgrimage<br/> Support 
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div  className="text">
-                                        <p >
-                                            We handle all logistics so you can focus on the spiritual purpose of your pilgrimage.
-
-                                        </p>
-                                    </div>
-                                </div>
-                                <Link href="/about" className="theme-btn wow fadeInUp wow" data-wow-delay=".7s">Discover More<i className="bi bi-arrow-right"></i></Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div className="container">
+    <div className="about-wrapper-2">
+      <div className="row g-4">
+        <div className="col-lg-6">
+          <div className="about-image">
+            <Image
+              src="/assets/img/about/We strived only 329.png"
+              className="wow img-custom-anim-left"
+              alt="img"
+              width={330}
+              height={512}
+            />
+            <div className="shape-image float-bob-y">
+              <Image src="/assets/img/about/We strived only 196.png" alt="img" width={250} height={150} />
             </div>
-        </section>
+            <div className="group-image float-bob-x">
+              <Image src="/assets/img/about/group.png" alt="img" width={170} height={50} />
+            </div>
+            <div className="about-image-2">
+              <Image
+                src="/assets/img/about/We strived only 299.png"
+                className="wow img-custom-anim-top"
+                alt="img"
+                width={284}
+                height={411}
+              />
+              <div className="plane-shape">
+                <Image src="/assets/img/about/plane-shape2.png" alt="img" width={370} height={205} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-6">
+          <div className="about-content">
+            <div className="section-title">
+              <span className="sub-title wow fadeInUp">About Us</span>
+              <h2 className="wow fadeInUp wow" data-wow-delay=".3s">
+                Your Trusted Partner for Sacred Journeys
+              </h2>
+            </div>
+            <p className="wow fadeInUp wow" data-wow-delay=".5s">
+              At MR Tours, we are dedicated to making your Hajj and Umrah pilgrimages from the UK truly
+              special, seamless, and spiritually fulfilling. With over 20 years of experience serving
+              pilgrims, we provide expert guidance and comprehensive support to ensure your journey is
+              worry-free from start to finish.
+            </p>
+
+            <div className="about-items wow fadeInUp wow" data-wow-delay=".3s">
+              <div className="about-icon-items">
+                <div className="icon">
+                  <Image src="/assets/img/check.png" alt="img" width={34} height={30} />
+                </div>
+                <div style={{ width: '100px' }} className="content">
+                  <h5>Our Mission</h5>
+                </div>
+              </div>
+              <div className="text">
+                <p>
+                  We simplify your pilgrimage so you can focus on faith. Our team ensures comfort, peace of mind, and a truly spiritual experience.</p>
+              </div>
+            </div>
+
+            <div className="about-items wow fadeInUp wow" data-wow-delay=".5s">
+              <div className="about-icon-items">
+                <div className="icon">
+                  <Image src="/assets/img/check.png" alt="img" width={34} height={30} />
+                </div>
+                <div style={{ width: '100px' }} className="content">
+                  <h5>Why MR Tours Stands Out</h5>
+                </div>
+              </div>
+              <div className="text">
+                <p>
+                  Hassle-free packages with flights, visas, and hotels near Haram.
+20+ years of trusted service.
+Tailored plans for groups or individuals.
+24/7 assistance and secure ATOL & ABTA bookings.  </p>
+              </div>
+            </div>
+
+            <Link href="/about" className="theme-btn wow fadeInUp wow" data-wow-delay=".7s">
+              Discover More<i className="bi bi-arrow-right"></i>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         </section>
     );
 };
