@@ -14,7 +14,7 @@ const Counter3 = () => {
             <div className="container-fluid">
                 <div className="counter-wrapper-2 bg-cover" data-background="/assets/img/counter-bg.png">
                     <div className="counter-image">
-                        <Image src="/assets/img/experience.png" alt="img" width={397} height={200}   />
+                        <Image src="/assets/img/Experience.png" alt="img" width={397} height={200}   />
                     </div>
                     <div className="counter-items-2 wow fadeInUp wow" data-wow-delay=".2s">
                         <div className="counter-content">
