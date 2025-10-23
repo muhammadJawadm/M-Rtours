@@ -39,7 +39,7 @@ const HeroBanner3 = () => {
         travelers: '1',
         nights: '1',
         fullName: '',
-        phone: '',
+        phone: '+44',
         email: '',
         specificPackage: ''
     });
@@ -106,28 +106,21 @@ const HeroBanner3 = () => {
         }
 
         // Reset specific package if package type changes
-        if (name === 'packageType') {
-            setFormData(prev => ({
-                ...prev,
-                specificPackage: ''
-            }));
-        }
+        // if (name === 'packageType') {
+        //     setFormData(prev => ({
+        //         ...prev,
+        //         specificPackage: ''
+        //     }));
+        // }
     };
 
     const validateForm = (): boolean => {
         const errors: FormErrors = {};
         let isValid = true;
 
-        // Required field validation
-        if (!formData.packageType) {
-            errors.packageType = "Please select a package type";
-            isValid = false;
-        }
+        
 
-        if (!formData.specificPackage) {
-            errors.specificPackage = "Please select a specific package";
-            isValid = false;
-        }
+        
 
         if (!formData.departureDate) {
             errors.departureDate = "Please select a departure date";
@@ -166,9 +159,10 @@ const HeroBanner3 = () => {
 
     const handleSubmit = async (): Promise<void> => {
         // Clear any previous messages
+        console.log('Book now button is clikded ');
         setSubmitMessage(null);
         
-        // Validate form before submitting
+//        Validate form before submitting
         if (!validateForm()) {
             return;
         }
@@ -417,6 +411,9 @@ const HeroBanner3 = () => {
                             {/* First Row - Personal Information */}
                             <div className="form-grid">
                                 <div className="form-field">
+                                    <label htmlFor="contactNumber" className="form-label">
+                    Full Name <span className="required">*</span>
+                  </label>
                                     <input
                                         type="text"
                                         name="fullName"
@@ -429,14 +426,19 @@ const HeroBanner3 = () => {
                                     {formErrors.fullName && <span className="error-message">{formErrors.fullName}</span>}
                                 </div>
                                 <div className="form-field">
+                                 <label htmlFor="contactNumber" className="form-label">
+                    Contact Number (WhatsApp preferred)<span className="required">*</span>
+                  </label>   
                                     <input
                                         type="tel"
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleInputChange}
-                                        placeholder="Phone (e.g., 07123456789)"
+                                        placeholder="Phone (e.g., +447123456789)"
                                         className={`form-input ${formErrors.phone ? 'error' : ''}`}
                                         required
+                                        autoCapitalize='tel'
+                                        inputMode='tel'
                                     />
                                     {formErrors.phone ? (
                                         <span className="error-message">{formErrors.phone}</span>
@@ -445,6 +447,9 @@ const HeroBanner3 = () => {
                                     )}
                                 </div>
                                 <div className="form-field">
+                                    <label htmlFor="email" className="form-label">
+                    Email <span className="required">*</span>
+                  </label>
                                     <input
                                         type="email"
                                         name="email"
@@ -457,6 +462,9 @@ const HeroBanner3 = () => {
                                     {formErrors.email && <span className="error-message">{formErrors.email}</span>}
                                 </div>
                                 <div className="form-field">
+                                    <label htmlFor="contactNumber" className="form-label">
+                    Desired Service<span className="required">*</span>
+                  </label>
                                     <select
                                         name="packageType"
                                         value={formData.packageType}
@@ -921,6 +929,13 @@ const HeroBanner3 = () => {
                         padding: 0.75rem 0.875rem;
                         font-size: 0.9rem;
                     }
+
+                    .form-label {
+          font-size: 14px;
+          font-weight: 700;
+          color: #0f172a;
+          margin-bottom: 8px;
+        }
                     .form-input::placeholder {
                         opacity: 1;
                         color: #6b7280;
@@ -998,7 +1013,7 @@ const HeroBanner3 = () => {
                     box-shadow: none;
                 }
 
-                /* Success Modal Styles */
+                /* Success Modal Styles - Fixed */
                 .success-modal-overlay {
                     position: fixed;
                     top: 0;
@@ -1009,7 +1024,7 @@ const HeroBanner3 = () => {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    z-index: 9999; /* Increased z-index to be above all other elements */
+                    z-index: 99999; /* Increased z-index */
                 }
                 
                 .success-modal {
@@ -1021,7 +1036,13 @@ const HeroBanner3 = () => {
                     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
                     text-align: center;
                     animation: slideIn 0.4s ease-out;
-                    position: relative; /* Ensure positioning context */
+                    position: relative;
+                    z-index: 100000; /* Even higher z-index for the modal itself */
+                }
+                
+                .success-modal-content {
+                    position: relative;
+                    z-index: 100001; /* Ensure content is above all */
                 }
                 
                 .success-icon {
@@ -1058,6 +1079,8 @@ const HeroBanner3 = () => {
                     font-weight: 600;
                     cursor: pointer;
                     transition: all 0.3s ease;
+                    position: relative; /* Ensure button is clickable */
+                    z-index: 100002; /* Highest z-index for interactive elements */
                 }
                 
                 .close-modal-btn:hover {

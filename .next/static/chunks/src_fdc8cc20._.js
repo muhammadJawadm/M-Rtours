@@ -37,7 +37,7 @@ const HeroBanner3 = ()=>{
         travelers: '1',
         nights: '1',
         fullName: '',
-        phone: '',
+        phone: '+44',
         email: '',
         specificPackage: ''
     });
@@ -129,26 +129,17 @@ const HeroBanner3 = ()=>{
                     [name]: undefined
                 }));
         }
-        // Reset specific package if package type changes
-        if (name === 'packageType') {
-            setFormData((prev)=>({
-                    ...prev,
-                    specificPackage: ''
-                }));
-        }
+    // Reset specific package if package type changes
+    // if (name === 'packageType') {
+    //     setFormData(prev => ({
+    //         ...prev,
+    //         specificPackage: ''
+    //     }));
+    // }
     };
     const validateForm = ()=>{
         const errors = {};
         let isValid = true;
-        // Required field validation
-        if (!formData.packageType) {
-            errors.packageType = "Please select a package type";
-            isValid = false;
-        }
-        if (!formData.specificPackage) {
-            errors.specificPackage = "Please select a specific package";
-            isValid = false;
-        }
         if (!formData.departureDate) {
             errors.departureDate = "Please select a departure date";
             isValid = false;
@@ -180,8 +171,9 @@ const HeroBanner3 = ()=>{
     };
     const handleSubmit = async ()=>{
         // Clear any previous messages
+        console.log('Book now button is clikded ');
         setSubmitMessage(null);
-        // Validate form before submitting
+        //        Validate form before submitting
         if (!validateForm()) {
             return;
         }
@@ -324,20 +316,20 @@ const HeroBanner3 = ()=>{
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "jsx-c2b835511f3efb59" + " " + "hero-section hero-3",
+        className: "jsx-a35bcc32d5ffe0bf" + " " + "hero-section hero-3",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-c2b835511f3efb59" + " " + "swiper hero-slider-3",
+                className: "jsx-a35bcc32d5ffe0bf" + " " + "swiper hero-slider-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-c2b835511f3efb59" + " " + "swiper-wrapper",
+                        className: "jsx-a35bcc32d5ffe0bf" + " " + "swiper-wrapper",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             ...settings,
                             ref: sliderRef,
                             children: heroContent.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-c2b835511f3efb59" + " " + "swiper-slide",
+                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "swiper-slide",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-c2b835511f3efb59" + " " + "hero-media bg-cover",
+                                        className: "jsx-a35bcc32d5ffe0bf" + " " + "hero-media bg-cover",
                                         children: [
                                             item.video && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                                 autoPlay: true,
@@ -346,15 +338,15 @@ const HeroBanner3 = ()=>{
                                                 playsInline: true,
                                                 preload: "auto",
                                                 onCanPlay: handleVideoReady,
-                                                className: "jsx-c2b835511f3efb59" + " " + "hero-video",
+                                                className: "jsx-a35bcc32d5ffe0bf" + " " + "hero-video",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
                                                         src: item.video,
                                                         type: "video/mp4",
-                                                        className: "jsx-c2b835511f3efb59"
+                                                        className: "jsx-a35bcc32d5ffe0bf"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                        lineNumber: 349,
+                                                        lineNumber: 343,
                                                         columnNumber: 45
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -363,7 +355,7 @@ const HeroBanner3 = ()=>{
                                                             height: '100%',
                                                             position: 'relative'
                                                         },
-                                                        className: "jsx-c2b835511f3efb59",
+                                                        className: "jsx-a35bcc32d5ffe0bf",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                             src: item.img,
                                                             alt: "Hero background",
@@ -374,18 +366,18 @@ const HeroBanner3 = ()=>{
                                                             priority: true
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 352,
+                                                            lineNumber: 346,
                                                             columnNumber: 49
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                        lineNumber: 351,
+                                                        lineNumber: 345,
                                                         columnNumber: 45
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                lineNumber: 340,
+                                                lineNumber: 334,
                                                 columnNumber: 41
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -394,62 +386,62 @@ const HeroBanner3 = ()=>{
                                                     backgroundImage: `url(${item.img})`,
                                                     display: item.video ? 'none' : 'block'
                                                 },
-                                                className: "jsx-c2b835511f3efb59" + " " + "hero-image-fallback bg-cover"
+                                                className: "jsx-a35bcc32d5ffe0bf" + " " + "hero-image-fallback bg-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                lineNumber: 363,
+                                                lineNumber: 357,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-c2b835511f3efb59" + " " + "hero-overlay"
+                                                className: "jsx-a35bcc32d5ffe0bf" + " " + "hero-overlay"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                lineNumber: 372,
+                                                lineNumber: 366,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-c2b835511f3efb59" + " " + "container hero-content-container",
+                                                className: "jsx-a35bcc32d5ffe0bf" + " " + "container hero-content-container",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "row justify-content-center",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "row justify-content-center",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-c2b835511f3efb59" + " " + "col-lg-8",
+                                                        className: "jsx-a35bcc32d5ffe0bf" + " " + "col-lg-8",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-c2b835511f3efb59" + " " + "hero-content",
+                                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "hero-content",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     "data-animation": "fadeInUp",
                                                                     "data-delay": "1.2s",
-                                                                    className: "jsx-c2b835511f3efb59" + " " + "sub-title",
+                                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "sub-title",
                                                                     children: item.subtitle
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                    lineNumber: 378,
+                                                                    lineNumber: 372,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                                                     "data-animation": "fadeInUp",
                                                                     "data-delay": "1.4s",
-                                                                    className: "jsx-c2b835511f3efb59",
+                                                                    className: "jsx-a35bcc32d5ffe0bf",
                                                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$html$2d$react$2d$parser$2f$esm$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"])(item.title)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                    lineNumber: 381,
+                                                                    lineNumber: 375,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     "data-animation": "fadeInUp",
                                                                     "data-delay": "1.6s",
-                                                                    className: "jsx-c2b835511f3efb59",
+                                                                    className: "jsx-a35bcc32d5ffe0bf",
                                                                     children: item.content
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                    lineNumber: 384,
+                                                                    lineNumber: 378,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     "data-animation": "fadeInUp",
                                                                     "data-delay": "1.8s",
-                                                                    className: "jsx-c2b835511f3efb59" + " " + "about-button",
+                                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "about-button",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                                             href: "/Umrah-packages",
@@ -457,16 +449,16 @@ const HeroBanner3 = ()=>{
                                                                             children: [
                                                                                 "View Umrah Packages",
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                                    className: "jsx-c2b835511f3efb59" + " " + "bi bi-arrow-right"
+                                                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "bi bi-arrow-right"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                                    lineNumber: 388,
+                                                                                    lineNumber: 382,
                                                                                     columnNumber: 127
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                            lineNumber: 388,
+                                                                            lineNumber: 382,
                                                                             columnNumber: 57
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -475,109 +467,128 @@ const HeroBanner3 = ()=>{
                                                                             children: [
                                                                                 "Plan Your Hajj Journey",
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                                    className: "jsx-c2b835511f3efb59" + " " + "bi bi-arrow-right"
+                                                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "bi bi-arrow-right"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                                    lineNumber: 389,
+                                                                                    lineNumber: 383,
                                                                                     columnNumber: 137
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                            lineNumber: 389,
+                                                                            lineNumber: 383,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                    lineNumber: 387,
+                                                                    lineNumber: 381,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 377,
+                                                            lineNumber: 371,
                                                             columnNumber: 49
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                        lineNumber: 376,
+                                                        lineNumber: 370,
                                                         columnNumber: 45
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 375,
+                                                    lineNumber: 369,
                                                     columnNumber: 41
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                lineNumber: 374,
+                                                lineNumber: 368,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                        lineNumber: 338,
+                                        lineNumber: 332,
                                         columnNumber: 33
                                     }, this)
                                 }, i, false, {
                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                    lineNumber: 337,
+                                    lineNumber: 331,
                                     columnNumber: 29
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                            lineNumber: 335,
+                            lineNumber: 329,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                        lineNumber: 334,
+                        lineNumber: 328,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-c2b835511f3efb59" + " " + "swiper-dot",
+                        className: "jsx-a35bcc32d5ffe0bf" + " " + "swiper-dot",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-c2b835511f3efb59" + " " + "dot2"
+                            className: "jsx-a35bcc32d5ffe0bf" + " " + "dot2"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                            lineNumber: 401,
+                            lineNumber: 395,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                        lineNumber: 400,
+                        lineNumber: 394,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                lineNumber: 333,
+                lineNumber: 327,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-c2b835511f3efb59" + " " + "booking-form-wrapper",
+                className: "jsx-a35bcc32d5ffe0bf" + " " + "booking-form-wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-c2b835511f3efb59" + " " + "container",
+                    className: "jsx-a35bcc32d5ffe0bf" + " " + "container",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-c2b835511f3efb59" + " " + "booking-form-card",
+                        className: "jsx-a35bcc32d5ffe0bf" + " " + "booking-form-card",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-c2b835511f3efb59" + " " + "booking-form-content",
+                            className: "jsx-a35bcc32d5ffe0bf" + " " + "booking-form-content",
                             children: [
                                 submitMessage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-c2b835511f3efb59" + " " + `alert ${submitMessage.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`,
+                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `alert ${submitMessage.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`,
                                     children: submitMessage.text.replace(/'/g, "&apos;")
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                    lineNumber: 412,
+                                    lineNumber: 406,
                                     columnNumber: 33
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-c2b835511f3efb59" + " " + "form-grid",
+                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "form-grid",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    htmlFor: "contactNumber",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "form-label",
+                                                    children: [
+                                                        "Full Name ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "required",
+                                                            children: "*"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                            lineNumber: 415,
+                                                            columnNumber: 31
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                    lineNumber: 414,
+                                                    columnNumber: 37
+                                                }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "text",
                                                     name: "fullName",
@@ -585,66 +596,106 @@ const HeroBanner3 = ()=>{
                                                     onChange: handleInputChange,
                                                     placeholder: "Full Name",
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.fullName ? 'error' : ''}`
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.fullName ? 'error' : ''}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 420,
+                                                    lineNumber: 417,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.fullName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.fullName
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 429,
+                                                    lineNumber: 426,
                                                     columnNumber: 61
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 419,
+                                            lineNumber: 413,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    htmlFor: "contactNumber",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "form-label",
+                                                    children: [
+                                                        "Contact Number (WhatsApp preferred)",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "required",
+                                                            children: "*"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                            lineNumber: 430,
+                                                            columnNumber: 56
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                    lineNumber: 429,
+                                                    columnNumber: 34
+                                                }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "tel",
                                                     name: "phone",
                                                     value: formData.phone,
                                                     onChange: handleInputChange,
-                                                    placeholder: "Phone (e.g., 07123456789)",
+                                                    placeholder: "Phone (e.g., +447123456789)",
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.phone ? 'error' : ''}`
+                                                    autoCapitalize: "tel",
+                                                    inputMode: "tel",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.phone ? 'error' : ''}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
                                                     lineNumber: 432,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.phone ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.phone
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 442,
+                                                    lineNumber: 444,
                                                     columnNumber: 41
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "phone-format-help",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "phone-format-help",
                                                     children: "UK format: 07XXX XXXXXX or +447XXX XXXXXX"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 444,
+                                                    lineNumber: 446,
                                                     columnNumber: 41
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 431,
+                                            lineNumber: 428,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    htmlFor: "email",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "form-label",
+                                                    children: [
+                                                        "Email ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "required",
+                                                            children: "*"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                            lineNumber: 451,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                    lineNumber: 450,
+                                                    columnNumber: 37
+                                                }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "email",
                                                     name: "email",
@@ -652,142 +703,161 @@ const HeroBanner3 = ()=>{
                                                     onChange: handleInputChange,
                                                     placeholder: "Email",
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.email ? 'error' : ''}`
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.email ? 'error' : ''}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 448,
+                                                    lineNumber: 453,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.email
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 457,
+                                                    lineNumber: 462,
                                                     columnNumber: 58
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 447,
+                                            lineNumber: 449,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    htmlFor: "contactNumber",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "form-label",
+                                                    children: [
+                                                        "Desired Service",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "required",
+                                                            children: "*"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                            lineNumber: 466,
+                                                            columnNumber: 36
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                                    lineNumber: 465,
+                                                    columnNumber: 37
+                                                }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                     name: "packageType",
                                                     value: formData.packageType,
                                                     onChange: handleInputChange,
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.packageType ? 'error' : ''}`,
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.packageType ? 'error' : ''}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "",
-                                                            className: "jsx-c2b835511f3efb59",
+                                                            className: "jsx-a35bcc32d5ffe0bf",
                                                             children: "Select Service"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 467,
+                                                            lineNumber: 475,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "umrah",
-                                                            className: "jsx-c2b835511f3efb59",
+                                                            className: "jsx-a35bcc32d5ffe0bf",
                                                             children: "Book Your Umrah"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 468,
+                                                            lineNumber: 476,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "hajj",
-                                                            className: "jsx-c2b835511f3efb59",
+                                                            className: "jsx-a35bcc32d5ffe0bf",
                                                             children: "Book Your Hajj"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 469,
+                                                            lineNumber: 477,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 460,
+                                                    lineNumber: 468,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.packageType && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.packageType
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 471,
+                                                    lineNumber: 479,
                                                     columnNumber: 64
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 459,
+                                            lineNumber: 464,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                    lineNumber: 418,
+                                    lineNumber: 412,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-c2b835511f3efb59" + " " + "form-grid travel-details-row",
+                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "form-grid travel-details-row",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                     name: "departureCity",
                                                     value: formData.departureCity,
                                                     onChange: handleInputChange,
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.departureCity ? 'error' : ''}`,
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.departureCity ? 'error' : ''}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "",
-                                                            className: "jsx-c2b835511f3efb59",
+                                                            className: "jsx-a35bcc32d5ffe0bf",
                                                             children: "Select Departure City"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 485,
+                                                            lineNumber: 493,
                                                             columnNumber: 41
                                                         }, this),
                                                         ukCities.map((city, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: city,
-                                                                className: "jsx-c2b835511f3efb59",
+                                                                className: "jsx-a35bcc32d5ffe0bf",
                                                                 children: city
                                                             }, index, false, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                lineNumber: 487,
+                                                                lineNumber: 495,
                                                                 columnNumber: 45
                                                             }, this))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 478,
+                                                    lineNumber: 486,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.departureCity && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.departureCity
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 490,
+                                                    lineNumber: 498,
                                                     columnNumber: 66
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 477,
+                                            lineNumber: 485,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "date",
@@ -799,43 +869,43 @@ const HeroBanner3 = ()=>{
                                                         color: 'black'
                                                     },
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.departureDate ? 'error' : ''}`
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.departureDate ? 'error' : ''}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 493,
+                                                    lineNumber: 501,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.departureDate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.departureDate
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 503,
+                                                    lineNumber: 511,
                                                     columnNumber: 66
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 492,
+                                            lineNumber: 500,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                     name: "travelers",
                                                     value: formData.travelers,
                                                     onChange: handleInputChange,
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.travelers ? 'error' : ''}`,
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.travelers ? 'error' : ''}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "",
-                                                            className: "jsx-c2b835511f3efb59",
+                                                            className: "jsx-a35bcc32d5ffe0bf",
                                                             children: "Travelers"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 513,
+                                                            lineNumber: 521,
                                                             columnNumber: 41
                                                         }, this),
                                                         [
@@ -849,7 +919,7 @@ const HeroBanner3 = ()=>{
                                                             8
                                                         ].map((num)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: num,
-                                                                className: "jsx-c2b835511f3efb59",
+                                                                className: "jsx-a35bcc32d5ffe0bf",
                                                                 children: [
                                                                     num,
                                                                     " ",
@@ -857,46 +927,46 @@ const HeroBanner3 = ()=>{
                                                                 ]
                                                             }, num, true, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                lineNumber: 515,
+                                                                lineNumber: 523,
                                                                 columnNumber: 45
                                                             }, this))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 506,
+                                                    lineNumber: 514,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.travelers && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.travelers
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 518,
+                                                    lineNumber: 526,
                                                     columnNumber: 62
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 505,
+                                            lineNumber: 513,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                     name: "nights",
                                                     value: formData.nights,
                                                     onChange: handleInputChange,
                                                     required: true,
-                                                    className: "jsx-c2b835511f3efb59" + " " + `form-input ${formErrors.nights ? 'error' : ''}`,
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + `form-input ${formErrors.nights ? 'error' : ''}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "",
-                                                            className: "jsx-c2b835511f3efb59",
+                                                            className: "jsx-a35bcc32d5ffe0bf",
                                                             children: "Nights"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                            lineNumber: 528,
+                                                            lineNumber: 536,
                                                             columnNumber: 41
                                                         }, this),
                                                         [
@@ -914,7 +984,7 @@ const HeroBanner3 = ()=>{
                                                             21
                                                         ].map((num)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: num,
-                                                                className: "jsx-c2b835511f3efb59",
+                                                                className: "jsx-a35bcc32d5ffe0bf",
                                                                 children: [
                                                                     num,
                                                                     " ",
@@ -922,82 +992,82 @@ const HeroBanner3 = ()=>{
                                                                 ]
                                                             }, num, true, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                                lineNumber: 530,
+                                                                lineNumber: 538,
                                                                 columnNumber: 45
                                                             }, this))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 521,
+                                                    lineNumber: 529,
                                                     columnNumber: 37
                                                 }, this),
                                                 formErrors.nights && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-c2b835511f3efb59" + " " + "error-message",
+                                                    className: "jsx-a35bcc32d5ffe0bf" + " " + "error-message",
                                                     children: formErrors.nights
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                    lineNumber: 533,
+                                                    lineNumber: 541,
                                                     columnNumber: 59
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 520,
+                                            lineNumber: 528,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-c2b835511f3efb59" + " " + "form-field button-field",
+                                            className: "jsx-a35bcc32d5ffe0bf" + " " + "form-field button-field",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: handleSubmit,
                                                 disabled: isSubmitting,
-                                                className: "jsx-c2b835511f3efb59" + " " + "form-button",
+                                                className: "jsx-a35bcc32d5ffe0bf" + " " + "form-button",
                                                 children: isSubmitting ? 'Booking...' : 'Book Now'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                                lineNumber: 536,
+                                                lineNumber: 544,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 535,
+                                            lineNumber: 543,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                    lineNumber: 476,
+                                    lineNumber: 484,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                            lineNumber: 409,
+                            lineNumber: 403,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                        lineNumber: 408,
+                        lineNumber: 402,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                    lineNumber: 407,
+                    lineNumber: 401,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                lineNumber: 406,
+                lineNumber: 400,
                 columnNumber: 13
             }, this),
             showSuccessModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-c2b835511f3efb59" + " " + "success-modal-overlay",
+                className: "jsx-a35bcc32d5ffe0bf" + " " + "success-modal-overlay",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-c2b835511f3efb59" + " " + "success-modal",
+                    className: "jsx-a35bcc32d5ffe0bf" + " " + "success-modal",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-c2b835511f3efb59" + " " + "success-modal-content",
+                        className: "jsx-a35bcc32d5ffe0bf" + " " + "success-modal-content",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-c2b835511f3efb59" + " " + "success-icon",
+                                className: "jsx-a35bcc32d5ffe0bf" + " " + "success-icon",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                     xmlns: "http://www.w3.org/2000/svg",
                                     width: "60",
@@ -1008,104 +1078,104 @@ const HeroBanner3 = ()=>{
                                     strokeWidth: "2",
                                     strokeLinecap: "round",
                                     strokeLinejoin: "round",
-                                    className: "jsx-c2b835511f3efb59",
+                                    className: "jsx-a35bcc32d5ffe0bf",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                             d: "M22 11.08V12a10 10 0 1 1-5.93-9.14",
-                                            className: "jsx-c2b835511f3efb59"
+                                            className: "jsx-a35bcc32d5ffe0bf"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 557,
+                                            lineNumber: 565,
                                             columnNumber: 37
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                                             points: "22 4 12 14.01 9 11.01",
-                                            className: "jsx-c2b835511f3efb59"
+                                            className: "jsx-a35bcc32d5ffe0bf"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                            lineNumber: 558,
+                                            lineNumber: 566,
                                             columnNumber: 37
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                    lineNumber: 556,
+                                    lineNumber: 564,
                                     columnNumber: 33
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                lineNumber: 555,
-                                columnNumber: 29
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "jsx-c2b835511f3efb59",
-                                children: "Thank You!"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                lineNumber: 561,
-                                columnNumber: 29
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "jsx-c2b835511f3efb59",
-                                children: "Your booking request has been submitted successfully."
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                lineNumber: 562,
-                                columnNumber: 29
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "jsx-c2b835511f3efb59",
-                                children: "We have sent a confirmation email with your details."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
                                 lineNumber: 563,
                                 columnNumber: 29
                             }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "jsx-a35bcc32d5ffe0bf",
+                                children: "Thank You!"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                lineNumber: 569,
+                                columnNumber: 29
+                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "jsx-c2b835511f3efb59",
+                                className: "jsx-a35bcc32d5ffe0bf",
+                                children: "Your booking request has been submitted successfully."
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                lineNumber: 570,
+                                columnNumber: 29
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "jsx-a35bcc32d5ffe0bf",
+                                children: "We have sent a confirmation email with your details."
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
+                                lineNumber: 571,
+                                columnNumber: 29
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "jsx-a35bcc32d5ffe0bf",
                                 children: "Our team will contact you shortly to discuss your journey."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                lineNumber: 564,
+                                lineNumber: 572,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setShowSuccessModal(false),
-                                className: "jsx-c2b835511f3efb59" + " " + "close-modal-btn",
+                                className: "jsx-a35bcc32d5ffe0bf" + " " + "close-modal-btn",
                                 children: "Close"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                lineNumber: 565,
+                                lineNumber: 573,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                        lineNumber: 554,
+                        lineNumber: 562,
                         columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                    lineNumber: 553,
+                    lineNumber: 561,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                lineNumber: 552,
+                lineNumber: 560,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "c2b835511f3efb59",
-                children: ".hero-media.jsx-c2b835511f3efb59{justify-content:center;align-items:center;width:100%;height:100vh;min-height:500px;max-height:900px;display:flex;position:relative;overflow:hidden}.hero-content-container.jsx-c2b835511f3efb59{z-index:3;text-align:center;width:100%;padding:0 1rem;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.hero-video.jsx-c2b835511f3efb59{object-fit:cover;z-index:0;filter:brightness(.7)contrast(1.1);width:100%;height:100%;position:absolute;top:0;left:0}.hero-image-fallback.jsx-c2b835511f3efb59{z-index:0;filter:brightness(.7)contrast(1.1);background-position:50%;background-repeat:no-repeat;background-size:cover;width:100%;height:100%;position:absolute;top:0;left:0}.hero-overlay.jsx-c2b835511f3efb59{z-index:1;background:linear-gradient(135deg,#0000004d 0%,#0003 50%,#0000004d 100%);width:100%;height:100%;position:absolute;top:0;left:0}.hero-content.jsx-c2b835511f3efb59{z-index:4;text-shadow:3px 3px 6px #000000e6;text-align:center;padding:2rem 1rem;position:relative}.hero-content.jsx-c2b835511f3efb59 .sub-title.jsx-c2b835511f3efb59{color:#fff;text-shadow:3px 3px 6px #000000e6;margin-bottom:1rem;font-size:1.2rem;font-weight:600}.hero-content.jsx-c2b835511f3efb59 h1.jsx-c2b835511f3efb59{color:#fff;text-shadow:4px 4px 8px #000000e6;margin-bottom:1.5rem;font-size:3.5rem;font-weight:700;line-height:1.2}.hero-content.jsx-c2b835511f3efb59 p.jsx-c2b835511f3efb59{color:#f8f9fa;text-shadow:3px 3px 6px #000000e6;max-width:600px;margin-bottom:2rem;margin-left:auto;margin-right:auto;font-size:1.2rem;font-weight:500;line-height:1.6}.theme-btn.jsx-c2b835511f3efb59{backdrop-filter:blur(10px);text-shadow:none;border:2px solid #ffffff4d;font-weight:600;transition:all .3s;color:#333!important;background:#fffffff2!important}.theme-btn.jsx-c2b835511f3efb59:hover{transform:translateY(-2px);box-shadow:0 8px 25px #0000004d;color:#000!important;background:#fff!important}.theme-btn.style-2.jsx-c2b835511f3efb59{border:2px solid #ffffff4d;color:#fff!important;background:#000c!important}.theme-btn.style-2.jsx-c2b835511f3efb59:hover{color:#fff!important;background:#000000f2!important}.booking-form-wrapper.jsx-c2b835511f3efb59{z-index:10;margin-top:-80px;padding:0 1rem 3rem;position:relative}.booking-form-card.jsx-c2b835511f3efb59{background:#fff;border-radius:12px;max-width:1500px;min-height:200px;margin:0 auto;box-shadow:0 25px 50px -12px #00000040}.booking-form-content.jsx-c2b835511f3efb59{padding:2rem 1rem}.form-grid.jsx-c2b835511f3efb59{grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-bottom:1.5rem;display:grid}.travel-details-row.jsx-c2b835511f3efb59{grid-template-columns:repeat(5,1fr)}.button-field.jsx-c2b835511f3efb59{align-items:flex-start;display:flex}.form-field.jsx-c2b835511f3efb59{width:100%}.form-input.jsx-c2b835511f3efb59{color:#333;background:#fff;border:2px solid #e5e7eb;border-radius:8px;outline:none;width:100%;padding:1rem 1.5rem;font-size:1rem;transition:all .3s}.form-input.error.jsx-c2b835511f3efb59{background-color:#fff8f8;border-color:#dc3545}.form-input.jsx-c2b835511f3efb59:focus{border-color:#28aae2;box-shadow:0 0 0 3px #28aae21a}.form-input.jsx-c2b835511f3efb59::placeholder{color:#9ca3af;opacity:1}.form-button.jsx-c2b835511f3efb59{color:#fff;cursor:pointer;background-color:#28aae2;border:none;border-radius:8px;width:100%;padding:1rem 1.5rem;font-size:1rem;font-weight:700;transition:all .3s;box-shadow:0 10px 15px -3px #0000001a}.form-button.jsx-c2b835511f3efb59:hover{background-color:#2193c7;transform:translateY(-2px);box-shadow:0 15px 25px -5px #0003}.error-message.jsx-c2b835511f3efb59{color:#dc3545;margin-top:.25rem;font-size:.8rem;display:block}.last-row.jsx-c2b835511f3efb59{grid-template-columns:2fr 1fr}@media (width<=1200px){.hero-content.jsx-c2b835511f3efb59 h1.jsx-c2b835511f3efb59{font-size:2.5rem}.hero-content.jsx-c2b835511f3efb59 p.jsx-c2b835511f3efb59{font-size:1rem}.hero-media.jsx-c2b835511f3efb59{height:70vh;min-height:400px;max-height:700px}.booking-form-wrapper.jsx-c2b835511f3efb59{margin-top:-70px}.form-grid.jsx-c2b835511f3efb59,.travel-details-row.jsx-c2b835511f3efb59{grid-template-columns:repeat(2,1fr)}.button-field.jsx-c2b835511f3efb59{grid-column:span 2}}@media (width<=900px){.hero-content.jsx-c2b835511f3efb59 h1.jsx-c2b835511f3efb59{font-size:2rem}.hero-content.jsx-c2b835511f3efb59 p.jsx-c2b835511f3efb59{font-size:.95rem}.hero-media.jsx-c2b835511f3efb59{height:60vh;min-height:300px;max-height:500px;margin-top:60px}.booking-form-wrapper.jsx-c2b835511f3efb59{margin-top:-60px}.form-grid.jsx-c2b835511f3efb59{gap:1rem;margin-bottom:1.2rem}}@media (width<=768px){.hero-media.jsx-c2b835511f3efb59{height:50vh;min-height:250px;max-height:400px;margin-top:70px}.hero-content.jsx-c2b835511f3efb59{padding:1rem .5rem}.hero-content.jsx-c2b835511f3efb59 h1.jsx-c2b835511f3efb59{margin-bottom:1rem;font-size:1.5rem}.hero-content.jsx-c2b835511f3efb59 p.jsx-c2b835511f3efb59{margin-bottom:1rem;font-size:.9rem}.hero-content.jsx-c2b835511f3efb59 .sub-title.jsx-c2b835511f3efb59{margin-bottom:.8rem;font-size:1rem}.about-button.jsx-c2b835511f3efb59{flex-direction:column;align-items:center;gap:1rem;display:flex}.about-button.jsx-c2b835511f3efb59 .theme-btn.jsx-c2b835511f3efb59{text-align:center;width:200px}.booking-form-wrapper.jsx-c2b835511f3efb59{margin-top:-50px;padding:0 .8rem 2rem}.booking-form-content.jsx-c2b835511f3efb59{padding:1.5rem 1rem}.form-grid.jsx-c2b835511f3efb59{grid-template-columns:1fr;gap:1rem;margin-bottom:1rem}.form-input.jsx-c2b835511f3efb59,.form-button.jsx-c2b835511f3efb59{padding:.875rem 1rem;font-size:.95rem}}@media (width<=480px){.hero-media.jsx-c2b835511f3efb59{height:45vh;min-height:200px;max-height:300px;margin-top:80px}.hero-content.jsx-c2b835511f3efb59 h1.jsx-c2b835511f3efb59{margin-bottom:.8rem;font-size:1.2rem}.hero-content.jsx-c2b835511f3efb59 p.jsx-c2b835511f3efb59{margin-bottom:.8rem;font-size:.85rem}.hero-content.jsx-c2b835511f3efb59 .sub-title.jsx-c2b835511f3efb59{margin-bottom:.5rem;font-size:.9rem}.booking-form-wrapper.jsx-c2b835511f3efb59{margin-top:-40px}.booking-form-content.jsx-c2b835511f3efb59{padding:1.2rem .8rem}.form-grid.jsx-c2b835511f3efb59{gap:.875rem;margin-bottom:.875rem}.form-input.jsx-c2b835511f3efb59,.form-button.jsx-c2b835511f3efb59{padding:.75rem .875rem;font-size:.9rem}.form-input.jsx-c2b835511f3efb59::placeholder{opacity:1;color:#6b7280;font-size:.9rem}input[type=date].jsx-c2b835511f3efb59::-webkit-calendar-picker-indicator{cursor:pointer;background-position:100%;background-size:auto;position:absolute;bottom:8px;right:10px}input[type=date].jsx-c2b835511f3efb59{padding-right:40px;position:relative}select.form-input.jsx-c2b835511f3efb59{appearance:none;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\");background-position:right .7rem center;background-repeat:no-repeat;background-size:1em;padding-right:40px}}@media (width<=380px){.hero-media.jsx-c2b835511f3efb59{height:40vh;min-height:180px;max-height:260px;margin-top:90px}.form-input.jsx-c2b835511f3efb59::placeholder{font-size:.85rem}.form-input.jsx-c2b835511f3efb59,.form-button.jsx-c2b835511f3efb59{padding:.7rem .8rem}}@media (prefers-reduced-motion:reduce){.hero-video.jsx-c2b835511f3efb59{animation-play-state:paused}}.alert.jsx-c2b835511f3efb59{border:1px solid #0000;border-radius:.375rem;margin-bottom:1rem;padding:.75rem 1.25rem}.alert-success.jsx-c2b835511f3efb59{color:#0f5132;background-color:#d1e7dd;border-color:#badbcc}.alert-danger.jsx-c2b835511f3efb59{color:#842029;background-color:#f8d7da;border-color:#f5c2c7}.form-button.jsx-c2b835511f3efb59:disabled{cursor:not-allowed;box-shadow:none;background-color:#94d2ee;transform:none}.success-modal-overlay.jsx-c2b835511f3efb59{z-index:9999;background-color:#000000b3;justify-content:center;align-items:center;display:flex;position:fixed;inset:0}.success-modal.jsx-c2b835511f3efb59{text-align:center;background:#fff;border-radius:12px;width:90%;max-width:500px;padding:2rem;animation:.4s ease-out slideIn;position:relative;box-shadow:0 25px 50px -12px #00000040}.success-icon.jsx-c2b835511f3efb59{background-color:#4caf501a;border-radius:50%;justify-content:center;align-items:center;width:80px;height:80px;margin:0 auto 1.5rem;display:flex}.success-modal.jsx-c2b835511f3efb59 h3.jsx-c2b835511f3efb59{color:#333;margin-bottom:1rem;font-size:1.8rem;font-weight:600}.success-modal.jsx-c2b835511f3efb59 p.jsx-c2b835511f3efb59{color:#666;margin-bottom:.8rem;line-height:1.6}.close-modal-btn.jsx-c2b835511f3efb59{color:#fff;cursor:pointer;background-color:#28aae2;border:none;border-radius:8px;margin-top:1.5rem;padding:.8rem 2rem;font-weight:600;transition:all .3s}.close-modal-btn.jsx-c2b835511f3efb59:hover{background-color:#1d8bb8;transform:translateY(-2px)}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes slideIn{0%{opacity:0;transform:translateY(-50px)}to{opacity:1;transform:translateY(0)}}.phone-format-help.jsx-c2b835511f3efb59{color:#6b7280;margin-top:.3rem;font-size:.8rem}"
+                id: "a35bcc32d5ffe0bf",
+                children: ".hero-media.jsx-a35bcc32d5ffe0bf{justify-content:center;align-items:center;width:100%;height:100vh;min-height:500px;max-height:900px;display:flex;position:relative;overflow:hidden}.hero-content-container.jsx-a35bcc32d5ffe0bf{z-index:3;text-align:center;width:100%;padding:0 1rem;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.hero-video.jsx-a35bcc32d5ffe0bf{object-fit:cover;z-index:0;filter:brightness(.7)contrast(1.1);width:100%;height:100%;position:absolute;top:0;left:0}.hero-image-fallback.jsx-a35bcc32d5ffe0bf{z-index:0;filter:brightness(.7)contrast(1.1);background-position:50%;background-repeat:no-repeat;background-size:cover;width:100%;height:100%;position:absolute;top:0;left:0}.hero-overlay.jsx-a35bcc32d5ffe0bf{z-index:1;background:linear-gradient(135deg,#0000004d 0%,#0003 50%,#0000004d 100%);width:100%;height:100%;position:absolute;top:0;left:0}.hero-content.jsx-a35bcc32d5ffe0bf{z-index:4;text-shadow:3px 3px 6px #000000e6;text-align:center;padding:2rem 1rem;position:relative}.hero-content.jsx-a35bcc32d5ffe0bf .sub-title.jsx-a35bcc32d5ffe0bf{color:#fff;text-shadow:3px 3px 6px #000000e6;margin-bottom:1rem;font-size:1.2rem;font-weight:600}.hero-content.jsx-a35bcc32d5ffe0bf h1.jsx-a35bcc32d5ffe0bf{color:#fff;text-shadow:4px 4px 8px #000000e6;margin-bottom:1.5rem;font-size:3.5rem;font-weight:700;line-height:1.2}.hero-content.jsx-a35bcc32d5ffe0bf p.jsx-a35bcc32d5ffe0bf{color:#f8f9fa;text-shadow:3px 3px 6px #000000e6;max-width:600px;margin-bottom:2rem;margin-left:auto;margin-right:auto;font-size:1.2rem;font-weight:500;line-height:1.6}.theme-btn.jsx-a35bcc32d5ffe0bf{backdrop-filter:blur(10px);text-shadow:none;border:2px solid #ffffff4d;font-weight:600;transition:all .3s;color:#333!important;background:#fffffff2!important}.theme-btn.jsx-a35bcc32d5ffe0bf:hover{transform:translateY(-2px);box-shadow:0 8px 25px #0000004d;color:#000!important;background:#fff!important}.theme-btn.style-2.jsx-a35bcc32d5ffe0bf{border:2px solid #ffffff4d;color:#fff!important;background:#000c!important}.theme-btn.style-2.jsx-a35bcc32d5ffe0bf:hover{color:#fff!important;background:#000000f2!important}.booking-form-wrapper.jsx-a35bcc32d5ffe0bf{z-index:10;margin-top:-80px;padding:0 1rem 3rem;position:relative}.booking-form-card.jsx-a35bcc32d5ffe0bf{background:#fff;border-radius:12px;max-width:1500px;min-height:200px;margin:0 auto;box-shadow:0 25px 50px -12px #00000040}.booking-form-content.jsx-a35bcc32d5ffe0bf{padding:2rem 1rem}.form-grid.jsx-a35bcc32d5ffe0bf{grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-bottom:1.5rem;display:grid}.travel-details-row.jsx-a35bcc32d5ffe0bf{grid-template-columns:repeat(5,1fr)}.button-field.jsx-a35bcc32d5ffe0bf{align-items:flex-start;display:flex}.form-field.jsx-a35bcc32d5ffe0bf{width:100%}.form-input.jsx-a35bcc32d5ffe0bf{color:#333;background:#fff;border:2px solid #e5e7eb;border-radius:8px;outline:none;width:100%;padding:1rem 1.5rem;font-size:1rem;transition:all .3s}.form-input.error.jsx-a35bcc32d5ffe0bf{background-color:#fff8f8;border-color:#dc3545}.form-input.jsx-a35bcc32d5ffe0bf:focus{border-color:#28aae2;box-shadow:0 0 0 3px #28aae21a}.form-input.jsx-a35bcc32d5ffe0bf::placeholder{color:#9ca3af;opacity:1}.form-button.jsx-a35bcc32d5ffe0bf{color:#fff;cursor:pointer;background-color:#28aae2;border:none;border-radius:8px;width:100%;padding:1rem 1.5rem;font-size:1rem;font-weight:700;transition:all .3s;box-shadow:0 10px 15px -3px #0000001a}.form-button.jsx-a35bcc32d5ffe0bf:hover{background-color:#2193c7;transform:translateY(-2px);box-shadow:0 15px 25px -5px #0003}.error-message.jsx-a35bcc32d5ffe0bf{color:#dc3545;margin-top:.25rem;font-size:.8rem;display:block}.last-row.jsx-a35bcc32d5ffe0bf{grid-template-columns:2fr 1fr}@media (width<=1200px){.hero-content.jsx-a35bcc32d5ffe0bf h1.jsx-a35bcc32d5ffe0bf{font-size:2.5rem}.hero-content.jsx-a35bcc32d5ffe0bf p.jsx-a35bcc32d5ffe0bf{font-size:1rem}.hero-media.jsx-a35bcc32d5ffe0bf{height:70vh;min-height:400px;max-height:700px}.booking-form-wrapper.jsx-a35bcc32d5ffe0bf{margin-top:-70px}.form-grid.jsx-a35bcc32d5ffe0bf,.travel-details-row.jsx-a35bcc32d5ffe0bf{grid-template-columns:repeat(2,1fr)}.button-field.jsx-a35bcc32d5ffe0bf{grid-column:span 2}}@media (width<=900px){.hero-content.jsx-a35bcc32d5ffe0bf h1.jsx-a35bcc32d5ffe0bf{font-size:2rem}.hero-content.jsx-a35bcc32d5ffe0bf p.jsx-a35bcc32d5ffe0bf{font-size:.95rem}.hero-media.jsx-a35bcc32d5ffe0bf{height:60vh;min-height:300px;max-height:500px;margin-top:60px}.booking-form-wrapper.jsx-a35bcc32d5ffe0bf{margin-top:-60px}.form-grid.jsx-a35bcc32d5ffe0bf{gap:1rem;margin-bottom:1.2rem}}@media (width<=768px){.hero-media.jsx-a35bcc32d5ffe0bf{height:50vh;min-height:250px;max-height:400px;margin-top:70px}.hero-content.jsx-a35bcc32d5ffe0bf{padding:1rem .5rem}.hero-content.jsx-a35bcc32d5ffe0bf h1.jsx-a35bcc32d5ffe0bf{margin-bottom:1rem;font-size:1.5rem}.hero-content.jsx-a35bcc32d5ffe0bf p.jsx-a35bcc32d5ffe0bf{margin-bottom:1rem;font-size:.9rem}.hero-content.jsx-a35bcc32d5ffe0bf .sub-title.jsx-a35bcc32d5ffe0bf{margin-bottom:.8rem;font-size:1rem}.about-button.jsx-a35bcc32d5ffe0bf{flex-direction:column;align-items:center;gap:1rem;display:flex}.about-button.jsx-a35bcc32d5ffe0bf .theme-btn.jsx-a35bcc32d5ffe0bf{text-align:center;width:200px}.booking-form-wrapper.jsx-a35bcc32d5ffe0bf{margin-top:-50px;padding:0 .8rem 2rem}.booking-form-content.jsx-a35bcc32d5ffe0bf{padding:1.5rem 1rem}.form-grid.jsx-a35bcc32d5ffe0bf{grid-template-columns:1fr;gap:1rem;margin-bottom:1rem}.form-input.jsx-a35bcc32d5ffe0bf,.form-button.jsx-a35bcc32d5ffe0bf{padding:.875rem 1rem;font-size:.95rem}}@media (width<=480px){.hero-media.jsx-a35bcc32d5ffe0bf{height:45vh;min-height:200px;max-height:300px;margin-top:80px}.hero-content.jsx-a35bcc32d5ffe0bf h1.jsx-a35bcc32d5ffe0bf{margin-bottom:.8rem;font-size:1.2rem}.hero-content.jsx-a35bcc32d5ffe0bf p.jsx-a35bcc32d5ffe0bf{margin-bottom:.8rem;font-size:.85rem}.hero-content.jsx-a35bcc32d5ffe0bf .sub-title.jsx-a35bcc32d5ffe0bf{margin-bottom:.5rem;font-size:.9rem}.booking-form-wrapper.jsx-a35bcc32d5ffe0bf{margin-top:-40px}.booking-form-content.jsx-a35bcc32d5ffe0bf{padding:1.2rem .8rem}.form-grid.jsx-a35bcc32d5ffe0bf{gap:.875rem;margin-bottom:.875rem}.form-input.jsx-a35bcc32d5ffe0bf,.form-button.jsx-a35bcc32d5ffe0bf{padding:.75rem .875rem;font-size:.9rem}.form-label.jsx-a35bcc32d5ffe0bf{color:#0f172a;margin-bottom:8px;font-size:14px;font-weight:700}.form-input.jsx-a35bcc32d5ffe0bf::placeholder{opacity:1;color:#6b7280;font-size:.9rem}input[type=date].jsx-a35bcc32d5ffe0bf::-webkit-calendar-picker-indicator{cursor:pointer;background-position:100%;background-size:auto;position:absolute;bottom:8px;right:10px}input[type=date].jsx-a35bcc32d5ffe0bf{padding-right:40px;position:relative}select.form-input.jsx-a35bcc32d5ffe0bf{appearance:none;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\");background-position:right .7rem center;background-repeat:no-repeat;background-size:1em;padding-right:40px}}@media (width<=380px){.hero-media.jsx-a35bcc32d5ffe0bf{height:40vh;min-height:180px;max-height:260px;margin-top:90px}.form-input.jsx-a35bcc32d5ffe0bf::placeholder{font-size:.85rem}.form-input.jsx-a35bcc32d5ffe0bf,.form-button.jsx-a35bcc32d5ffe0bf{padding:.7rem .8rem}}@media (prefers-reduced-motion:reduce){.hero-video.jsx-a35bcc32d5ffe0bf{animation-play-state:paused}}.alert.jsx-a35bcc32d5ffe0bf{border:1px solid #0000;border-radius:.375rem;margin-bottom:1rem;padding:.75rem 1.25rem}.alert-success.jsx-a35bcc32d5ffe0bf{color:#0f5132;background-color:#d1e7dd;border-color:#badbcc}.alert-danger.jsx-a35bcc32d5ffe0bf{color:#842029;background-color:#f8d7da;border-color:#f5c2c7}.form-button.jsx-a35bcc32d5ffe0bf:disabled{cursor:not-allowed;box-shadow:none;background-color:#94d2ee;transform:none}.success-modal-overlay.jsx-a35bcc32d5ffe0bf{z-index:99999;background-color:#000000b3;justify-content:center;align-items:center;display:flex;position:fixed;inset:0}.success-modal.jsx-a35bcc32d5ffe0bf{text-align:center;z-index:100000;background:#fff;border-radius:12px;width:90%;max-width:500px;padding:2rem;animation:.4s ease-out slideIn;position:relative;box-shadow:0 25px 50px -12px #00000040}.success-modal-content.jsx-a35bcc32d5ffe0bf{z-index:100001;position:relative}.success-icon.jsx-a35bcc32d5ffe0bf{background-color:#4caf501a;border-radius:50%;justify-content:center;align-items:center;width:80px;height:80px;margin:0 auto 1.5rem;display:flex}.success-modal.jsx-a35bcc32d5ffe0bf h3.jsx-a35bcc32d5ffe0bf{color:#333;margin-bottom:1rem;font-size:1.8rem;font-weight:600}.success-modal.jsx-a35bcc32d5ffe0bf p.jsx-a35bcc32d5ffe0bf{color:#666;margin-bottom:.8rem;line-height:1.6}.close-modal-btn.jsx-a35bcc32d5ffe0bf{color:#fff;cursor:pointer;z-index:100002;background-color:#28aae2;border:none;border-radius:8px;margin-top:1.5rem;padding:.8rem 2rem;font-weight:600;transition:all .3s;position:relative}.close-modal-btn.jsx-a35bcc32d5ffe0bf:hover{background-color:#1d8bb8;transform:translateY(-2px)}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes slideIn{0%{opacity:0;transform:translateY(-50px)}to{opacity:1;transform:translateY(0)}}.phone-format-help.jsx-a35bcc32d5ffe0bf{color:#6b7280;margin-top:.3rem;font-size:.8rem}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-        lineNumber: 332,
+        lineNumber: 326,
         columnNumber: 9
     }, this);
 };
-_s(HeroBanner3, "WO3DQI86+2Kq3hEL7d/qCzol69I=");
+_s(HeroBanner3, "8V+VSbYj6yndSSeIrkPJ+IJqbPU=");
 _c = HeroBanner3;
 const __TURBOPACK__default__export__ = HeroBanner3;
 var _c;

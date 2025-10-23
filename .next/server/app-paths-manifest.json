@@ -1,7 +1,9 @@
 {
   "/(innerpage)/Umrah-packages/page": "app/(innerpage)/Umrah-packages/page.js",
+  "/(innerpage)/beatPrice/page": "app/(innerpage)/beatPrice/page.js",
   "/(innerpage)/contact/page": "app/(innerpage)/contact/page.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/send-email/route": "app/api/send-email/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
 }
