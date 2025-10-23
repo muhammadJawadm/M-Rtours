@@ -4,6 +4,7 @@ import loadBackgroudImages from '../Common/loadBackgroudImages';
 import Slider from 'react-slick';
 import parse from 'html-react-parser';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface FormData {
     packageType: string;
@@ -346,7 +347,16 @@ const HeroBanner3 = () => {
                                             onCanPlay={handleVideoReady}
                                         >
                                             <source src={item.video} type="video/mp4" />
-                                            <img src={item.img} alt="Hero background" />
+                                            {/* Replace img with next/image */}
+                                            <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+                                                <Image 
+                                                    src={item.img} 
+                                                    alt="Hero background" 
+                                                    fill 
+                                                    style={{ objectFit: 'cover' }} 
+                                                    priority 
+                                                />
+                                            </div>
                                         </video>
                                     )}
                                     
