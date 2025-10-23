@@ -439,10 +439,10 @@ const HeroBanner3 = () => {
                                         required
                                     />
                                     {formErrors.phone ? (
-        <span className="error-message">{formErrors.phone}</span>
-    ) : (
-        <span className="phone-format-help">UK format: 07XXX XXXXXX or +447XXX XXXXXX</span>
-    )}
+    <span className="error-message">{formErrors.phone}</span>
+) : (
+    <span className="phone-format-help">UK format: 07XXX XXXXXX or +447XXX XXXXXX</span>
+)}
                                 </div>
                                 <div className="form-field">
                                     <input
