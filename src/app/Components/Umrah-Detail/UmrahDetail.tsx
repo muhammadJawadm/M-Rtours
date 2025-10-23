@@ -32,12 +32,12 @@ interface BookingFormData {
     address: string;
     packageName: string;
     travelDate: string;
-    numAdults: number;
-    numChildren: number;
-    numInfants: number;
+    // numAdults: number;
+    // numChildren: number;
+    // numInfants: number;
     departureAirport: string;
     preferredAirline: string;
-    roomType: string;
+    // roomType: string;
     mealPreference: string;
     addZiyarahMakkah: boolean;
     addZiyarahMadinah: boolean;
@@ -63,12 +63,12 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
         address: '',
         packageName: '',
         travelDate: '',
-        numAdults: 1,
-        numChildren: 0,
-        numInfants: 0,
+        // numAdults: 1,
+        // numChildren: 0,
+        // numInfants: 0,
         departureAirport: '',
         preferredAirline: '',
-        roomType: 'Quad',
+        // roomType: 'Quad',
         mealPreference: 'Breakfast Only',
         addZiyarahMakkah: false,
         addZiyarahMadinah: false,
@@ -212,12 +212,12 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                     address: '',
                     packageName: packageData?.package_name || '',
                     travelDate: '',
-                    numAdults: 1,
-                    numChildren: 0,
-                    numInfants: 0,
+                    // numAdults: 1,
+                    // numChildren: 0,
+                    // numInfants: 0,
                     departureAirport: '',
                     preferredAirline: '',
-                    roomType: 'Quad',
+                    // roomType: 'Quad',
                     mealPreference: 'Breakfast Only',
                     addZiyarahMakkah: false,
                     addZiyarahMadinah: false,
@@ -445,57 +445,19 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                                                         className="form-control"
                                                     />
                                                 </div>
-                                                <div className="col-4">
-                                                    <input 
-                                                        type="number" 
-                                                        name="numAdults" 
-                                                        value={formData.numAdults}
-                                                        onChange={handleInputChange}
-                                                        placeholder="Adults*" 
-                                                        min="1"
-                                                        required 
-                                                        className="form-control"
-                                                    />
-                                                </div>
-                                                <div className="col-4">
-                                                    <input 
-                                                        type="number" 
-                                                        name="numChildren" 
-                                                        value={formData.numChildren}
-                                                        onChange={handleInputChange}
-                                                        placeholder="Children" 
-                                                        min="0"
-                                                        className="form-control"
-                                                    />
-                                                </div>
-                                                <div className="col-4">
-                                                    <input 
-                                                        type="number" 
-                                                        name="numInfants" 
-                                                        value={formData.numInfants}
-                                                        onChange={handleInputChange}
-                                                        placeholder="Infants" 
-                                                        min="0"
-                                                        className="form-control"
-                                                    />
-                                                </div>
+                                                
                                                 <div className="col-12">
-                                                    <select 
+                                                    <input 
+                                                        type="text" 
                                                         name="departureAirport" 
+                                                        placeholder='departure Airport*'
                                                         value={formData.departureAirport}
                                                         onChange={handleInputChange}
                                                         required
                                                         className="form-control"
-                                                    >
-                                                        <option value="">Select Departure Airport*</option>
-                                                        <option value="London Heathrow">London Heathrow</option>
-                                                        <option value="Manchester">Manchester</option>
-                                                        <option value="Birmingham">Birmingham</option>
-                                                        <option value="Glasgow">Glasgow</option>
-                                                        <option value="Edinburgh">Edinburgh</option>
-                                                    </select>
+                                                    />
                                                 </div>
-                                                <div className="col-12">
+                                                {/* <div className="col-12">
                                                     <select 
                                                         name="preferredAirline" 
                                                         value={formData.preferredAirline}
@@ -508,8 +470,8 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                                                         <option value="Saudi Airlines">Saudi Airlines</option>
                                                         <option value="Royal Jordanian">Royal Jordanian</option>
                                                     </select>
-                                                </div>
-                                                <div className="col-6">
+                                                </div> */}
+                                                {/* <div className="col-12">
                                                     <select 
                                                         name="roomType" 
                                                         value={formData.roomType}
@@ -517,12 +479,15 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                                                         required
                                                         className="form-control"
                                                     >
-                                                        <option value="Quad">Quad Room</option>
-                                                        <option value="Triple">Triple Room</option>
+                                                        <option value="Single">Single Room</option>
                                                         <option value="Double">Double Room</option>
+                                                        <option value="Triple">Triple Room</option>
+                                                        <option value="Quad">Quad Room</option>
+                                                        
+                                                        
                                                     </select>
-                                                </div>
-                                                <div className="col-6">
+                                                </div> */}
+                                                {/* <div className="col-6">
                                                     <select 
                                                         name="mealPreference" 
                                                         value={formData.mealPreference}
@@ -533,7 +498,7 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                                                         <option value="Half Board">Half Board</option>
                                                         <option value="Full Board">Full Board</option>
                                                     </select>
-                                                </div>
+                                                </div> */}
 
                                                 <div className="col-12 mt-4">
                                                     <h6 className="form-section-title">Additional Services</h6>

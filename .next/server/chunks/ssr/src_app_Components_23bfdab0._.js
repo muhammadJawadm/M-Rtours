@@ -102,7 +102,7 @@ const Choose1 = ()=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "wow fadeInUp wow",
                                             "data-wow-delay": ".3s",
-                                            children: "As one of the UK’s leading Hajj and Umrah travel agencies, MR Tours has helped countless pilgrims fulfill their sacred duties with ease. Whether it’s your first Umrah or a deluxe Hajj, we manage all logistics—from flights to premium accommodations—so you can focus on worship and reflection."
+                                            children: "As one of the UK’s leading Hajj and Umrah travel agencies, MR Tours has helped countless pilgrims fulfill their sacred duties with ease. Whether it’s your first Umrah or a Hajj, we manage all logistics—from flights to premium accommodations—so you can focus on worship and reflection."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Choose/Choose1.tsx",
                                             lineNumber: 36,

@@ -125,36 +125,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const Faq1 = ()=>{
     const faqContent = [
         {
-            title: 'What is an Umrah package?',
-            content: 'An Umrah package is your all-in-one solution for a seamless pilgrimage. It bundles flights, accommodations, visas, and transfers, saving you time and money while ensuring a spiritually enriching experience.'
+            title: 'What documents do I need for an Umrah visa?',
+            content: 'You only need to give us a few simple documents, and we will take care of your Umrah visa. These documents will be required: Two Passport Size Photos, Filled Visa Form, Valid Passport and Certificate of Vaccination Against Meningitis.'
         },
         {
-            title: 'Is booking an Umrah package more cost-effective?',
-            content: 'Yes, bundling your travel, accommodation, and services often unlocks exclusive deals unavailable when booking separately. MR Tours\' packages not only save you money but also simplify planning, letting you focus on your spiritual journey.'
+            title: 'Can I customize my Umrah package?',
+            content: 'We take pride in providing tailored Umrah packages that can be customized to align with your specific preferences and requirements.'
         },
         {
-            title: 'When is the best time to book an Umrah package?',
-            content: 'Your heart\'s call to Makkah and Madinah can be answered any time of year with MR Tours. We offer tailored packages for every season: spring serenity, summer vibrancy, autumn tranquility, or winter peace. Explore our monthly offerings, including January to December Umrah packages, Ramadan specials, and last-minute deals for spontaneous pilgrims. Book early for peak seasons like Ramadan or school holidays, or opt for off-peak months like Muharram, Safar, or Rajab for budget-friendly options. Join our mailing list for exclusive deals and updates!'
+            title: 'Are there any discounts available for group bookings?',
+            content: 'For group bookings, we provide exclusive discounts as a token of appreciation. To avail of these special offers, kindly reach out to our dedicated customer support team, who will gladly provide you with further details and assistance.'
         },
         {
-            title: 'When is the cheapest time to perform Umrah from the UK?',
-            content: 'The most affordable Umrah packages are typically available during off-peak months like January, May, September, or November, offering lower prices and quieter holy sites. Booking early for peak periods like Ramadan or December ensures great value. Flexible travelers can snag last-minute deals for added savings. MR Tours provides ATOL-protected packages with competitive pricing year-round; contact us to find the perfect deal for you.'
+            title: 'What is the average flight time to Saudia Arabia from the UK?',
+            content: 'Direct flights to Saudi Arabia from the UK typically take 12 to 13 hours. But connecting flights are likely to take longer.'
         },
         {
-            title: 'How can I book an Umrah package with a low deposit?',
-            content: 'Booking with MR Tours is simple and stress-free via our website, where you\'ll find the latest packages, early bird offers, and flexible payment plans. Start with a low deposit from just £50 per person, pay in installments up to four weeks before departure, and enjoy tailored itineraries with flights, hotels, visas, and 24/7 support. Our ATOL and ABTA-protected bookings ensure peace of mind for solo travelers, families, or groups.'
+            title: 'How long does it take to perform Umrah?',
+            content: 'Since Umrah has only four rituals, it can be completed in just a few hours. However, we suggest staying for at least 3-7 days so you can have the complete experience of Makkah.'
         },
         {
-            title: 'Where can I find the best value Umrah packages with flexible payments?',
-            content: 'MR Tours\' website is your go-to for affordable, high-value Umrah packages. From budget-friendly 3-star to luxurious 5-star options, we offer departures from major UK airports, low deposits, and easy monthly payments. Explore family, group, or solo packages, including last-minute and seasonal offers. Our user-friendly site makes planning effortless; select your travel dates and let us guide you to the sacred cities.'
+            title: 'Can I perform Umrah during Ramadan?',
+            content: 'Certainly! Umrah can be performed during Ramadan. Take advantage of our exclusive Ramadan Umrah Packages tailored specifically for this scared month.'
         },
         {
-            title: 'Is an all-inclusive Umrah package worth it?',
-            content: 'Absolutely. All-inclusive packages cover accommodation, meals, and transfers, freeing you to focus on worship without logistical worries. This smart, budget-friendly option minimizes distractions and maximizes your spiritual experience, leaving room for Ziyarat visits or personal reflection.'
-        },
-        {
-            title: 'Why choose MR Tours for your Umrah or Hajj journey?',
-            content: 'MR Tours is trusted by thousands of UK pilgrims for seamless, affordable, and spiritually fulfilling journeys. With flexible payment plans, low deposits from £50, tailored packages for all budgets, and expert guidance, we ensure every step is hassle-free. Enjoy exclusive perks like hotel upgrades and ATOL-protected bookings. Start your sacred journey with MR Tours today.'
+            title: 'Can I add a hotel of my choice to my Umrah package?',
+            content: 'We provide a range of hotel options to suit your needs. However, if you want to add a hotel of your choice to your Umrah package, feel free to do so.'
         }
     ];
     const accordionContentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -176,7 +172,7 @@ const Faq1 = ()=>{
         firstItemOpen
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "jsx-4a89741767e10e2c" + " " + "faq-section section-padding pt-0 fix",
+        className: "jsx-4a89741767e10e2c" + " " + "faq-section section-padding pt-5 fix",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "jsx-4a89741767e10e2c" + " " + "left-shape float-bob-y",
@@ -187,12 +183,12 @@ const Faq1 = ()=>{
                     height: 241
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                    lineNumber: 64,
+                    lineNumber: 60,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                lineNumber: 63,
+                lineNumber: 59,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -215,22 +211,22 @@ const Faq1 = ()=>{
                                                     children: "Got Questions?"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 68,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     "data-wow-delay": ".3s",
                                                     className: "jsx-4a89741767e10e2c" + " " + "wow fadeInUp wow",
-                                                    children: "Still Feeling Confused? Explore Our FAQs"
+                                                    children: "Frequently Asked Questions"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 75,
+                                                    lineNumber: 71,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 67,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -239,7 +235,7 @@ const Faq1 = ()=>{
                                             children: "Find answers to common questions our customers ask about planning their Umrah and Hajj journeys with MR Tours."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 75,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -256,14 +252,14 @@ const Faq1 = ()=>{
                                                             height: 12
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 84,
+                                                            lineNumber: 80,
                                                             columnNumber: 41
                                                         }, this),
                                                         "ATOL & ABTA Protected"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 79,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -276,20 +272,20 @@ const Faq1 = ()=>{
                                                             height: 12
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 88,
+                                                            lineNumber: 84,
                                                             columnNumber: 41
                                                         }, this),
                                                         "24/7 Support During Your Journey"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 83,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 78,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -301,7 +297,7 @@ const Faq1 = ()=>{
                                                     children: "Have more questions? Contact us or call"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 93,
+                                                    lineNumber: 89,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -312,12 +308,12 @@ const Faq1 = ()=>{
                                                         children: "+44 123 456 7890"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                        lineNumber: 94,
+                                                        lineNumber: 90,
                                                         columnNumber: 41
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 94,
+                                                    lineNumber: 90,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -325,24 +321,24 @@ const Faq1 = ()=>{
                                                     children: "for personalized assistance."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 95,
+                                                    lineNumber: 91,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 88,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                    lineNumber: 70,
+                                    lineNumber: 66,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                lineNumber: 69,
+                                lineNumber: 65,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -371,12 +367,12 @@ const Faq1 = ()=>{
                                                                 children: item.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                                lineNumber: 106,
+                                                                lineNumber: 102,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 105,
+                                                            lineNumber: 101,
                                                             columnNumber: 45
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -389,54 +385,54 @@ const Faq1 = ()=>{
                                                                 children: item.content
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                                lineNumber: 111,
+                                                                lineNumber: 107,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                            lineNumber: 110,
+                                                            lineNumber: 106,
                                                             columnNumber: 45
                                                         }, this)
                                                     ]
                                                 }, index, true, {
                                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                                    lineNumber: 104,
+                                                    lineNumber: 100,
                                                     columnNumber: 41
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 98,
                                             columnNumber: 37
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 97,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 96,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                                lineNumber: 99,
+                                lineNumber: 95,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                        lineNumber: 68,
+                        lineNumber: 64,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                    lineNumber: 67,
+                    lineNumber: 63,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-                lineNumber: 66,
+                lineNumber: 62,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -446,7 +442,7 @@ const Faq1 = ()=>{
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
-        lineNumber: 62,
+        lineNumber: 58,
         columnNumber: 9
     }, this);
 };

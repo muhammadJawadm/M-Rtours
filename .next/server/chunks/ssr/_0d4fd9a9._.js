@@ -76,7 +76,7 @@ const ClientReviews = ()=>{
             name: "Zainab",
             location: "Bradford",
             packageDetails: "7 Nights, 5 Star Umrah Package",
-            image: "/assets/img/avatar/avatar1.jpg",
+            image: "./assets/img/testimonial/1 (3).jpeg",
             review: "When I saw the Ka'bah, my heart just broke open, and I cried like a child. MR Tours made it so easy, with a beautiful hotel right by the Haram and a team that felt like family. They guided me through my first Umrah with so much care. I found a peace I'll hold onto forever."
         },
         {
@@ -84,7 +84,7 @@ const ClientReviews = ()=>{
             name: "Omar",
             location: "London",
             packageDetails: "15 Nights, 3 Star Umrah Package",
-            image: "",
+            image: "./assets/img/testimonial/1 (1).jpeg",
             review: "I wanted my kids to feel the magic of Madinah, and MR Tours made it happen. Even when my little one got sick, their team jumped in like they were our own, getting us a doctor fast. Those extra days praying together as a family? That's a gift we'll always treasure."
         },
         {
@@ -92,7 +92,7 @@ const ClientReviews = ()=>{
             name: "Amina",
             location: "Birmingham",
             packageDetails: "10 Nights, 4 Star Umrah Package",
-            image: "",
+            image: "./assets/img/testimonial/1 (5).jpeg",
             review: "Taking my mom, who's getting older, was scary, but MR Tours had our backs. They got us a room close to the mosque and helped with a wheelchair. Seeing her face light up as we prayed together healed something in me. They made our dream come true with so much kindness."
         },
         {
@@ -100,7 +100,7 @@ const ClientReviews = ()=>{
             name: "Yusuf",
             location: "Manchester",
             packageDetails: "7 Nights, 3 Star Umrah Package",
-            image: "",
+            image: "./assets/img/testimonial/1 (2).jpeg",
             review: "Going alone felt daunting, but MR Tours made me feel like I belonged. Their guides showed me every step, and the affordable package meant I could pray without worrying about money. Standing in Arafat, I felt like a new person, thanks to their quiet support."
         },
         {
@@ -108,7 +108,7 @@ const ClientReviews = ()=>{
             name: "Layla",
             location: "Sheffield",
             packageDetails: "15 Nights, 5 Star Umrah Package",
-            image: "",
+            image: "./assets/img/testimonial/1 (6).jpeg",
             review: "After a tough year, I needed Umrah to find myself again. MR Tours wrapped me in care, from smooth flights to a cozy hotel. Praying in Masjid an-Nabawi, I felt my heart mend, like Allah was right there with me. Their team made it feel so personal, like they knew my story."
         },
         {
@@ -116,7 +116,7 @@ const ClientReviews = ()=>{
             name: "Bilal",
             location: "Cardiff",
             packageDetails: "10 Nights, 4 Star Umrah Package",
-            image: "",
+            image: "./assets/img/testimonial/1 (4).jpeg",
             review: "I went to honor my grandma's wish for me to see Makkah. MR Tours made it special, sharing stories about the holy sites that brought them to life. Every prayer felt deeper because they took care of everything. I felt her love with me, and that's because of MR Tours."
         }
     ];
@@ -573,7 +573,7 @@ const ClientReviews = ()=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "cta-text",
-                                children: "Moved by Their Words? Share Your Story or Explore Umrah Packages to start your own sacred journey with MR Tours."
+                                children: "Moved by Their Words? Share Your Story or Explore Umrah Packages to Start Your Own Sacred Journey With MR Tours."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
                                 lineNumber: 397,
@@ -581,27 +581,16 @@ const ClientReviews = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "cta-buttons",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/Umrah-packages",
-                                        className: "cta-button",
-                                        children: "Explore Umrah Packages"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                        lineNumber: 401,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/contact",
-                                        className: "cta-button secondary",
-                                        children: "Share Your Story"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                        lineNumber: 404,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/Umrah-packages",
+                                    className: "cta-button",
+                                    children: "Explore Umrah Packages"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
+                                    lineNumber: 401,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
                                 lineNumber: 400,
                                 columnNumber: 11

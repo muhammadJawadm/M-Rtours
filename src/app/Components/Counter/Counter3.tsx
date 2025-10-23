@@ -11,15 +11,15 @@ const Counter3 = () => {
 
     return (
 <section className="counter-section-2 fix">
-            <div className="container-fluid">
+            <div className="container-fluid align-items-center">
                 <div className="counter-wrapper-2 bg-cover" data-background="/assets/img/counter-bg.png">
-                    <div className="counter-image">
-                        <Image src="/assets/img/Experience.png" alt="img" width={397} height={200}   />
+                    <div className="counter-image w-full h-full">
+                        {/* <Image src="/assets/img/Experience.png" alt="img" width={397} height={200}   /> */}
                     </div>
-                    <div className="counter-items-2 wow fadeInUp wow" data-wow-delay=".2s">
-                        <div className="counter-content">
+                    <div className="counter-items-2 wow fadeInUp wow  " data-wow-delay=".2s">
+                        <div className="counter-content ">
                             <h2><span className="count">Years</span></h2>
-                            <p>10+ years serving UK pilgrims.</p>
+                            <p>4+ years serving</p>
                         </div>
                     </div>
                     <div className="counter-items-2 wow fadeInUp wow" data-wow-delay=".4s">

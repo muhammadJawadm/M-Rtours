@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     }
     
     // The recipient email address
-    const toAddress = 'info@m-rtours.co.uk';
+    const toAddress = 'malikjawadkanyal@gmail.com';
     
     // Determine which form was submitted and format email accordingly
     let subject, textContent, htmlContent;
@@ -50,11 +50,9 @@ export async function POST(request: Request) {
         Package Details:
         Package Name: ${formData.packageName}
         Travel Date: ${formData.travelDate}
-        Travelers: ${formData.numAdults} adults, ${formData.numChildren} children, ${formData.numInfants} infants
         Departure Airport: ${formData.departureAirport}
         Preferred Airline: ${formData.preferredAirline || 'Not specified'}
-        Room Type: ${formData.roomType}
-        Meal Preference: ${formData.mealPreference}
+    
         
         Additional Services:
         Ziyarah Tours in Makkah: ${formData.addZiyarahMakkah ? 'Yes' : 'No'}
@@ -85,11 +83,8 @@ export async function POST(request: Request) {
         <ul>
           <li><strong>Package Name:</strong> ${formData.packageName}</li>
           <li><strong>Travel Date:</strong> ${formData.travelDate}</li>
-          <li><strong>Travelers:</strong> ${formData.numAdults} adults, ${formData.numChildren} children, ${formData.numInfants} infants</li>
+          
           <li><strong>Departure Airport:</strong> ${formData.departureAirport}</li>
-          <li><strong>Preferred Airline:</strong> ${formData.preferredAirline || 'Not specified'}</li>
-          <li><strong>Room Type:</strong> ${formData.roomType}</li>
-          <li><strong>Meal Preference:</strong> ${formData.mealPreference}</li>
         </ul>
         
         <h3>Additional Services:</h3>

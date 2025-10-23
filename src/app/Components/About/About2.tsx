@@ -138,7 +138,7 @@ const About2 = () => {
             </div>
             <p className="wow fadeInUp wow" data-wow-delay=".5s">
               At MR Tours, we are dedicated to making your Hajj and Umrah pilgrimages from the UK truly
-              special, seamless, and spiritually fulfilling. With over 20 years of experience serving
+              special, seamless, and spiritually fulfilling. With over 4 years of experience serving
               pilgrims, we provide expert guidance and comprehensive support to ensure your journey is
               worry-free from start to finish.
             </p>
@@ -170,15 +170,13 @@ const About2 = () => {
               <div className="text">
                 <p>
                   Hassle-free packages with flights, visas, and hotels near Haram.
-20+ years of trusted service.
+4+ years of trusted service.
 Tailored plans for groups or individuals.
 24/7 assistance and secure ATOL & ABTA bookings.  </p>
               </div>
             </div>
 
-            <Link href="/about" className="theme-btn wow fadeInUp wow" data-wow-delay=".7s">
-              Discover More<i className="bi bi-arrow-right"></i>
-            </Link>
+            
           </div>
         </div>
       </div>

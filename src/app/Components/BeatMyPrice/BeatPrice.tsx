@@ -112,7 +112,7 @@ export default function BeatMyQuoteForm() {
           console.warn("Email sent to server but there was an issue delivering it:", emailResult.message);
         }
       } catch (emailError) {
-        // Log email error but don&apos;t fail the overall submission since Firestore succeeded
+        // Log email error but don't fail the overall submission since Firestore succeeded
         console.error("Error sending email notification:", emailError);
       }
 
@@ -131,10 +131,21 @@ export default function BeatMyQuoteForm() {
         packageDetails: "",
       })
 
-      setTimeout(() => setSubmitStatus("idle"), 5000)
+      // Scroll to top of form to show the success message
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      
+      // Keep the success alert visible for 8 seconds
+      setTimeout(() => {
+        if (submitStatus === "success") {
+          setSubmitStatus("idle");
+        }
+      }, 8000);
+      
     } catch (error) {
       console.error("Error submitting form to Firestore:", error)
       setSubmitStatus("error")
+      // Scroll to top of form to show the error message
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } finally {
       setIsSubmitting(false)
     }
@@ -297,21 +308,22 @@ export default function BeatMyQuoteForm() {
         .alert {
           padding: 16px;
           border-radius: 10px;
-          margin: 18px 0 26px;
+          margin: 0 0 26px;
           text-align: center;
           font-weight: 600;
+          animation: fadeIn 0.3s ease-out;
         }
 
         .success-message {
-          background: var(--success-bg);
-          border-left: 4px solid var(--success-border);
-          color: var(--success-fg);
+          background-color: rgba(76, 175, 80, 0.1);
+          border-left: 4px solid #4CAF50;
+          color: #155724;
         }
 
         .error-message {
-          background: var(--error-bg);
-          border-left: 4px solid var(--error-border);
-          color: var(--error-fg);
+          background-color: rgba(244, 67, 54, 0.1);
+          border-left: 4px solid #F44336;
+          color: #721c24;
         }
 
         .form-grid {
@@ -510,15 +522,31 @@ export default function BeatMyQuoteForm() {
               <span className="form-hint">We respond within 24 hours</span>
             </div>
 
+            {/* Alert messages */}
             {submitStatus === "success" && (
               <div className="alert success-message" role="status" aria-live="polite">
-                Thank you! Your quote request has been submitted. We&apos;ll contact you shortly with a better deal!
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '10px' }}>
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <strong>Thank You!</strong>
+                </div>
+                Your quote request has been submitted successfully. Our team will contact you within 24 hours with a better offer!
               </div>
             )}
 
             {submitStatus === "error" && (
               <div className="alert error-message" role="alert" aria-live="assertive">
-                Sorry, there was an error submitting your request. Please try again or contact us directly.
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F44336" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '10px' }}>
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <strong>Something Went Wrong</strong>
+                </div>
+                Sorry, there was an error submitting your request. Please try again or contact us directly for assistance.
               </div>
             )}
 

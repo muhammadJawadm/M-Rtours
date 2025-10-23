@@ -18,7 +18,7 @@ const ClientReviews: React.FC = () => {
       name: "Zainab",
       location: "Bradford",
       packageDetails: "7 Nights, 5 Star Umrah Package",
-      image: "/assets/img/avatar/avatar1.jpg", // Add default avatar path
+      image: "./assets/img/testimonial/1 (3).jpeg", // Add default avatar path
       review: "When I saw the Ka'bah, my heart just broke open, and I cried like a child. MR Tours made it so easy, with a beautiful hotel right by the Haram and a team that felt like family. They guided me through my first Umrah with so much care. I found a peace I'll hold onto forever."
     },
     {
@@ -26,7 +26,7 @@ const ClientReviews: React.FC = () => {
       name: "Omar",
       location: "London",
       packageDetails: "15 Nights, 3 Star Umrah Package",
-      image: "",
+      image: "./assets/img/testimonial/1 (1).jpeg",
       review: "I wanted my kids to feel the magic of Madinah, and MR Tours made it happen. Even when my little one got sick, their team jumped in like they were our own, getting us a doctor fast. Those extra days praying together as a family? That's a gift we'll always treasure."
     },
     {
@@ -34,7 +34,7 @@ const ClientReviews: React.FC = () => {
       name: "Amina",
       location: "Birmingham",
       packageDetails: "10 Nights, 4 Star Umrah Package",
-      image: "",
+      image: "./assets/img/testimonial/1 (5).jpeg",
       review: "Taking my mom, who's getting older, was scary, but MR Tours had our backs. They got us a room close to the mosque and helped with a wheelchair. Seeing her face light up as we prayed together healed something in me. They made our dream come true with so much kindness."
     },
     {
@@ -42,7 +42,7 @@ const ClientReviews: React.FC = () => {
       name: "Yusuf",
       location: "Manchester",
       packageDetails: "7 Nights, 3 Star Umrah Package",
-      image: "",
+      image: "./assets/img/testimonial/1 (2).jpeg",
       review: "Going alone felt daunting, but MR Tours made me feel like I belonged. Their guides showed me every step, and the affordable package meant I could pray without worrying about money. Standing in Arafat, I felt like a new person, thanks to their quiet support."
     },
     {
@@ -50,7 +50,7 @@ const ClientReviews: React.FC = () => {
       name: "Layla",
       location: "Sheffield",
       packageDetails: "15 Nights, 5 Star Umrah Package",
-      image: "",
+      image: "./assets/img/testimonial/1 (6).jpeg",
       review: "After a tough year, I needed Umrah to find myself again. MR Tours wrapped me in care, from smooth flights to a cozy hotel. Praying in Masjid an-Nabawi, I felt my heart mend, like Allah was right there with me. Their team made it feel so personal, like they knew my story."
     },
     {
@@ -58,7 +58,7 @@ const ClientReviews: React.FC = () => {
       name: "Bilal",
       location: "Cardiff",
       packageDetails: "10 Nights, 4 Star Umrah Package",
-      image: "",
+      image: "./assets/img/testimonial/1 (4).jpeg",
       review: "I went to honor my grandma's wish for me to see Makkah. MR Tours made it special, sharing stories about the holy sites that brought them to life. Every prayer felt deeper because they took care of everything. I felt her love with me, and that's because of MR Tours."
     }
   ];
@@ -395,15 +395,13 @@ const ClientReviews: React.FC = () => {
 
         <div className="cta-container">
           <p className="cta-text">
-            Moved by Their Words? Share Your Story or Explore Umrah Packages to start your own sacred journey with MR Tours.
+            Moved by Their Words? Share Your Story or Explore Umrah Packages to Start Your Own Sacred Journey With MR Tours.
           </p>
           <div className="cta-buttons">
             <Link href="/Umrah-packages" className="cta-button">
               Explore Umrah Packages
             </Link>
-            <Link href="/contact" className="cta-button secondary">
-              Share Your Story
-            </Link>
+            
           </div>
         </div>
       </div>

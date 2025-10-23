@@ -53,17 +53,30 @@ const HajjPackages: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const fetchPackages = async () => {
-      try {
-        setLoading(true);
-        // Try to fetch from Firebase
-        const packagesCollection = collection(db, 'Hajj-packages');
-        const packagesSnapshot = await getDocs(packagesCollection);
-        
-        const packagesData = packagesSnapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        })) as HajjPackage[];
+      const fetchPackages = async () => {
+        try {
+          setLoading(true);
+          // Try to fetch from Firebase
+          const packagesCollection = collection(db, 'Hajj-packages');
+          const packagesSnapshot = await getDocs(packagesCollection);
+          
+          const packagesData = packagesSnapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data()
+          })) as HajjPackage[];
+
+          const categoryOrder = ["Silver", "Gold", "Diamond"];
+
+        // Sort: others first → then Silver → Gold → Diamond
+        packagesData.sort((a, b) => {
+          const indexA = categoryOrder.indexOf(a.package_tier || "");
+          const indexB = categoryOrder.indexOf(b.package_tier || "");
+
+          const orderA = indexA === -1 ? -1 : indexA;
+          const orderB = indexB === -1 ? -1 : indexB;
+
+          return orderA - orderB;
+        });
         
         setPackages(packagesData);
       } catch (error) {
@@ -223,11 +236,6 @@ const HajjPackages: React.FC = () => {
                                   <p className="stay-duration">{pkg.azizia_nights}</p>
                                 </div>
                                 
-                                <div className="location-block">
-                                  <h4>Madinah Stay</h4>
-                                  <p className="hotel-name">{pkg.madinah_hotel}</p>
-                                  <p className="stay-duration">{pkg.madinah_nights}</p>
-                                </div>
                               </div>
 
                               <div className="hajj-services">

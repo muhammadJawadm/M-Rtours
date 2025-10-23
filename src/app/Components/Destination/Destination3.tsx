@@ -65,7 +65,7 @@ const Destination3 = () => {
 
                                 <DestinationCard
                                     img="/assets/img/destination/Pic 5.png"
-                                    title="Madinah Mususeum"
+                                    title="Madinah Museum"
                                     content="174,688 Travelers"
                                     path="/Hajj-packages"
                                 ></DestinationCard>

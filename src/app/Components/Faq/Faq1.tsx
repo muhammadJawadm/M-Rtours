@@ -6,36 +6,32 @@ const Faq1 = () => {
 
     const faqContent = [
         {
-            title: 'What is an Umrah package?', 
-            content: 'An Umrah package is your all-in-one solution for a seamless pilgrimage. It bundles flights, accommodations, visas, and transfers, saving you time and money while ensuring a spiritually enriching experience.'
+            title: 'What documents do I need for an Umrah visa?', 
+            content: 'You only need to give us a few simple documents, and we will take care of your Umrah visa. These documents will be required: Two Passport Size Photos, Filled Visa Form, Valid Passport and Certificate of Vaccination Against Meningitis.'
         },
         {
-            title: 'Is booking an Umrah package more cost-effective?', 
-            content: 'Yes, bundling your travel, accommodation, and services often unlocks exclusive deals unavailable when booking separately. MR Tours\' packages not only save you money but also simplify planning, letting you focus on your spiritual journey.'
+            title: 'Can I customize my Umrah package?', 
+            content: 'We take pride in providing tailored Umrah packages that can be customized to align with your specific preferences and requirements.'
         },
         {
-            title: 'When is the best time to book an Umrah package?', 
-            content: 'Your heart\'s call to Makkah and Madinah can be answered any time of year with MR Tours. We offer tailored packages for every season: spring serenity, summer vibrancy, autumn tranquility, or winter peace. Explore our monthly offerings, including January to December Umrah packages, Ramadan specials, and last-minute deals for spontaneous pilgrims. Book early for peak seasons like Ramadan or school holidays, or opt for off-peak months like Muharram, Safar, or Rajab for budget-friendly options. Join our mailing list for exclusive deals and updates!'
+            title: 'Are there any discounts available for group bookings?', 
+            content: 'For group bookings, we provide exclusive discounts as a token of appreciation. To avail of these special offers, kindly reach out to our dedicated customer support team, who will gladly provide you with further details and assistance.'
         },
         {
-            title: 'When is the cheapest time to perform Umrah from the UK?', 
-            content: 'The most affordable Umrah packages are typically available during off-peak months like January, May, September, or November, offering lower prices and quieter holy sites. Booking early for peak periods like Ramadan or December ensures great value. Flexible travelers can snag last-minute deals for added savings. MR Tours provides ATOL-protected packages with competitive pricing year-round; contact us to find the perfect deal for you.'
+            title: 'What is the average flight time to Saudia Arabia from the UK?', 
+            content: 'Direct flights to Saudi Arabia from the UK typically take 12 to 13 hours. But connecting flights are likely to take longer.'
         },
         {
-            title: 'How can I book an Umrah package with a low deposit?', 
-            content: 'Booking with MR Tours is simple and stress-free via our website, where you\'ll find the latest packages, early bird offers, and flexible payment plans. Start with a low deposit from just £50 per person, pay in installments up to four weeks before departure, and enjoy tailored itineraries with flights, hotels, visas, and 24/7 support. Our ATOL and ABTA-protected bookings ensure peace of mind for solo travelers, families, or groups.'
+            title: 'How long does it take to perform Umrah?', 
+            content: 'Since Umrah has only four rituals, it can be completed in just a few hours. However, we suggest staying for at least 3-7 days so you can have the complete experience of Makkah.'
         },
         {
-            title: 'Where can I find the best value Umrah packages with flexible payments?', 
-            content: 'MR Tours\' website is your go-to for affordable, high-value Umrah packages. From budget-friendly 3-star to luxurious 5-star options, we offer departures from major UK airports, low deposits, and easy monthly payments. Explore family, group, or solo packages, including last-minute and seasonal offers. Our user-friendly site makes planning effortless; select your travel dates and let us guide you to the sacred cities.'
+            title: 'Can I perform Umrah during Ramadan?', 
+            content: 'Certainly! Umrah can be performed during Ramadan. Take advantage of our exclusive Ramadan Umrah Packages tailored specifically for this scared month.'
         },
         {
-            title: 'Is an all-inclusive Umrah package worth it?', 
-            content: 'Absolutely. All-inclusive packages cover accommodation, meals, and transfers, freeing you to focus on worship without logistical worries. This smart, budget-friendly option minimizes distractions and maximizes your spiritual experience, leaving room for Ziyarat visits or personal reflection.'
-        },
-        {
-            title: 'Why choose MR Tours for your Umrah or Hajj journey?', 
-            content: 'MR Tours is trusted by thousands of UK pilgrims for seamless, affordable, and spiritually fulfilling journeys. With flexible payment plans, low deposits from £50, tailored packages for all budgets, and expert guidance, we ensure every step is hassle-free. Enjoy exclusive perks like hotel upgrades and ATOL-protected bookings. Start your sacred journey with MR Tours today.'
+            title: 'Can I add a hotel of my choice to my Umrah package?', 
+            content: 'We provide a range of hotel options to suit your needs. However, if you want to add a hotel of your choice to your Umrah package, feel free to do so.'
         }
     ]; 
 
@@ -59,7 +55,7 @@ const Faq1 = () => {
     }, [firstItemOpen]);    
 
     return (
-        <section className="faq-section section-padding pt-0 fix">
+        <section className="faq-section section-padding pt-5 fix">
             <div className="left-shape float-bob-y">
                 <Image src="/assets/img/tree-shape-2.png" alt="img" width={221} height={241} />
             </div>
@@ -73,7 +69,7 @@ const Faq1 = () => {
                                         Got Questions?
                                     </span>
                                     <h2 className="wow fadeInUp wow" data-wow-delay=".3s">
-                                        Still Feeling Confused? Explore Our FAQs
+                                        Frequently Asked Questions
                                     </h2>
                                 </div>
                                 <p className="mt-3 mt-mb-0 wow fadeInUp wow" data-wow-delay=".5s">

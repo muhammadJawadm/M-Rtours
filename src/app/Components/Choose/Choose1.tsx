@@ -35,7 +35,7 @@ const Choose1 = () => {
                 </div>
                 <p className="wow fadeInUp wow" data-wow-delay=".3s">
                   As one of the UK’s leading Hajj and Umrah travel agencies, MR Tours has helped countless
-                  pilgrims fulfill their sacred duties with ease. Whether it’s your first Umrah or a deluxe
+                  pilgrims fulfill their sacred duties with ease. Whether it’s your first Umrah or a
                   Hajj, we manage all logistics—from flights to premium accommodations—so you can focus on
                   worship and reflection.
                 </p>

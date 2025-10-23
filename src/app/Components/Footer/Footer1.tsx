@@ -41,10 +41,10 @@ const Footer1 = () => {
                                         </button>
                                     </div>
                                     <div className="social-icon d-flex align-items-center justify-content-center">
-                                        <a href="#"><i className="bi bi-facebook"></i></a>
-                                        <a href="#"><i className="bi bi-twitter-x"></i></a>
-                                        <a href="#"><i className="bi bi-linkedin"></i></a>
-                                        <a href="#"><i className="bi bi-instagram"></i></a>
+                                        <a href="https://www.facebook.com/MRToursUK"><i className="bi bi-facebook"></i></a>
+                                        <a href="https://www.youtube.com/@m-rtoursuk"><i className="bi bi-youtube"></i></a>
+                                        <a href="https://www.tiktok.com/@mr.tours8"><i className="bi bi-tiktok"></i></a>
+                                        <a href="https://www.instagram.com/m_r_tours"><i className="bi bi-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ const Footer1 = () => {
                                         <div className="icon">
                                         <i className="bi bi-envelope-fill"></i>
                                         </div>
-                                        <div className="content">
+                                        <div className="content pt-2">
                                          <h6>
                                              <a href="mailto:info@touron.com">info@m-rtours.co.uk</a> 
                                          </h6>
@@ -152,7 +152,7 @@ const Footer1 = () => {
                                        <div className="icon">
                                        <i className="bi bi-telephone-fill"></i>
                                        </div>
-                                       <div className="content">
+                                       <div className="content pt-2">
                                            <h6>
                                                <a href="tel:+256214203215">+44 7517 240405 </a> <br/>
                                                {/* <a href="tel:+10987654321">+44 7517 240405 </a> */}
@@ -169,10 +169,7 @@ const Footer1 = () => {
                         <p className="wow fadeInUp" data-wow-delay=".3s">
                             Copyright © <span>M-Rtours</span> All Rights Reserved.
                         </p>
-                        <ul className="bottom-list wow fadeInUp" data-wow-delay=".5s">
-                            <li>Terms of use</li>
-                            <li>Privacy Policy</li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>

@@ -1,0 +1,12 @@
+const CHUNK_PUBLIC_PATH = "server/app/api/submit-booking/route.js";
+const runtime = require("../../../chunks/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/node_modules_next_8f8610d9._.js");
+runtime.loadChunk("server/chunks/node_modules_@grpc_grpc-js_7f00da83._.js");
+runtime.loadChunk("server/chunks/node_modules_protobufjs_998281b9._.js");
+runtime.loadChunk("server/chunks/node_modules_@firebase_firestore_dist_index_node_mjs_d57471a3._.js");
+runtime.loadChunk("server/chunks/node_modules_@firebase_storage_dist_node-esm_index_node_esm_c94ec49e.js");
+runtime.loadChunk("server/chunks/node_modules_d7c0995b._.js");
+runtime.loadChunk("server/chunks/[root-of-the-server]__15fc1832._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/api/submit-booking/route/actions.js [app-rsc] (server actions loader, ecmascript)", CHUNK_PUBLIC_PATH);
+runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/submit-booking/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/submit-booking/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
