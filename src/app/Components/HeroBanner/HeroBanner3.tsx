@@ -439,7 +439,7 @@ const HeroBanner3 = () => {
                                         required
                                     />
                                     {formErrors.phone ? (
-                                        <span className="error-message">{formErrors.phone.replace(/'/g, "&apos;")}</span>
+                                        <span className="error-message">{formErrors.phone}</span>
                                     ) : (
                                         <span className="phone-format-help">UK format: 07XXX XXXXXX or +447XXX XXXXXX</span>
                                     )}
@@ -560,7 +560,7 @@ const HeroBanner3 = () => {
                             </div>
                             <h3>Thank You!</h3>
                             <p>Your booking request has been submitted successfully.</p>
-                            <p>We've sent a confirmation email with your details.</p>
+                            <p>We have sent a confirmation email with your details.</p>
                             <p>Our team will contact you shortly to discuss your journey.</p>
                             <button 
                                 className="close-modal-btn"

@@ -623,7 +623,7 @@ const HeroBanner3 = ()=>{
                                                 }, this),
                                                 formErrors.phone ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "jsx-c2b835511f3efb59" + " " + "error-message",
-                                                    children: formErrors.phone.replace(/'/g, "&apos;")
+                                                    children: formErrors.phone
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
                                                     lineNumber: 442,
@@ -1055,7 +1055,7 @@ const HeroBanner3 = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "jsx-c2b835511f3efb59",
-                                children: "We've sent a confirmation email with your details."
+                                children: "We have sent a confirmation email with your details."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
                                 lineNumber: 563,
