@@ -122,11 +122,6 @@ const Blog4 = () => {
                     alt={item.title} 
                     width={416} 
                     height={347}
-                    onError={(e) => {
-                      // Fallback if image fails to load
-                      const target = e.target as HTMLImageElement;
-                      target.src = fallbackImage;
-                    }}
                   />
                 </div>
                 <div className="news-content">

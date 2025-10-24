@@ -568,7 +568,7 @@ const HeroBanner3 = () => {
                             </div>
                             <h3>Thank You!</h3>
                             <p>Your booking request has been submitted successfully.</p>
-                            <p>We have sent a confirmation email with your details.</p>
+                            {/* <p>We have sent a confirmation email with your details.</p> */}
                             <p>Our team will contact you shortly to discuss your journey.</p>
                             <button 
                                 className="close-modal-btn"

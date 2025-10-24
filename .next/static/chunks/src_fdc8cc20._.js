@@ -1125,14 +1125,6 @@ const HeroBanner3 = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "jsx-a35bcc32d5ffe0bf",
-                                children: "We have sent a confirmation email with your details."
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
-                                lineNumber: 571,
-                                columnNumber: 29
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "jsx-a35bcc32d5ffe0bf",
                                 children: "Our team will contact you shortly to discuss your journey."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner3.tsx",
