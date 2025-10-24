@@ -411,7 +411,7 @@ const ClientReviews = ()=>{
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "description",
-                        children: "At MR Tours, Umrah isn't just a trip; it's a journey that changes hearts. Our pilgrims share their stories below, filled with love, faith, and moments they'll never forget. These are real people who trusted us with their sacred Umrah, and we're honored to share their words."
+                        children: "These are real testimonials of people who trusted us with their sacred Umrah, and we're honored to share their words."
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
                         lineNumber: 339,
@@ -422,7 +422,7 @@ const ClientReviews = ()=>{
                         children: "Pilgrim Stories"
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                        lineNumber: 345,
+                        lineNumber: 343,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -445,14 +445,14 @@ const ClientReviews = ()=>{
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                                lineNumber: 351,
+                                                lineNumber: 349,
                                                 columnNumber: 19
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "avatar-placeholder",
                                                 children: review.name.charAt(0)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                                lineNumber: 360,
+                                                lineNumber: 358,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -463,7 +463,7 @@ const ClientReviews = ()=>{
                                                         children: review.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                                        lineNumber: 365,
+                                                        lineNumber: 363,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -471,7 +471,7 @@ const ClientReviews = ()=>{
                                                         children: review.location
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                                        lineNumber: 368,
+                                                        lineNumber: 366,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -479,19 +479,19 @@ const ClientReviews = ()=>{
                                                         children: review.packageDetails
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                                        lineNumber: 371,
+                                                        lineNumber: 369,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                                lineNumber: 364,
+                                                lineNumber: 362,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                        lineNumber: 349,
+                                        lineNumber: 347,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -503,18 +503,18 @@ const ClientReviews = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                        lineNumber: 376,
+                                        lineNumber: 374,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, review.id, true, {
                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                lineNumber: 348,
+                                lineNumber: 346,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                        lineNumber: 346,
+                        lineNumber: 344,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -522,7 +522,7 @@ const ClientReviews = ()=>{
                         children: "What Our Pilgrims Love"
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                        lineNumber: 383,
+                        lineNumber: 381,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -533,7 +533,7 @@ const ClientReviews = ()=>{
                         children: "Here's what keeps them coming back:"
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                        lineNumber: 384,
+                        lineNumber: 382,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -546,7 +546,7 @@ const ClientReviews = ()=>{
                                         children: feature.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                        lineNumber: 390,
+                                        lineNumber: 388,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -554,18 +554,18 @@ const ClientReviews = ()=>{
                                         children: feature.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                        lineNumber: 391,
+                                        lineNumber: 389,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, feature.id, true, {
                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                lineNumber: 389,
+                                lineNumber: 387,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                        lineNumber: 387,
+                        lineNumber: 385,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -576,7 +576,7 @@ const ClientReviews = ()=>{
                                 children: "Moved by Their Words? Share Your Story or Explore Umrah Packages to Start Your Own Sacred Journey With MR Tours."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                lineNumber: 397,
+                                lineNumber: 395,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -587,18 +587,18 @@ const ClientReviews = ()=>{
                                     children: "Explore Umrah Packages"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                    lineNumber: 401,
+                                    lineNumber: 399,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                                lineNumber: 400,
+                                lineNumber: 398,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Reviews & Feedback/Reviews.tsx",
-                        lineNumber: 396,
+                        lineNumber: 394,
                         columnNumber: 9
                     }, this)
                 ]

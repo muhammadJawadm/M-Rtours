@@ -337,9 +337,7 @@ const ClientReviews: React.FC = () => {
           Voices of Our Pilgrims
         </h2>
         <p className="description">
-          At MR Tours, Umrah isn&apos;t just a trip; it&apos;s a journey that changes hearts. Our pilgrims share their stories below, 
-          filled with love, faith, and moments they&apos;ll never forget. These are real people who trusted us with their sacred Umrah, 
-          and we&apos;re honored to share their words.
+          These are real testimonials of people who trusted us with their sacred Umrah, and we&apos;re honored to share their words. 
         </p>
 
         <h3 className="section-title">Pilgrim Stories</h3>
