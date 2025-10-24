@@ -577,7 +577,7 @@ export default function BeatMyQuoteForm() {
           
             <h1 className="main-title" >Already have a quote? Let us beat it!</h1>
             <p className="subtitle">
-              Better value, hotels, and service—guaranteed. Share your quote and we'll craft a superior package without
+              Better value, hotels, and service—guaranteed. Share your quote and we&apos;ll craft a superior package without
               compromising on quality.
             </p>
 
@@ -822,7 +822,7 @@ export default function BeatMyQuoteForm() {
               </div>
               <h3 className="modal-title">Request Submitted Successfully!</h3>
               <p className="modal-message">
-                Thank you for choosing us! Your quote request has been received. We'll review your details and contact you within 24 hours with a better deal.
+                Thank you for choosing us! Your quote request has been received. We&apos;ll review your details and contact you within 24 hours with a better deal.
               </p>
               <button 
                 type="button"
