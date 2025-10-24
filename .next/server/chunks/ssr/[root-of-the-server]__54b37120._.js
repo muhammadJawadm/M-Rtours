@@ -190,7 +190,6 @@ function BeatMyQuoteForm() {
     });
     const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [submitStatus, setSubmitStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("idle");
-    const [showModal, setShowModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const months = [
         "January",
         "February",
@@ -281,207 +280,214 @@ function BeatMyQuoteForm() {
                 currentQuote: "",
                 packageDetails: ""
             });
-            setShowModal(true);
+            // Auto-close modal after 5 seconds
+            setTimeout(()=>setSubmitStatus("idle"), 50000);
         } catch (error) {
             console.error("Error submitting form to Firestore:", error);
             setSubmitStatus("error");
-            setShowModal(true);
         } finally{
             setIsSubmitting(false);
         }
     };
-    const closeModal = ()=>{
-        setShowModal(false);
-    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "7d4c860fbaaf30b1",
-                children: '.jsx-7d4c860fbaaf30b1:root{--brand:#28aae2;--bg:var(--color-background,#fff);--fg:var(--color-foreground,#1f2937);--muted-fg:#5b6472;--card:#fff;--border:#e8ecef;--ring:#28aae21f;--shadow:0 10px 40px #00000014;--success-bg:#d4edda;--success-border:#28a745;--success-fg:#155724;--error-bg:#f8d7da;--error-border:#dc3545;--error-fg:#721c24;--whatsapp:#25d366}.jsx-7d4c860fbaaf30b1{box-sizing:border-box;margin:0;padding:0}.page-container.jsx-7d4c860fbaaf30b1{background:var(--bg);min-height:100vh;color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}.header-section.jsx-7d4c860fbaaf30b1{color:#fff;text-align:center;isolation:isolate;padding:68px 20px 96px;position:relative}.header-section.jsx-7d4c860fbaaf30b1:before{content:"";filter:brightness(.5);z-index:-1;background:linear-gradient(#12202c26,#12202c66),linear-gradient(#28aae22e,#28aae20d),url(/assets/img/BeatPrice.jpg) 50%/cover no-repeat;width:100%;height:100%;position:absolute;top:0;left:0}.header-content.jsx-7d4c860fbaaf30b1{z-index:2;max-width:980px;margin:120px auto 0;position:relative}.main-title.jsx-7d4c860fbaaf30b1{text-wrap:balance;color:#fff;text-shadow:0 2px 4px #0000004d;margin:0 0 12px;font-size:44px;font-weight:800;line-height:1.15}.subtitle.jsx-7d4c860fbaaf30b1{opacity:.95;text-shadow:0 1px 3px #00000040;max-width:780px;margin:0 auto 28px;font-size:18px;font-weight:500}.trust-badges.jsx-7d4c860fbaaf30b1{flex-wrap:wrap;justify-content:center;gap:18px;margin-top:14px;display:flex}.badge.jsx-7d4c860fbaaf30b1{color:#0b1720;backdrop-filter:saturate(180%)blur(4px);background:#ffffffe6;border:1px solid #ffffffe6;border-radius:999px;align-items:center;gap:10px;padding:8px 14px;font-size:14px;font-weight:600;display:inline-flex;box-shadow:0 1px 1px #10182814}.badge-icon.jsx-7d4c860fbaaf30b1{color:#0b1720;background:#28aae21f;border:1px solid #28aae23d;border-radius:50%;place-items:center;width:28px;height:28px;font-size:16px;display:grid}.form-section.jsx-7d4c860fbaaf30b1{z-index:10;max-width:980px;margin:60px auto 0;padding:0 20px 84px;position:relative}.form-container.jsx-7d4c860fbaaf30b1{background:var(--card);box-shadow:var(--shadow);border:1px solid var(--border);border-radius:14px;padding:40px 34px}.form-header.jsx-7d4c860fbaaf30b1{justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;display:flex}.form-title.jsx-7d4c860fbaaf30b1{color:#0f172a;font-size:20px;font-weight:800}.form-hint.jsx-7d4c860fbaaf30b1{color:var(--muted-fg);font-size:14px}.alert.jsx-7d4c860fbaaf30b1{text-align:center;border-radius:10px;margin:0 0 26px;padding:16px;font-weight:600;animation:.3s ease-out fadeIn}.success-message.jsx-7d4c860fbaaf30b1{color:#155724;background-color:#4caf501a;border-left:4px solid #4caf50}.error-message.jsx-7d4c860fbaaf30b1{color:#721c24;background-color:#f443361a;border-left:4px solid #f44336}.form-grid.jsx-7d4c860fbaaf30b1{grid-template-columns:1fr;gap:22px;display:grid}.form-group.jsx-7d4c860fbaaf30b1{flex-direction:column;display:flex}.form-group.full-width.jsx-7d4c860fbaaf30b1{grid-column:1/-1}.form-label.jsx-7d4c860fbaaf30b1{color:#0f172a;margin-bottom:8px;font-size:14px;font-weight:700}.required.jsx-7d4c860fbaaf30b1{color:#e74c3c;margin-left:4px}.form-input.jsx-7d4c860fbaaf30b1,.form-select.jsx-7d4c860fbaaf30b1,.form-textarea.jsx-7d4c860fbaaf30b1{border:2px solid var(--border);color:#0f172a;background:#fff;border-radius:10px;padding:14px 16px;font-family:inherit;font-size:16px;transition:all .2s}.form-input.jsx-7d4c860fbaaf30b1::placeholder,.form-textarea.jsx-7d4c860fbaaf30b1::placeholder{color:#9aa4b2}.form-input.jsx-7d4c860fbaaf30b1:focus,.form-select.jsx-7d4c860fbaaf30b1:focus,.form-textarea.jsx-7d4c860fbaaf30b1:focus{border-color:var(--brand);box-shadow:0 0 0 6px var(--ring);outline:none}.form-textarea.jsx-7d4c860fbaaf30b1{resize:vertical;min-height:130px}.submit-button.jsx-7d4c860fbaaf30b1{color:#fff;cursor:pointer;letter-spacing:.2px;background:#1f8bc0;border:none;border-radius:10px;justify-content:center;align-items:center;gap:10px;width:100%;margin-top:8px;padding:18px;font-size:17px;font-weight:800;transition:all .2s;display:inline-flex}.submit-button.jsx-7d4c860fbaaf30b1:hover:not(:disabled){background:#1f8bc0;transform:translateY(-1px);box-shadow:0 8px 22px #28aae247}.submit-button.jsx-7d4c860fbaaf30b1:disabled{opacity:.7;cursor:not-allowed}.spinner.jsx-7d4c860fbaaf30b1{border:2px solid #ffffff80;border-top-color:#fff;border-radius:50%;width:18px;height:18px;animation:.8s linear infinite spin}@keyframes spin{to{transform:rotate(360deg)}}.whatsapp-float.jsx-7d4c860fbaaf30b1{background:var(--whatsapp);cursor:pointer;z-index:1000;border:2px solid #ffffffa6;border-radius:50%;justify-content:center;align-items:center;width:60px;height:60px;text-decoration:none;transition:all .2s;display:flex;position:fixed;bottom:28px;right:28px;box-shadow:0 6px 18px #25d36659}.whatsapp-float.jsx-7d4c860fbaaf30b1:hover{transform:scale(1.06);box-shadow:0 8px 26px #25d36680}.whatsapp-icon.jsx-7d4c860fbaaf30b1{fill:#fff;width:30px;height:30px}@media (width>=768px){.form-grid.jsx-7d4c860fbaaf30b1{grid-template-columns:1fr 1fr}.form-group.full-width.jsx-7d4c860fbaaf30b1{grid-column:1/-1}.main-title.jsx-7d4c860fbaaf30b1{font-size:52px}.subtitle.jsx-7d4c860fbaaf30b1{font-size:20px}}@media (width<=767px){.header-section.jsx-7d4c860fbaaf30b1{padding:44px 18px 76px}.main-title.jsx-7d4c860fbaaf30b1{font-size:32px}.subtitle.jsx-7d4c860fbaaf30b1{font-size:16px}.trust-badges.jsx-7d4c860fbaaf30b1{gap:10px}.badge.jsx-7d4c860fbaaf30b1{font-size:13px}.badge-icon.jsx-7d4c860fbaaf30b1{width:24px;height:24px;font-size:14px}.form-section.jsx-7d4c860fbaaf30b1{padding:0 16px 68px}.form-container.jsx-7d4c860fbaaf30b1{padding:28px 22px}.whatsapp-float.jsx-7d4c860fbaaf30b1{width:56px;height:56px;bottom:18px;right:18px}.whatsapp-icon.jsx-7d4c860fbaaf30b1{width:28px;height:28px}}.modal-overlay.jsx-7d4c860fbaaf30b1{z-index:100001;background-color:#000000b3;justify-content:center;align-items:center;animation:.3s ease-out fadeIn;display:flex;position:fixed;inset:0}.modal.jsx-7d4c860fbaaf30b1{text-align:center;z-index:100002;background:#fff;border-radius:12px;width:90%;max-width:500px;padding:2rem;animation:.4s ease-out slideIn;position:relative;box-shadow:0 25px 50px -12px #00000040}.success-icon.jsx-7d4c860fbaaf30b1{background-color:#4caf501a;border-radius:50%;justify-content:center;align-items:center;width:80px;height:80px;margin:0 auto 1.5rem;display:flex}.error-icon.jsx-7d4c860fbaaf30b1{background-color:#f443361a;border-radius:50%;justify-content:center;align-items:center;width:80px;height:80px;margin:0 auto 1.5rem;display:flex}.modal.jsx-7d4c860fbaaf30b1 h3.jsx-7d4c860fbaaf30b1{color:#333;margin-bottom:1rem;font-size:1.8rem;font-weight:600}.modal.jsx-7d4c860fbaaf30b1 p.jsx-7d4c860fbaaf30b1{color:#666;margin-bottom:.8rem;line-height:1.6}.modal-btn.jsx-7d4c860fbaaf30b1{color:#fff;cursor:pointer;background-color:#28aae2;border:none;border-radius:8px;margin-top:1.5rem;padding:.8rem 2rem;font-weight:600;transition:all .3s}.modal-btn.jsx-7d4c860fbaaf30b1:hover{background-color:#1d8bb8;transform:translateY(-2px)}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes slideIn{0%{opacity:0;transform:translateY(-50px)}to{opacity:1;transform:translateY(0)}}'
+                id: "627d1577ad1432a6",
+                children: '.jsx-627d1577ad1432a6:root{--brand:#28aae2;--bg:var(--color-background,#fff);--fg:var(--color-foreground,#1f2937);--muted-fg:#5b6472;--card:#fff;--border:#e8ecef;--ring:#28aae21f;--shadow:0 10px 40px #00000014;--success-bg:#d4edda;--success-border:#28a745;--success-fg:#155724;--error-bg:#f8d7da;--error-border:#dc3545;--error-fg:#721c24;--whatsapp:#25d366}.jsx-627d1577ad1432a6{box-sizing:border-box;margin:0;padding:0}.page-container.jsx-627d1577ad1432a6{background:var(--bg);min-height:100vh;color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}.header-section.jsx-627d1577ad1432a6{color:#fff;text-align:center;isolation:isolate;padding:68px 20px 96px;position:relative}.header-section.jsx-627d1577ad1432a6:before{content:"";filter:brightness(.5);z-index:-1;background:linear-gradient(#12202c26,#12202c66),linear-gradient(#28aae22e,#28aae20d),url(/assets/img/BeatPrice.jpg) 50%/cover no-repeat;width:100%;height:100%;position:absolute;top:0;left:0}.header-content.jsx-627d1577ad1432a6{z-index:2;max-width:980px;margin:120px auto 0;position:relative}.main-title.jsx-627d1577ad1432a6{text-wrap:balance;color:#fff;text-shadow:0 2px 4px #0000004d;margin:0 0 12px;font-size:44px;font-weight:800;line-height:1.15}.subtitle.jsx-627d1577ad1432a6{opacity:.95;text-shadow:0 1px 3px #00000040;max-width:780px;margin:0 auto 28px;font-size:18px;font-weight:500}.trust-badges.jsx-627d1577ad1432a6{flex-wrap:wrap;justify-content:center;gap:18px;margin-top:14px;display:flex}.badge.jsx-627d1577ad1432a6{color:#0b1720;backdrop-filter:saturate(180%)blur(4px);background:#ffffffe6;border:1px solid #ffffffe6;border-radius:999px;align-items:center;gap:10px;padding:8px 14px;font-size:14px;font-weight:600;display:inline-flex;box-shadow:0 1px 1px #10182814}.badge-icon.jsx-627d1577ad1432a6{color:#0b1720;background:#28aae21f;border:1px solid #28aae23d;border-radius:50%;place-items:center;width:28px;height:28px;font-size:16px;display:grid}.form-section.jsx-627d1577ad1432a6{z-index:10;max-width:980px;margin:60px auto 0;padding:0 20px 84px;position:relative}.form-container.jsx-627d1577ad1432a6{background:var(--card);box-shadow:var(--shadow);border:1px solid var(--border);border-radius:14px;padding:40px 34px}.form-header.jsx-627d1577ad1432a6{justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;display:flex}.form-title.jsx-627d1577ad1432a6{color:#0f172a;font-size:20px;font-weight:800}.form-hint.jsx-627d1577ad1432a6{color:var(--muted-fg);font-size:14px}.alert.jsx-627d1577ad1432a6{text-align:center;border-radius:10px;margin:18px 0 26px;padding:16px;font-weight:600}.error-message.jsx-627d1577ad1432a6{background:var(--error-bg);border-left:4px solid var(--error-border);color:var(--error-fg)}.form-grid.jsx-627d1577ad1432a6{grid-template-columns:1fr;gap:22px;display:grid}.form-group.jsx-627d1577ad1432a6{flex-direction:column;display:flex}.form-group.full-width.jsx-627d1577ad1432a6{grid-column:1/-1}.form-label.jsx-627d1577ad1432a6{color:#0f172a;margin-bottom:8px;font-size:14px;font-weight:700}.required.jsx-627d1577ad1432a6{color:#e74c3c;margin-left:4px}.form-input.jsx-627d1577ad1432a6,.form-select.jsx-627d1577ad1432a6,.form-textarea.jsx-627d1577ad1432a6{border:2px solid var(--border);color:#0f172a;background:#fff;border-radius:10px;padding:14px 16px;font-family:inherit;font-size:16px;transition:all .2s}.form-input.jsx-627d1577ad1432a6::placeholder,.form-textarea.jsx-627d1577ad1432a6::placeholder{color:#9aa4b2}.form-input.jsx-627d1577ad1432a6:focus,.form-select.jsx-627d1577ad1432a6:focus,.form-textarea.jsx-627d1577ad1432a6:focus{border-color:var(--brand);box-shadow:0 0 0 6px var(--ring);outline:none}.form-textarea.jsx-627d1577ad1432a6{resize:vertical;min-height:130px}.submit-button.jsx-627d1577ad1432a6{color:#fff;cursor:pointer;letter-spacing:.2px;background:#1f8bc0;border:none;border-radius:10px;justify-content:center;align-items:center;gap:10px;width:100%;margin-top:8px;padding:18px;font-size:17px;font-weight:800;transition:all .2s;display:inline-flex}.submit-button.jsx-627d1577ad1432a6:hover:not(:disabled){background:#1f8bc0;transform:translateY(-1px);box-shadow:0 8px 22px #28aae247}.submit-button.jsx-627d1577ad1432a6:disabled{opacity:.7;cursor:not-allowed}.spinner.jsx-627d1577ad1432a6{border:2px solid #ffffff80;border-top-color:#fff;border-radius:50%;width:18px;height:18px;animation:.8s linear infinite spin}@keyframes spin{to{transform:rotate(360deg)}}.whatsapp-float.jsx-627d1577ad1432a6{background:var(--whatsapp);cursor:pointer;z-index:1000;border:2px solid #ffffffa6;border-radius:50%;justify-content:center;align-items:center;width:60px;height:60px;text-decoration:none;transition:all .2s;display:flex;position:fixed;bottom:28px;right:28px;box-shadow:0 6px 18px #25d36659}.whatsapp-float.jsx-627d1577ad1432a6:hover{transform:scale(1.06);box-shadow:0 8px 26px #25d36680}.whatsapp-icon.jsx-627d1577ad1432a6{fill:#fff;width:30px;height:30px}.modal-overlay.jsx-627d1577ad1432a6{backdrop-filter:blur(4px);z-index:9999;background:#0009;justify-content:center;align-items:center;padding:20px;animation:.2s fadeIn;display:flex;position:fixed;inset:0}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.modal-content.jsx-627d1577ad1432a6{text-align:center;background:#fff;border-radius:16px;width:100%;max-width:440px;padding:40px;animation:.3s slideUp;box-shadow:0 20px 60px #0000004d}@keyframes slideUp{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.modal-icon.jsx-627d1577ad1432a6{color:#fff;background:linear-gradient(135deg,#28aae2 0%,#1f8bc0 100%);border-radius:50%;justify-content:center;align-items:center;width:72px;height:72px;margin:0 auto 24px;animation:.4s .2s both scaleIn;display:flex}@keyframes scaleIn{0%{transform:scale(0)}to{transform:scale(1)}}.modal-icon.jsx-627d1577ad1432a6 svg.jsx-627d1577ad1432a6{stroke-width:3px;width:40px;height:40px}.modal-title.jsx-627d1577ad1432a6{color:#0f172a;margin:0 0 12px;font-size:24px;font-weight:800}.modal-message.jsx-627d1577ad1432a6{color:var(--muted-fg);margin:0 0 28px;font-size:16px;line-height:1.6}.modal-button.jsx-627d1577ad1432a6{color:#fff;cursor:pointer;background:linear-gradient(135deg,#28aae2 0%,#1f8bc0 100%);border:none;border-radius:10px;width:100%;padding:16px;font-size:16px;font-weight:700;transition:all .2s}.modal-button.jsx-627d1577ad1432a6:hover{transform:translateY(-2px);box-shadow:0 8px 22px #28aae259}@media (width>=768px){.form-grid.jsx-627d1577ad1432a6{grid-template-columns:1fr 1fr}.form-group.full-width.jsx-627d1577ad1432a6{grid-column:1/-1}.main-title.jsx-627d1577ad1432a6{font-size:52px}.subtitle.jsx-627d1577ad1432a6{font-size:20px}}@media (width<=767px){.header-section.jsx-627d1577ad1432a6{padding:44px 18px 76px}.main-title.jsx-627d1577ad1432a6{font-size:32px}.subtitle.jsx-627d1577ad1432a6{font-size:16px}.trust-badges.jsx-627d1577ad1432a6{gap:10px}.badge.jsx-627d1577ad1432a6{font-size:13px}.badge-icon.jsx-627d1577ad1432a6{width:24px;height:24px;font-size:14px}.form-section.jsx-627d1577ad1432a6{padding:0 16px 68px}.form-container.jsx-627d1577ad1432a6{padding:28px 22px}.whatsapp-float.jsx-627d1577ad1432a6{width:56px;height:56px;bottom:18px;right:18px}.whatsapp-icon.jsx-627d1577ad1432a6{width:28px;height:28px}.modal-content.jsx-627d1577ad1432a6{padding:32px 24px}.modal-icon.jsx-627d1577ad1432a6{width:64px;height:64px}.modal-icon.jsx-627d1577ad1432a6 svg.jsx-627d1577ad1432a6{width:36px;height:36px}.modal-title.jsx-627d1577ad1432a6{font-size:22px}.modal-message.jsx-627d1577ad1432a6{font-size:15px}}'
             }, void 0, false, void 0, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-7d4c860fbaaf30b1" + " " + "page-container",
+                className: "jsx-627d1577ad1432a6" + " " + "page-container",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                         role: "banner",
-                        className: "jsx-7d4c860fbaaf30b1" + " " + "header-section",
+                        className: "jsx-627d1577ad1432a6" + " " + "header-section",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-7d4c860fbaaf30b1" + " " + "header-content ",
+                            className: "jsx-627d1577ad1432a6" + " " + "header-content ",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "jsx-7d4c860fbaaf30b1" + " " + "main-title",
+                                    className: "jsx-627d1577ad1432a6" + " " + "main-title",
                                     children: "Already have a quote? Let us beat it!"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                    lineNumber: 581,
+                                    lineNumber: 578,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "jsx-7d4c860fbaaf30b1" + " " + "subtitle",
-                                    children: "Better value, hotels, and service—guaranteed. Share your quote and we’ll craft a superior package without compromising on quality."
+                                    className: "jsx-627d1577ad1432a6" + " " + "subtitle",
+                                    children: "Better value, hotels, and service—guaranteed. Share your quote and we'll craft a superior package without compromising on quality."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                    lineNumber: 582,
+                                    lineNumber: 579,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     "aria-label": "Trust badges",
-                                    className: "jsx-7d4c860fbaaf30b1" + " " + "trust-badges",
+                                    className: "jsx-627d1577ad1432a6" + " " + "trust-badges",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-7d4c860fbaaf30b1" + " " + "badge",
+                                            className: "jsx-627d1577ad1432a6" + " " + "badge",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     "aria-hidden": "true",
-                                                    className: "jsx-7d4c860fbaaf30b1" + " " + "badge-icon",
+                                                    className: "jsx-627d1577ad1432a6" + " " + "badge-icon",
                                                     children: "✓"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                                    lineNumber: 586,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "jsx-627d1577ad1432a6",
+                                                    children: "ATOL Protected"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
                                                     lineNumber: 589,
                                                     columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-7d4c860fbaaf30b1",
-                                                    children: "ATOL Protected"
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                            lineNumber: 585,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-627d1577ad1432a6" + " " + "badge",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    "aria-hidden": "true",
+                                                    className: "jsx-627d1577ad1432a6" + " " + "badge-icon",
+                                                    children: "★"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
                                                     lineNumber: 592,
                                                     columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 588,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-7d4c860fbaaf30b1" + " " + "badge",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    "aria-hidden": "true",
-                                                    className: "jsx-7d4c860fbaaf30b1" + " " + "badge-icon",
-                                                    children: "★"
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "jsx-627d1577ad1432a6",
+                                                    children: "Trusted Hajj & Umrah Partner"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
                                                     lineNumber: 595,
                                                     columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-7d4c860fbaaf30b1",
-                                                    children: "Trusted Hajj & Umrah Partner"
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                            lineNumber: 591,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-627d1577ad1432a6" + " " + "badge",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    "aria-hidden": "true",
+                                                    className: "jsx-627d1577ad1432a6" + " " + "badge-icon",
+                                                    children: "☎"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
                                                     lineNumber: 598,
                                                     columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 594,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-7d4c860fbaaf30b1" + " " + "badge",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    "aria-hidden": "true",
-                                                    className: "jsx-7d4c860fbaaf30b1" + " " + "badge-icon",
-                                                    children: "☎"
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "jsx-627d1577ad1432a6",
+                                                    children: "UK Based Support"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
                                                     lineNumber: 601,
                                                     columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-7d4c860fbaaf30b1",
-                                                    children: "UK Based Support"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                    lineNumber: 604,
-                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 600,
+                                            lineNumber: 597,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                    lineNumber: 587,
+                                    lineNumber: 584,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                            lineNumber: 579,
+                            lineNumber: 576,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                        lineNumber: 578,
+                        lineNumber: 575,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-section",
+                        className: "jsx-627d1577ad1432a6" + " " + "form-section",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             role: "region",
                             "aria-label": "Beat My Quote form",
-                            className: "jsx-7d4c860fbaaf30b1" + " " + "form-container",
+                            className: "jsx-627d1577ad1432a6" + " " + "form-container",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-7d4c860fbaaf30b1" + " " + "form-header",
+                                    className: "jsx-627d1577ad1432a6" + " " + "form-header",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "jsx-7d4c860fbaaf30b1" + " " + "form-title",
+                                            className: "jsx-627d1577ad1432a6" + " " + "form-title",
                                             children: "Tell us about your trip"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 613,
+                                            lineNumber: 610,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "jsx-7d4c860fbaaf30b1" + " " + "form-hint",
+                                            className: "jsx-627d1577ad1432a6" + " " + "form-hint",
                                             children: "We respond within 24 hours"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 614,
+                                            lineNumber: 611,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                    lineNumber: 612,
+                                    lineNumber: 609,
                                     columnNumber: 13
+                                }, this),
+                                submitStatus === "error" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    role: "alert",
+                                    "aria-live": "assertive",
+                                    className: "jsx-627d1577ad1432a6" + " " + "alert error-message",
+                                    children: "Sorry, there was an error submitting your request. Please try again or contact us directly."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                    lineNumber: 615,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                     onSubmit: handleSubmit,
                                     "aria-busy": isSubmitting,
-                                    className: "jsx-7d4c860fbaaf30b1",
+                                    className: "jsx-627d1577ad1432a6",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-grid",
+                                        className: "jsx-627d1577ad1432a6" + " " + "form-grid",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "fullName",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "Full Name",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 621,
+                                                                lineNumber: 624,
                                                                 columnNumber: 30
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 620,
+                                                        lineNumber: 623,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -493,38 +499,38 @@ function BeatMyQuoteForm() {
                                                         required: true,
                                                         placeholder: "Enter your full name",
                                                         autoComplete: "name",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-input"
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-input"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 623,
+                                                        lineNumber: 626,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 619,
+                                                lineNumber: 622,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "contactNumber",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "Contact Number (WhatsApp preferred)",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 638,
+                                                                lineNumber: 641,
                                                                 columnNumber: 56
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 637,
+                                                        lineNumber: 640,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -537,38 +543,38 @@ function BeatMyQuoteForm() {
                                                         placeholder: "+44 7XXX XXXXXX",
                                                         autoComplete: "tel",
                                                         inputMode: "tel",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-input"
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-input"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 640,
+                                                        lineNumber: 643,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 636,
+                                                lineNumber: 639,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group full-width",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group full-width",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "email",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "Email Address",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 656,
+                                                                lineNumber: 659,
                                                                 columnNumber: 34
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 655,
+                                                        lineNumber: 658,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -580,38 +586,38 @@ function BeatMyQuoteForm() {
                                                         required: true,
                                                         placeholder: "your.email@example.com",
                                                         autoComplete: "email",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-input"
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-input"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 658,
+                                                        lineNumber: 661,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 654,
+                                                lineNumber: 657,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "travelMonth",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "Preferred Travel Month",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 673,
+                                                                lineNumber: 676,
                                                                 columnNumber: 43
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 672,
+                                                        lineNumber: 675,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -620,58 +626,58 @@ function BeatMyQuoteForm() {
                                                         value: formData.travelMonth,
                                                         onChange: handleInputChange,
                                                         required: true,
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-select",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-select",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: "",
-                                                                className: "jsx-7d4c860fbaaf30b1",
+                                                                className: "jsx-627d1577ad1432a6",
                                                                 children: "Select month"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 683,
+                                                                lineNumber: 686,
                                                                 columnNumber: 21
                                                             }, this),
                                                             months.map((month)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                     value: month,
-                                                                    className: "jsx-7d4c860fbaaf30b1",
+                                                                    className: "jsx-627d1577ad1432a6",
                                                                     children: month
                                                                 }, month, false, {
                                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                    lineNumber: 685,
+                                                                    lineNumber: 688,
                                                                     columnNumber: 23
                                                                 }, this))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 675,
+                                                        lineNumber: 678,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 671,
+                                                lineNumber: 674,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "duration",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "Duration (Days)",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 694,
+                                                                lineNumber: 697,
                                                                 columnNumber: 36
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 693,
+                                                        lineNumber: 696,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -684,38 +690,38 @@ function BeatMyQuoteForm() {
                                                         placeholder: "e.g., 7, 10, 14",
                                                         min: "1",
                                                         inputMode: "numeric",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-input"
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-input"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 696,
+                                                        lineNumber: 699,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 692,
+                                                lineNumber: 695,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "numberOfGuests",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "No. of Guests / Travellers",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 712,
+                                                                lineNumber: 715,
                                                                 columnNumber: 47
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 711,
+                                                        lineNumber: 714,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -728,28 +734,28 @@ function BeatMyQuoteForm() {
                                                         placeholder: "Number of travelers",
                                                         min: "1",
                                                         inputMode: "numeric",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-input"
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-input"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 714,
+                                                        lineNumber: 717,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 710,
+                                                lineNumber: 713,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "departureCity",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: "Departure City (UK)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 729,
+                                                        lineNumber: 732,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -757,58 +763,58 @@ function BeatMyQuoteForm() {
                                                         name: "departureCity",
                                                         value: formData.departureCity,
                                                         onChange: handleInputChange,
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-select",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-select",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: "",
-                                                                className: "jsx-7d4c860fbaaf30b1",
+                                                                className: "jsx-627d1577ad1432a6",
                                                                 children: "Select city"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 739,
+                                                                lineNumber: 742,
                                                                 columnNumber: 21
                                                             }, this),
                                                             ukCities.map((city)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                     value: city,
-                                                                    className: "jsx-7d4c860fbaaf30b1",
+                                                                    className: "jsx-627d1577ad1432a6",
                                                                     children: city
                                                                 }, city, false, {
                                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                    lineNumber: 741,
+                                                                    lineNumber: 744,
                                                                     columnNumber: 23
                                                                 }, this))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 732,
+                                                        lineNumber: 735,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 728,
+                                                lineNumber: 731,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "accommodationPreference",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "Accommodation Preference",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 750,
+                                                                lineNumber: 753,
                                                                 columnNumber: 45
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 749,
+                                                        lineNumber: 752,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -817,76 +823,76 @@ function BeatMyQuoteForm() {
                                                         value: formData.accommodationPreference,
                                                         onChange: handleInputChange,
                                                         required: true,
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-select",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-select",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: "",
-                                                                className: "jsx-7d4c860fbaaf30b1",
+                                                                className: "jsx-627d1577ad1432a6",
                                                                 children: "Select preference"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 760,
+                                                                lineNumber: 763,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: "3-Star",
-                                                                className: "jsx-7d4c860fbaaf30b1",
+                                                                className: "jsx-627d1577ad1432a6",
                                                                 children: "3-Star"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 761,
+                                                                lineNumber: 764,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: "4-Star",
-                                                                className: "jsx-7d4c860fbaaf30b1",
+                                                                className: "jsx-627d1577ad1432a6",
                                                                 children: "4-Star"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 762,
+                                                                lineNumber: 765,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                 value: "5-Star",
-                                                                className: "jsx-7d4c860fbaaf30b1",
+                                                                className: "jsx-627d1577ad1432a6",
                                                                 children: "5-Star"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 763,
+                                                                lineNumber: 766,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 752,
+                                                        lineNumber: 755,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 748,
+                                                lineNumber: 751,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "currentQuote",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: [
                                                             "Current Quote Received (£)",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-7d4c860fbaaf30b1" + " " + "required",
+                                                                className: "jsx-627d1577ad1432a6" + " " + "required",
                                                                 children: "*"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                                lineNumber: 769,
+                                                                lineNumber: 772,
                                                                 columnNumber: 47
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 768,
+                                                        lineNumber: 771,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -900,28 +906,28 @@ function BeatMyQuoteForm() {
                                                         min: "0",
                                                         step: "0.01",
                                                         inputMode: "decimal",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-input"
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-input"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 771,
+                                                        lineNumber: 774,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 767,
+                                                lineNumber: 770,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group full-width",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group full-width",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "packageDetails",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-label",
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-label",
                                                         children: "Package Details / Message"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 787,
+                                                        lineNumber: 790,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -930,252 +936,142 @@ function BeatMyQuoteForm() {
                                                         value: formData.packageDetails,
                                                         onChange: handleInputChange,
                                                         placeholder: "Tell us what your quote includes (optional)",
-                                                        className: "jsx-7d4c860fbaaf30b1" + " " + "form-textarea"
+                                                        className: "jsx-627d1577ad1432a6" + " " + "form-textarea"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 790,
+                                                        lineNumber: 793,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 786,
+                                                lineNumber: 789,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-7d4c860fbaaf30b1" + " " + "form-group full-width",
+                                                className: "jsx-627d1577ad1432a6" + " " + "form-group full-width",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     type: "submit",
                                                     disabled: isSubmitting,
                                                     "aria-live": "polite",
-                                                    className: "jsx-7d4c860fbaaf30b1" + " " + "submit-button",
+                                                    className: "jsx-627d1577ad1432a6" + " " + "submit-button",
                                                     children: [
                                                         isSubmitting && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             "aria-hidden": "true",
-                                                            className: "jsx-7d4c860fbaaf30b1" + " " + "spinner"
+                                                            className: "jsx-627d1577ad1432a6" + " " + "spinner"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                            lineNumber: 802,
+                                                            lineNumber: 805,
                                                             columnNumber: 38
                                                         }, this),
                                                         isSubmitting ? "Submitting..." : "Beat My Quote Now"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                    lineNumber: 801,
+                                                    lineNumber: 804,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 800,
+                                                lineNumber: 803,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                        lineNumber: 618,
+                                        lineNumber: 621,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                    lineNumber: 617,
+                                    lineNumber: 620,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                            lineNumber: 611,
+                            lineNumber: 608,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                        lineNumber: 610,
+                        lineNumber: 607,
                         columnNumber: 9
                     }, this),
-                    showModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        onClick: closeModal,
-                        className: "jsx-7d4c860fbaaf30b1" + " " + "modal-overlay",
+                    submitStatus === "success" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        onClick: ()=>setSubmitStatus("idle"),
+                        className: "jsx-627d1577ad1432a6" + " " + "modal-overlay",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             onClick: (e)=>e.stopPropagation(),
-                            className: "jsx-7d4c860fbaaf30b1" + " " + "modal",
+                            className: "jsx-627d1577ad1432a6" + " " + "modal-content",
                             children: [
-                                submitStatus === "success" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-7d4c860fbaaf30b1" + " " + "success-icon",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                xmlns: "http://www.w3.org/2000/svg",
-                                                width: "40",
-                                                height: "40",
-                                                viewBox: "0 0 24 24",
-                                                fill: "none",
-                                                stroke: "#4CAF50",
-                                                strokeWidth: "2",
-                                                strokeLinecap: "round",
-                                                strokeLinejoin: "round",
-                                                className: "jsx-7d4c860fbaaf30b1",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                        d: "M22 11.08V12a10 10 0 1 1-5.93-9.14",
-                                                        className: "jsx-7d4c860fbaaf30b1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 819,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
-                                                        points: "22 4 12 14.01 9 11.01",
-                                                        className: "jsx-7d4c860fbaaf30b1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 820,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 818,
-                                                columnNumber: 21
-                                            }, this)
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "jsx-627d1577ad1432a6" + " " + "modal-icon",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        viewBox: "0 0 24 24",
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        strokeWidth: "2",
+                                        className: "jsx-627d1577ad1432a6",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            d: "M20 6L9 17l-5-5",
+                                            className: "jsx-627d1577ad1432a6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 817,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "jsx-7d4c860fbaaf30b1",
-                                            children: "Thank You!"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 823,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "jsx-7d4c860fbaaf30b1",
-                                            children: "Your quote request has been submitted successfully."
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 824,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "jsx-7d4c860fbaaf30b1",
-                                            children: "Our team will contact you within 24 hours with a better offer!"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 825,
+                                            lineNumber: 820,
                                             columnNumber: 19
                                         }, this)
-                                    ]
-                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-7d4c860fbaaf30b1" + " " + "error-icon",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                xmlns: "http://www.w3.org/2000/svg",
-                                                width: "40",
-                                                height: "40",
-                                                viewBox: "0 0 24 24",
-                                                fill: "none",
-                                                stroke: "#F44336",
-                                                strokeWidth: "2",
-                                                strokeLinecap: "round",
-                                                strokeLinejoin: "round",
-                                                className: "jsx-7d4c860fbaaf30b1",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                                        cx: "12",
-                                                        cy: "12",
-                                                        r: "10",
-                                                        className: "jsx-7d4c860fbaaf30b1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 831,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
-                                                        x1: "12",
-                                                        y1: "8",
-                                                        x2: "12",
-                                                        y2: "12",
-                                                        className: "jsx-7d4c860fbaaf30b1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 832,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
-                                                        x1: "12",
-                                                        y1: "16",
-                                                        x2: "12.01",
-                                                        y2: "16",
-                                                        className: "jsx-7d4c860fbaaf30b1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                        lineNumber: 833,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                                lineNumber: 830,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 829,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "jsx-7d4c860fbaaf30b1",
-                                            children: "Something Went Wrong"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 836,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "jsx-7d4c860fbaaf30b1",
-                                            children: "Sorry, there was an error submitting your request."
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 837,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "jsx-7d4c860fbaaf30b1",
-                                            children: "Please try again or contact us directly for assistance."
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                            lineNumber: 838,
-                                            columnNumber: 19
-                                        }, this)
-                                    ]
-                                }, void 0, true),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: closeModal,
-                                    className: "jsx-7d4c860fbaaf30b1" + " " + "modal-btn",
-                                    children: submitStatus === "success" ? "Great!" : "Close"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                        lineNumber: 819,
+                                        columnNumber: 17
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                                    lineNumber: 842,
+                                    lineNumber: 818,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "jsx-627d1577ad1432a6" + " " + "modal-title",
+                                    children: "Request Submitted Successfully!"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                    lineNumber: 823,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "jsx-627d1577ad1432a6" + " " + "modal-message",
+                                    children: "Thank you for choosing us! Your quote request has been received. We'll review your details and contact you within 24 hours with a better deal."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                    lineNumber: 824,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: ()=>setSubmitStatus("idle"),
+                                    className: "jsx-627d1577ad1432a6" + " " + "modal-button",
+                                    children: "Got it, thanks!"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
+                                    lineNumber: 827,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                            lineNumber: 814,
+                            lineNumber: 817,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                        lineNumber: 813,
+                        lineNumber: 816,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/BeatMyPrice/BeatPrice.tsx",
-                lineNumber: 577,
+                lineNumber: 574,
                 columnNumber: 7
             }, this)
         ]

@@ -275,7 +275,12 @@ const HajjPackages: React.FC = () => {
                                   <span className="price-amount">{pkg.currency}{pkg.price_quad.toLocaleString()}</span>
                                 </div>
                               </div>
-
+<button 
+                              className="view-details-btn"
+                              onClick={() => handleViewDetails(pkg.id)}
+                            >
+                              View Details
+                            </button>
                             
                             </div>
                           </div>

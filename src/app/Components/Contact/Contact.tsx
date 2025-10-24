@@ -25,45 +25,43 @@ const Contact = () => {
     // Handle form submission
     const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        
+
         // Basic validation
         if (!formData.name || !formData.email || !formData.message) {
             alert("Please fill in all required fields");
             return;
         }
-        
-        // Set submitting state
+
         setIsSubmitting(true);
-        
+
         try {
-            // Simulate API call with timeout
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            
-            // Optional: Send to an API endpoint
-            // await fetch('/api/contact', {
-            //    method: 'POST',
-            //    headers: { 'Content-Type': 'application/json' },
-            //    body: JSON.stringify(formData),
-            // });
-            
-            // Reset form
+            // Send to API endpoint for mail
+            const res = await fetch('/api/contact-mail', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+            const result = await res.json();
+            if (!result.success) {
+                alert("Failed to send email. Please try again later.");
+            }
+
             setFormData({
                 name: '',
                 email: '',
                 subject: '',
                 message: ''
             });
-            
-            // Show success alert
+
             setShowAlert(true);
-            
-            // Auto-hide alert after 8 seconds
+
             setTimeout(() => {
                 setShowAlert(false);
             }, 8000);
-            
+
         } catch (error) {
             console.error("Error submitting form:", error);
+            alert("Failed to send email. Please try again later.");
         } finally {
             setIsSubmitting(false);
         }
