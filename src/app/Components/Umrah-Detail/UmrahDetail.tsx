@@ -8,21 +8,18 @@ import { useParams } from 'next/navigation';
 
 interface Package {
     id: string;
-    package_name: string;
-    duration_nights: number;
-    makkah_nights: number;
-    madinah_nights: number;
-    star_rating: number;
-    price_per_person: number;
-    currency: string;
-    description: string;
-    package_inclusions: string[];
-    hotel_details: {
-        makkah_hotel: string;
-        madinah_hotel: string;
-    };
-    notes: string[];
+    "Package Name": string;
+    "Duration (Nights)": number;
+    "Makkah Nights": number;
+    "Madinah Nights": number;
+    "Star Rating": string;
+    "Price (£)": number;
+    "Makkah Hotel": string;
+    "Madinah Hotel": string;
+    "Month": string;
+    "Includes": string;
     image?: string;
+    currency: string;
 }
 
 interface BookingFormData {
@@ -120,7 +117,7 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
         // Safely update formData if package_name exists
         setFormData(prev => ({
           ...prev,
-          packageName: data.package_name || ''
+          packageName: data['Package Name'] || ''
         }));
       } else {
         console.error("Package not found in Firestore");
@@ -210,7 +207,7 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                     email: '',
                     phone: '',
                     address: '',
-                    packageName: packageData?.package_name || '',
+                    packageName: packageData?.['Package Name'] || '',
                     travelDate: '',
                     // numAdults: 1,
                     // numChildren: 0,
@@ -272,7 +269,7 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                             <div className="details-thumb">
                                 <Image 
                                     src={packageData.image || "/assets/img/destails/tour-details.jpg"} 
-                                    alt={packageData.package_name} 
+                                    alt={packageData['Package Name']} 
                                     width={856} 
                                     height={510}   
                                 />
@@ -280,33 +277,33 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                             <div className="activities-details-content">
                                 <div className="package-header-info mb-4">
                                     <div className="d-flex justify-content-between align-items-center flex-wrap">
-                                        <span className="badge bg-primary">{packageData.star_rating} Star Package</span>
-                                        <h3 className="price-tag text-primary mb-0">{packageData.currency}{packageData.price_per_person} <small>/person</small></h3>
+                                        <span className="badge bg-primary">{packageData['Star Rating']} Star Package</span>
+                                        <h3 className="price-tag text-primary mb-0">{packageData['Currency']}{packageData['Price (£)']} <small>/person</small></h3>
                                     </div>
                                 </div>
-                                
-                                <h2 className="mb-3">{packageData.package_name}</h2>
-                                <p className="lead">{packageData.description}</p>
+
+                                <h2 className="mb-3">{packageData['Package Name']}</h2>
+                                {/* <p className="lead">{packageData.description}</p> */}
                                 
                                 <div className="package-duration-info my-4 p-3 bg-light rounded">
                                     <div className="row">
                                         <div className="col-md-4">
-                                            <strong>Total Duration:</strong> {packageData.duration_nights} Nights
+                                            <strong>Total Duration:</strong> {packageData['Duration (Nights)']} Nights
                                         </div>
                                         <div className="col-md-4">
-                                            <strong>Makkah:</strong> {packageData.makkah_nights} Nights
+                                            <strong>Makkah:</strong> {packageData['Makkah Nights']} Nights
                                         </div>
                                         <div className="col-md-4">
-                                            <strong>Madinah:</strong> {packageData.madinah_nights} Nights
+                                            <strong>Madinah:</strong> {packageData['Madinah Nights']} Nights
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="activities-list-item">
+                                 <div className="activities-list-item">
                                     <h3>Package Inclusions</h3>
                                     <div className="activities-item">
                                         <ul className="activities-list">
-                                            {packageData.package_inclusions.map((inclusion, idx) => (
+                                            {packageData.Includes.split(',').map((inclusion, idx) => (
                                                 <li key={idx}>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M12.6916 5.22013L12.1877 4.5967C12.0188 4.38782 11.7004 4.38782 11.5315 4.5967L11.0275 5.22013C10.7366 5.5801 10.3473 5.84785 9.90712 5.99089C9.46691 6.13393 8.99465 6.14609 8.54766 6.02591L7.77347 5.81779C7.51411 5.74804 7.25644 5.93521 7.24261 6.20348L7.20136 7.00406C7.17753 7.46631 7.02002 7.91171 6.74795 8.28617C6.47588 8.66064 6.10096 8.94807 5.66869 9.11357L4.92005 9.40021C4.66922 9.49626 4.57083 9.79917 4.71727 10.0243L5.15447 10.6963C5.40689 11.0842 5.54126 11.5371 5.54126 12C5.54126 12.4629 5.40689 12.9158 5.15447 13.3037L4.71727 13.9757C4.57078 14.2008 4.66922 14.5037 4.92005 14.5998L5.66869 14.8864C6.10096 15.0519 6.47588 15.3393 6.74795 15.7138C7.02002 16.0883 7.17753 16.5337 7.20136 16.9959L7.24261 17.7965C7.25644 18.0648 7.51411 18.2519 7.77347 18.1822L8.54766 17.9741C8.99464 17.8539 9.46691 17.866 9.90712 18.0091C10.3473 18.1521 10.7365 18.4198 11.0275 18.7798L11.5315 19.4033C11.7004 19.6122 12.0188 19.6122 12.1877 19.4033L12.6916 18.7798C12.9826 18.4198 13.3718 18.1521 13.8121 18.0091C14.2523 17.866 14.7245 17.8539 15.1715 17.9741L15.9457 18.1822C16.2051 18.2519 16.4627 18.0648 16.4766 17.7965L16.5178 16.9959C16.5416 16.5337 16.6992 16.0883 16.9712 15.7138C17.2433 15.3393 17.6182 15.0519 18.0505 14.8864L18.7991 14.5998C19.05 14.5037 19.1484 14.2008 19.0019 13.9757L18.5647 13.3037C18.3123 12.9158 18.1779 12.4629 18.1779 12C18.1779 11.5371 18.3123 11.0842 18.5647 10.6963L19.0019 10.0243C19.1484 9.79917 19.05 9.49626 18.7991 9.40021L18.0505 9.11357C17.6182 8.94807 17.2433 8.66064 16.9712 8.28617C16.6992 7.91171 16.5416 7.46631 16.5178 7.00406L16.4766 6.20348C16.4627 5.93521 16.2051 5.74804 15.9457 5.81779L15.1715 6.02591C14.7245 6.14609 14.2523 6.13393 13.812 5.99089C13.3718 5.84785 12.9826 5.5801 12.6916 5.22013Z" fill="#1CA8CB" />
@@ -317,30 +314,23 @@ const UmrahDetails: React.FC<UmrahDetailsProps> = ({ packageId }) => {
                                             ))}
                                         </ul>
                                     </div>
-                                </div>
+                                </div> 
 
                                 <div className="hotel-details-section my-4 p-4 bg-light rounded">
                                     <h3>Hotel Accommodation</h3>
                                     <div className="row mt-3">
                                         <div className="col-md-6">
                                             <h5>Makkah Hotel</h5>
-                                            <p>{packageData.hotel_details.makkah_hotel}</p>
+                                            <p>{packageData['Makkah Hotel']}</p>
                                         </div>
                                         <div className="col-md-6">
                                             <h5>Madinah Hotel</h5>
-                                            <p>{packageData.hotel_details.madinah_hotel}</p>
+                                            <p>{packageData['Madinah Hotel']}</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="important-notes my-4">
-                                    <h3>Important Notes</h3>
-                                    <ul className="list-styled">
-                                        {packageData.notes.map((note, idx) => (
-                                            <li key={idx}>✓ {note}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                              
 
                                 <div className="faq-items">
                                     <h3>Frequently Asked Questions</h3>

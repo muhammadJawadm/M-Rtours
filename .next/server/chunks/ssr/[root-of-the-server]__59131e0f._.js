@@ -261,7 +261,7 @@ function Header1({ variant }) {
     const [searchToggle, setSearchToggle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     // Check if current page is contact page
-    const isContactPage = pathname === '/about';
+    const isContactPage = pathname === '/about' || pathname === '/Umrah-packages';
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const handleScroll = ()=>{
             const currentScrollPos = window.scrollY;
@@ -282,160 +282,225 @@ function Header1({ variant }) {
         prevScrollPos
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-ed8d9cd9a426c0ce",
+        className: "jsx-61712decf5f7dc62",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "jsx-ed8d9cd9a426c0ce" + " " + `cs_site_header header_style_2 header_style_2_0 cs_style_1 header_sticky_style1 ${variant ? variant : ''} cs_sticky_header cs_site_header_full_width ${mobileToggle ? 'cs_mobile_toggle_active' : ''} ${isSticky ? isSticky : ''} ${isContactPage ? 'contact-header' : ''}`,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-ed8d9cd9a426c0ce" + " " + "container-fluid",
+                className: "jsx-61712decf5f7dc62" + " " + `cs_site_header header_style_2 header_style_2_0 cs_style_1 header_sticky_style1 ${variant ? variant : ''} cs_sticky_header cs_site_header_full_width ${mobileToggle ? 'cs_mobile_toggle_active' : ''} ${isSticky ? isSticky : ''} ${isContactPage ? 'contact-header' : ''}`,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-61712decf5f7dc62" + " " + "cs_top_header",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header_in",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header_left",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        className: "cs_site_branding",
-                                        href: "/",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/assets/img/logo/Logo666x172.svg",
-                                            alt: "img",
-                                            width: 213,
-                                            height: 55
+                            className: "jsx-61712decf5f7dc62" + " " + "container-fluid",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-61712decf5f7dc62" + " " + "cs_top_header_in",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-61712decf5f7dc62" + " " + "cs_top_header_left",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "jsx-61712decf5f7dc62" + " " + "cs_header_contact_text",
+                                            children: "Need help? Call us:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
                                             lineNumber: 52,
-                                            columnNumber: 17
+                                            columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
                                         lineNumber: 51,
                                         columnNumber: 13
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                    lineNumber: 50,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-ed8d9cd9a426c0ce" + " " + "cs_main_header_center",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-ed8d9cd9a426c0ce" + " " + `cs_nav cs_primary_font fw-medium ${isContactPage ? 'contact-nav' : ''}`,
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                onClick: ()=>setMobileToggle(!mobileToggle),
-                                                className: "jsx-ed8d9cd9a426c0ce" + " " + ((mobileToggle ? 'cs-munu_toggle cs_teggle_active' : 'cs-munu_toggle') || ""),
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-ed8d9cd9a426c0ce"
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-61712decf5f7dc62" + " " + "cs_top_header_right",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "tel:+1234567890",
+                                            className: "jsx-61712decf5f7dc62" + " " + "cs_header_contact_number",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                    className: "jsx-61712decf5f7dc62" + " " + "bi bi-telephone-fill"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                                    lineNumber: 65,
-                                                    columnNumber: 21
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                                lineNumber: 57,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Header$2f$Nav$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                setMobileToggle: setMobileToggle
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                                lineNumber: 67,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                                    lineNumber: 56,
+                                                    columnNumber: 17
+                                                }, this),
+                                                " +1 (234) 567-890"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                            lineNumber: 55,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                        lineNumber: 56,
-                                        columnNumber: 17
+                                        lineNumber: 54,
+                                        columnNumber: 13
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                    lineNumber: 55,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                lineNumber: 50,
+                                columnNumber: 11
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
                             lineNumber: 49,
-                            columnNumber: 11
+                            columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
                         lineNumber: 48,
-                        columnNumber: 9
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-61712decf5f7dc62" + " " + "cs_main_header",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "jsx-61712decf5f7dc62" + " " + "container-fluid",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-61712decf5f7dc62" + " " + "cs_main_header_in",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-61712decf5f7dc62" + " " + "cs_main_header_left",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            className: "cs_site_branding",
+                                            href: "/",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                src: "/assets/img/logo/Logo666x172.svg",
+                                                alt: "img",
+                                                width: 213,
+                                                height: 55
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                lineNumber: 68,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                            lineNumber: 67,
+                                            columnNumber: 13
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-61712decf5f7dc62" + " " + "cs_main_header_center",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-61712decf5f7dc62" + " " + `cs_nav cs_primary_font fw-medium ${isContactPage ? 'contact-nav' : ''}`,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    onClick: ()=>setMobileToggle(!mobileToggle),
+                                                    className: "jsx-61712decf5f7dc62" + " " + ((mobileToggle ? 'cs-munu_toggle cs_teggle_active' : 'cs-munu_toggle') || ""),
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "jsx-61712decf5f7dc62"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                        lineNumber: 81,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Header$2f$Nav$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    setMobileToggle: setMobileToggle
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                    lineNumber: 83,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                        lineNumber: 71,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                lineNumber: 65,
+                                columnNumber: 11
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                            lineNumber: 64,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                        lineNumber: 63,
+                        columnNumber: 7
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                    lineNumber: 47,
-                    columnNumber: 7
-                }, this)
-            }, void 0, false, {
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/app/Components/Header/Header1.tsx",
                 lineNumber: 40,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-ed8d9cd9a426c0ce" + " " + `search-wrap ${searchToggle ? 'active' : ''}`,
+                className: "jsx-61712decf5f7dc62" + " " + `search-wrap ${searchToggle ? 'active' : ''}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-ed8d9cd9a426c0ce" + " " + "search-inner",
+                    className: "jsx-61712decf5f7dc62" + " " + "search-inner",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                             onClick: ()=>setSearchToggle(!searchToggle),
                             id: "search-close",
-                            className: "jsx-ed8d9cd9a426c0ce" + " " + "bi bi-x-lg search-close"
+                            className: "jsx-61712decf5f7dc62" + " " + "bi bi-x-lg search-close"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                            lineNumber: 77,
+                            lineNumber: 93,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-ed8d9cd9a426c0ce" + " " + "search-cell",
+                            className: "jsx-61712decf5f7dc62" + " " + "search-cell",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                 method: "get",
-                                className: "jsx-ed8d9cd9a426c0ce",
+                                className: "jsx-61712decf5f7dc62",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-ed8d9cd9a426c0ce" + " " + "search-field-holder",
+                                    className: "jsx-61712decf5f7dc62" + " " + "search-field-holder",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "search",
                                         placeholder: "Search...",
-                                        className: "jsx-ed8d9cd9a426c0ce" + " " + "main-search-input"
+                                        className: "jsx-61712decf5f7dc62" + " " + "main-search-input"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 97,
                                         columnNumber: 25
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 96,
                                     columnNumber: 21
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                lineNumber: 79,
+                                lineNumber: 95,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                            lineNumber: 78,
+                            lineNumber: 94,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                    lineNumber: 76,
+                    lineNumber: 92,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                lineNumber: 75,
+                lineNumber: 91,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "ed8d9cd9a426c0ce",
-                children: ".contact-header .cs_nav .cs_nav_list>li>a,.contact-header .cs_nav .cs_nav_list>li>a:hover{color:#000!important}.contact-nav .cs_nav_list .submenu li a{color:var(--header)!important}.contact-header.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{color:#000!important}"
+                id: "61712decf5f7dc62",
+                children: ".cs_top_header{color:#fff;padding:10px 0;font-size:14px}.cs_top_header_in{justify-content:space-between;align-items:center;display:flex}.cs_header_contact_text{color:inherit;font-weight:500}.cs_header_contact_number{color:#fff;align-items:center;gap:8px;font-weight:600;text-decoration:none;transition:opacity .3s;display:flex}.cs_header_contact_number:hover{opacity:.8}.cs_header_contact_number i{font-size:16px}.contact-header .cs_top_header .cs_header_contact_text,.contact-header .cs_top_header .cs_header_contact_number{color:#000}@media (width<=767px){.cs_top_header{padding:8px 0}.cs_header_contact_text{font-size:12px}.cs_header_contact_number{font-size:13px}}.contact-header .cs_nav .cs_nav_list>li>a,.contact-header .cs_nav .cs_nav_list>li>a:hover{color:#000!important}.contact-nav .cs_nav_list .submenu li a{color:var(--header)!important}.contact-header.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{color:#000!important}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
@@ -1008,29 +1073,106 @@ const Footer1 = ()=>{
                         className: "footer-bottom",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "footer-wrapper",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "wow fadeInUp",
-                                "data-wow-delay": ".3s",
-                                children: [
-                                    "Copyright © ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "M-Rtours"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                        lineNumber: 170,
-                                        columnNumber: 41
-                                    }, this),
-                                    " All Rights Reserved."
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                lineNumber: 169,
-                                columnNumber: 25
-                            }, this)
-                        }, void 0, false, {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "wow fadeInUp",
+                                    "data-wow-delay": ".3s",
+                                    children: [
+                                        "Copyright © ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: "M-Rtours"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                            lineNumber: 170,
+                                            columnNumber: 25
+                                        }, this),
+                                        " All Rights Reserved."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                    lineNumber: 169,
+                                    columnNumber: 9
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "footer-links",
+                                    style: {
+                                        color: 'white',
+                                        display: 'flex',
+                                        gap: '15px',
+                                        alignItems: 'center'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.trustpilot.com/review/m-rtours.co.uk",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            style: {
+                                                padding: '8px 16px',
+                                                // backgroundColor: '#00b67a',
+                                                color: 'white',
+                                                textDecoration: 'none',
+                                                borderRadius: '4px',
+                                                transition: 'opacity 0.3s'
+                                            },
+                                            onMouseEnter: (e)=>e.currentTarget.style.opacity = '0.8',
+                                            onMouseLeave: (e)=>e.currentTarget.style.opacity = '1',
+                                            children: "Trustpilot"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                            lineNumber: 173,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.google.com/search?q=m-rtours+reviews",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            style: {
+                                                padding: '8px 16px',
+                                                // backgroundColor: '#4285f4',
+                                                color: 'white',
+                                                textDecoration: 'none',
+                                                borderRadius: '4px',
+                                                transition: 'opacity 0.3s'
+                                            },
+                                            onMouseEnter: (e)=>e.currentTarget.style.opacity = '0.8',
+                                            onMouseLeave: (e)=>e.currentTarget.style.opacity = '1',
+                                            children: "Google Review"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                            lineNumber: 190,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.iata.org/",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            style: {
+                                                padding: '8px 16px',
+                                                // backgroundColor: '#003b5c',
+                                                color: 'white',
+                                                textDecoration: 'none',
+                                                borderRadius: '4px',
+                                                transition: 'opacity 0.3s'
+                                            },
+                                            onMouseEnter: (e)=>e.currentTarget.style.opacity = '0.8',
+                                            onMouseLeave: (e)=>e.currentTarget.style.opacity = '1',
+                                            children: "IATA"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                            lineNumber: 207,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                    lineNumber: 172,
+                                    columnNumber: 9
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
                             lineNumber: 168,
-                            columnNumber: 21
+                            columnNumber: 5
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",

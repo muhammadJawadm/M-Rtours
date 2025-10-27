@@ -24,7 +24,7 @@ const page = () => {
             <HeroBanner3></HeroBanner3>
             {/* <Form1></Form1> */}
             <Destination3></Destination3>
-            <FilteredUmrahPackages starRating={3}></FilteredUmrahPackages>
+            <FilteredUmrahPackages starRating="3 Star"></FilteredUmrahPackages>
             <About3></About3>
             {/* <DealOffers2></DealOffers2> */}
             {/* <Brand2></Brand2> */}
@@ -32,10 +32,10 @@ const page = () => {
             {/* <Counter2></Counter2> */}
 
             {/* <UmrahPackages></UmrahPackages> */}
-            
-            <FilteredUmrahPackages starRating={4}></FilteredUmrahPackages>
+
+            <FilteredUmrahPackages starRating="4 Star"></FilteredUmrahPackages>
             <Testimonial3></Testimonial3>
-            <FilteredUmrahPackages starRating={5}></FilteredUmrahPackages>
+            {/* <FilteredUmrahPackages starRating="5 Star"></FilteredUmrahPackages> */}
             <br />
             <Counter3></Counter3>
             <br />

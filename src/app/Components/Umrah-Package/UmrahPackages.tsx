@@ -7,27 +7,27 @@ import Image from 'next/image';
 
 interface Package {
     id: string;
-    package_name: string;
-    duration_nights: number;
-    makkah_nights: number;
-    madinah_nights: number;
-    star_rating: number;
-    price_per_person: number;
-    currency: string;
-    description: string;
-    package_inclusions: string[];
-    hotel_details: {
-        makkah_hotel: string;
-        madinah_hotel: string;
-    };
-    notes: string[];
+    "Package Name": string;
+    "Duration (Nights)": number;
+    "Makkah Nights": number;
+    "Madinah Nights": number;
+    "Star Rating": string;
+    "Price (£)": number;
+    "Makkah Hotel": string;
+    "Madinah Hotel": string;
+    "Month": string;
+    "Includes": string;
     image?: string;
+    currency: string;
 }
 
 const UmrahPackages: React.FC = () => {
     const router = useRouter();
     const [packages, setPackages] = useState<Package[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
+    const [selectedMonth, setSelectedMonth] = useState<string>('all');
+    const [selectedRating, setSelectedRating] = useState<string>('all');
+    const [selectedNights, setSelectedNights] = useState<string>('all');
 
     useEffect(() => {
         const fetchPackages = async () => {
@@ -59,24 +59,115 @@ const UmrahPackages: React.FC = () => {
         console.log("Navigating to UmrahDetail with ID:", id);
     };
 
+    // Get unique months and ratings for filters
+    const uniqueMonths = Array.from(new Set(packages.map(pkg => pkg.Month))).sort();
+    const uniqueRatings = Array.from(new Set(packages.map(pkg => pkg["Star Rating"]))).sort();
+    const uniqueNights = Array.from(new Set(packages.map(pkg => pkg["Duration (Nights)"]))).sort();
+
+    // Filter packages based on selected filters
+    const filteredPackages = packages.filter(pkg => {
+        const monthMatch = selectedMonth === 'all' || pkg.Month === selectedMonth;
+        const ratingMatch = selectedRating === 'all' || pkg["Star Rating"] === selectedRating;
+        const nightsMatch = selectedNights === 'all' || pkg["Duration (Nights)"] === Number(selectedNights);
+
+        return monthMatch && ratingMatch && nightsMatch ;
+    });
+
     // Group packages by star rating and sort
-    const groupedPackages = packages.reduce((acc, pkg) => {
-        const rating = pkg.star_rating;
+    const groupedPackages = filteredPackages.reduce((acc, pkg) => {
+        const rating = pkg["Star Rating"];
         if (!acc[rating]) {
             acc[rating] = [];
         }
         acc[rating].push(pkg);
         return acc;
-    }, {} as Record<number, Package[]>);
+    }, {} as Record<string, Package[]>);
 
-    // Sort star ratings in ascending order (3, 4, 5)
-    const sortedRatings = Object.keys(groupedPackages)
-        .map(Number)
-        .sort((a, b) => a - b);
+    // Sort star ratings in ascending order (3 Star, 4 Star, 5 Star)
+    const sortedRatings = Object.keys(groupedPackages).sort();
 
     return (
         <section className="umrah-packages-section section-padding">
             <div className="container">
+                {/* Filters Section */}
+                <div className="filters-container">
+                    
+                        <button 
+                            className="clear-filters-btn"
+                            onClick={() => {
+                                setSelectedMonth('all');
+                                setSelectedRating('all');
+                                setSelectedNights('all');
+                            }}
+                        >
+                            All
+                        </button>
+                    
+                    <div className="filter-group">
+                        <label htmlFor="month-filter" className="filter-label">
+                            <svg className="filter-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            Month
+                        </label>
+                        <select 
+                            id="month-filter"
+                            className="filter-select"
+                            value={selectedMonth}
+                            onChange={(e) => setSelectedMonth(e.target.value)}
+                        >
+                            <option value="all">All Months</option>
+                            {uniqueMonths.map(month => (
+                                <option key={month} value={month}>{month}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <div className="filter-group">
+                        <label htmlFor="rating-filter" className="filter-label">
+                            <svg className="filter-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Nights
+                        </label>
+                        <select 
+                            id="nights-filter"
+                            className="filter-select"
+                            value={selectedNights}
+                            onChange={(e) => setSelectedNights(e.target.value)}
+                        >
+                            <option value="all">All Nights</option>
+                            {uniqueNights.map(night => (
+                                <option key={night} value={night}>{night}</option>
+                            ))}
+                        </select>
+                    </div>
+                    <div className="filter-group">
+                        <label htmlFor="rating-filter" className="filter-label">
+                            <svg className="filter-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            
+                        </label>
+                        <select 
+                            id="rating-filter"
+                            className="filter-select"
+                            value={selectedRating}
+                            onChange={(e) => setSelectedRating(e.target.value)}
+                        >
+                            <option value="all">All Ratings</option>
+                            {uniqueRatings.map(rating => (
+                                <option key={rating} value={rating}>{rating}</option>
+                            ))}
+                        </select>
+                    </div>
+
+
+                </div>
+
                 {loading ? (
                     <div className="text-center py-5">
                         <div className="spinner-border text-primary" role="status">
@@ -84,13 +175,13 @@ const UmrahPackages: React.FC = () => {
                         </div>
                         <p className="mt-3">Loading packages...</p>
                     </div>
-                ) : packages.length > 0 ? (
+                ) : filteredPackages.length > 0 ? (
                     <>
                         {sortedRatings.map((rating) => (
                             <div key={rating} className="rating-group">
                                 <div className="section-title-area text-center mb-5">
                                     <h2 className="section-title wow fadeInUp">
-                                        {rating} Star Umrah Packages
+                                        {rating} Umrah Packages
                                     </h2>
                                 </div>
 
@@ -100,53 +191,64 @@ const UmrahPackages: React.FC = () => {
                                             <div className="package-card">
                                                 <div className="package-image-wrapper">
                                                     <Image 
-                                                        src={pkg.image}
-                                                        alt={pkg.package_name}
+                                                        src={pkg.image || '/assets/img/Umrah/Umrah page 4.png'}
+                                                        alt={pkg["Package Name"]}
                                                         width={400}
                                                         height={250}
                                                         className="package-image"
                                                         priority={false}
                                                         unoptimized
                                                     />
-                                                    <span className="package-duration">{pkg.duration_nights} NIGHTS</span>
-                                                    <span className="package-star-rating">{pkg.star_rating} ⭐</span>
+                                                    <span className="package-duration">{pkg["Duration (Nights)"]} NIGHTS</span>
+                                                    <span className="package-month-badge">{pkg.Month}</span>
                                                 </div>
                                                 
                                                 <div className="package-content">
-                                                    <h3 className="package-title">{pkg.package_name}</h3>
-                                                    <p className="package-description">{pkg.description}</p>
+                                                    <div className="package-header">
+                                                        <h3 className="package-title">{pkg["Package Name"]}</h3>
+                                                        <span className="package-star-rating">{pkg["Star Rating"]}</span>
+                                                    </div>
                                                     
-                                                    <div className="package-locations">
-                                                        <div className="location-item">
-                                                            <svg className="location-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                                                <circle cx="12" cy="10" r="3"></circle>
+                                                    <div className="package-hotels">
+                                                        <div className="hotel-item">
+                                                            <svg className="hotel-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                                             </svg>
-                                                            <span>Makkah {pkg.makkah_nights} Nights</span>
+                                                            <div className="hotel-info">
+                                                                <span className="hotel-label">Makkah ({pkg["Makkah Nights"]} Nights)</span>
+                                                                <span className="hotel-name">{pkg["Makkah Hotel"]}</span>
+                                                            </div>
                                                         </div>
-                                                        <div className="location-item">
-                                                            <svg className="location-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                                                <circle cx="12" cy="10" r="3"></circle>
+                                                        <div className="hotel-item">
+                                                            <svg className="hotel-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                                             </svg>
-                                                            <span>Madinah {pkg.madinah_nights} Nights</span>
+                                                            <div className="hotel-info">
+                                                                <span className="hotel-label">Madinah ({pkg["Madinah Nights"]} Nights)</span>
+                                                                <span className="hotel-name">{pkg["Madinah Hotel"]}</span>
+                                                            </div>
                                                         </div>
                                                     </div>
 
                                                     <div className="package-includes">
-                                                        {pkg.package_inclusions.slice(0, 4).map((inclusion, idx) => (
-                                                            <div key={idx} className="include-item">
-                                                                <svg className="include-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                                </svg>
-                                                                <span>{inclusion.split(':')[0]}</span>
-                                                            </div>
-                                                        ))}
-                                                    </div>
+                                                        <h4 className="includes-title">Package Includes:</h4>
+                                                        <div className="includes-list">
+                                                            {pkg.Includes.split(',').map((inclusion, idx) => (
+                                                                <div key={idx} className="include-item">
+                                                                    <svg className="include-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                                                    </svg>
+                                                                    <span>{inclusion}</span>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    </div> 
 
                                                     <div className="package-footer">
                                                         <div className="package-price">
-                                                            <span className="price-amount">{pkg.currency}{pkg.price_per_person.toLocaleString()}</span>
+                                                            <span className="price-amount">{pkg.currency}{pkg["Price (£)"]}</span>
                                                             <span className="price-unit">/person</span>
                                                         </div>
                                                         <button 
@@ -166,7 +268,7 @@ const UmrahPackages: React.FC = () => {
                     </>
                 ) : (
                     <div className="text-center py-5">
-                        <p>No packages available at the moment.</p>
+                        <p>No packages available for the selected filters.</p>
                     </div>
                 )}
             </div>
@@ -176,6 +278,71 @@ const UmrahPackages: React.FC = () => {
                     background-color: #f8f9fa;
                     padding: 80px 0;
                     width: 100%;
+                }
+
+                .filters-container {
+                    display: flex;
+                    gap: 20px;
+                    margin-bottom: 50px;
+                    padding: 30px;
+                    background: white;
+                    border-radius: 12px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+                }
+
+                .filter-group {
+                    flex: 1;
+                    min-width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                .filter-label {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-weight: 600;
+                    color: #1a1a1a;
+                    font-size: 0.95rem;
+                }
+
+                .filter-icon {
+                    color: #28AAE2;
+                }
+
+                .filter-select {
+                    padding: 12px 16px;
+                    border: 2px solid #e5e7eb;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    color: #1a1a1a;
+                    background: white;
+                    cursor: pointer;
+                    transition: border-color 0.3s ease;
+                }
+
+                .filter-select:focus {
+                    outline: none;
+                    border-color: #28AAE2;
+                }
+
+                .clear-filters-btn {
+                    padding: 12px 24px;
+                    background-color: #f3f4f6;
+                    color: #4a5568;
+                    border: none;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    height: fit-content;
+                }
+
+                .clear-filters-btn:hover {
+                    background-color: #e5e7eb;
                 }
 
                 .rating-group {
@@ -232,76 +399,122 @@ const UmrahPackages: React.FC = () => {
                     color: #1a1a1a;
                 }
 
-                .package-star-rating {
+                .package-month-badge {
                     position: absolute;
                     top: 20px;
                     left: 20px;
-                    background: white;
+                    background: #28AAE2;
+                    color: white;
                     padding: 8px 16px;
                     border-radius: 25px;
                     font-weight: 600;
                     font-size: 0.875rem;
-                    color: #1a1a1a;
-                }
-
-                .package-description {
-                    font-size: 0.9rem;
-                    color: #666;
-                    margin-bottom: 20px;
-                    line-height: 1.5;
                 }
 
                 .package-content {
                     padding: 25px;
                 }
 
+                .package-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-bottom: 20px;
+                    gap: 15px;
+                }
+
                 .package-title {
-                    font-size: 1.375rem;
+                    font-size: 1.25rem;
                     font-weight: 700;
                     color: #1a1a1a;
-                    margin-bottom: 15px;
+                    flex: 1;
+                    line-height: 1.3;
                 }
 
-                .package-locations {
+                .package-star-rating {
+                    background: #fef3c7;
+                    color: #92400e;
+                    padding: 6px 12px;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    white-space: nowrap;
+                }
+
+                .package-hotels {
                     display: flex;
-                    gap: 20px;
+                    flex-direction: column;
+                    gap: 15px;
                     margin-bottom: 20px;
-                    flex-wrap: wrap;
+                    padding: 20px;
+                    background: #f8f9fa;
+                    border-radius: 8px;
                 }
 
-                .location-item {
+                .hotel-item {
                     display: flex;
-                    align-items: center;
-                    gap: 8px;
-                    color: #666;
-                    font-size: 0.9rem;
+                    gap: 12px;
+                    align-items: flex-start;
                 }
 
-                .location-icon {
-                    color: #4a5568;
+                .hotel-icon {
+                    color: #28AAE2;
+                    flex-shrink: 0;
+                    margin-top: 2px;
+                }
+
+                .hotel-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+
+                .hotel-label {
+                    font-size: 0.8rem;
+                    color: #666;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+
+                .hotel-name {
+                    font-size: 0.95rem;
+                    color: #1a1a1a;
+                    font-weight: 500;
                 }
 
                 .package-includes {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 15px;
                     margin-bottom: 25px;
-                    padding: 20px 0;
-                    border-top: 1px solid #e5e7eb;
+                    padding-bottom: 25px;
                     border-bottom: 1px solid #e5e7eb;
+                }
+
+                .includes-title {
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    color: #1a1a1a;
+                    margin-bottom: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+
+                .includes-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
                 }
 
                 .include-item {
                     display: flex;
                     align-items: center;
-                    gap: 6px;
+                    gap: 8px;
                     color: #4a5568;
                     font-size: 0.9rem;
-                    font-weight: 500;
                 }
 
                 .include-icon {
-                    color: #2563eb;
+                    color: #28AAE2;
+                    flex-shrink: 0;
                 }
 
                 .package-footer {
@@ -344,16 +557,29 @@ const UmrahPackages: React.FC = () => {
                 }
 
                 @media (max-width: 768px) {
+                    .filters-container {
+                        flex-direction: column;
+                        padding: 20px;
+                    }
+
+                    .filter-group {
+                        min-width: 100%;
+                    }
+
                     .section-title {
                         font-size: 2rem;
                     }
 
                     .package-title {
-                        font-size: 1.25rem;
+                        font-size: 1.1rem;
                     }
 
                     .price-amount {
                         font-size: 1.5rem;
+                    }
+
+                    .package-card {
+                        margin-left: 0;
                     }
                 }
             `}</style>

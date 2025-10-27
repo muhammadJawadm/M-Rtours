@@ -13,7 +13,7 @@ export default function Header1({ variant } : any ) {
   const pathname = usePathname();
   
   // Check if current page is contact page
-  const isContactPage = pathname === '/about';
+  const isContactPage = pathname === '/about'|| pathname === '/Umrah-packages';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,6 +44,22 @@ export default function Header1({ variant } : any ) {
         mobileToggle ? 'cs_mobile_toggle_active' : ''
       } ${isSticky ? isSticky : ''} ${isContactPage ? 'contact-header' : ''}`}
     >
+      {/* Top Contact Bar */}
+      <div className="cs_top_header">
+        <div className="container-fluid">
+          <div className="cs_top_header_in">
+            <div className="cs_top_header_left">
+              <span className="cs_header_contact_text">Need help? Call us:</span>
+            </div>
+            <div className="cs_top_header_right">
+              <a href="tel:+1234567890" className="cs_header_contact_number">
+                <i className="bi bi-telephone-fill"></i> +1 (234) 567-890
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="cs_main_header">
         <div className="container-fluid">
           <div className="cs_main_header_in">
@@ -85,8 +101,66 @@ export default function Header1({ variant } : any ) {
         </div>
     </div>
 
-    {/* Add custom CSS for contact page header */}
+    {/* Add custom CSS for contact page header and top bar */}
     <style jsx global>{`
+      /* Top Header Bar Styles */
+      .cs_top_header {
+        padding: 10px 0;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      .cs_top_header_in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .cs_header_contact_text {
+        color: inherit;
+        font-weight: 500;
+      }
+
+      .cs_header_contact_number {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: opacity 0.3s ease;
+      }
+
+      .cs_header_contact_number:hover {
+        opacity: 0.8;
+      }
+
+      .cs_header_contact_number i {
+        font-size: 16px;
+      }
+
+      /* Contact page styling for top bar */
+      .contact-header .cs_top_header .cs_header_contact_text,
+      .contact-header .cs_top_header .cs_header_contact_number {
+        color: #000;
+      }
+
+      /* Hide top bar on mobile */
+      @media (max-width: 767px) {
+        .cs_top_header {
+          padding: 8px 0;
+        }
+        
+        .cs_header_contact_text {
+          font-size: 12px;
+        }
+
+        .cs_header_contact_number {
+          font-size: 13px;
+        }
+      }
+
+      /* Contact Page Header Styles */
       .contact-header .cs_nav .cs_nav_list > li > a {
         color: #000 !important;
       }
@@ -95,7 +169,6 @@ export default function Header1({ variant } : any ) {
         color: #000 !important;
       }
 
-      /* Only black for contact page, other pages remain as they were */
       .contact-nav .cs_nav_list .submenu li a {
         color: var(--header) !important;
       }

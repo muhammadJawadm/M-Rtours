@@ -631,6 +631,8 @@ const UmrahPackages = ()=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const [packages, setPackages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [selectedMonth, setSelectedMonth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('all');
+    const [selectedRating, setSelectedRating] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('all');
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const fetchPackages = async ()=>{
             try {
@@ -656,408 +658,673 @@ const UmrahPackages = ()=>{
         router.push(`/UmrahDetail/${id}`);
         console.log("Navigating to UmrahDetail with ID:", id);
     };
+    // Get unique months and ratings for filters
+    const uniqueMonths = Array.from(new Set(packages.map((pkg)=>pkg.Month))).sort();
+    const uniqueRatings = Array.from(new Set(packages.map((pkg)=>pkg["Star Rating"]))).sort();
+    // Filter packages based on selected filters
+    const filteredPackages = packages.filter((pkg)=>{
+        const monthMatch = selectedMonth === 'all' || pkg.Month === selectedMonth;
+        const ratingMatch = selectedRating === 'all' || pkg["Star Rating"] === selectedRating;
+        return monthMatch && ratingMatch;
+    });
     // Group packages by star rating and sort
-    const groupedPackages = packages.reduce((acc, pkg)=>{
-        const rating = pkg.star_rating;
+    const groupedPackages = filteredPackages.reduce((acc, pkg)=>{
+        const rating = pkg["Star Rating"];
         if (!acc[rating]) {
             acc[rating] = [];
         }
         acc[rating].push(pkg);
         return acc;
     }, {});
-    // Sort star ratings in ascending order (3, 4, 5)
-    const sortedRatings = Object.keys(groupedPackages).map(Number).sort((a, b)=>a - b);
+    // Sort star ratings in ascending order (3 Star, 4 Star, 5 Star)
+    const sortedRatings = Object.keys(groupedPackages).sort();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "jsx-567b750e56d1b593" + " " + "umrah-packages-section section-padding",
+        className: "jsx-66db96b3d94b1058" + " " + "umrah-packages-section section-padding",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-567b750e56d1b593" + " " + "container",
-                children: loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-567b750e56d1b593" + " " + "text-center py-5",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            role: "status",
-                            className: "jsx-567b750e56d1b593" + " " + "spinner-border text-primary",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "jsx-567b750e56d1b593" + " " + "visually-hidden",
-                                children: "Loading..."
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                lineNumber: 83,
-                                columnNumber: 29
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                            lineNumber: 82,
-                            columnNumber: 25
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "jsx-567b750e56d1b593" + " " + "mt-3",
-                            children: "Loading packages..."
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                            lineNumber: 85,
-                            columnNumber: 25
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                    lineNumber: 81,
-                    columnNumber: 21
-                }, this) : packages.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                    children: sortedRatings.map((rating)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-567b750e56d1b593" + " " + "rating-group",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-567b750e56d1b593" + " " + "section-title-area text-center mb-5",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "jsx-567b750e56d1b593" + " " + "section-title wow fadeInUp",
+                className: "jsx-66db96b3d94b1058" + " " + "container",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-66db96b3d94b1058" + " " + "filters-container",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-66db96b3d94b1058" + " " + "filter-group",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "month-filter",
+                                        className: "jsx-66db96b3d94b1058" + " " + "filter-label",
                                         children: [
-                                            rating,
-                                            " Star Umrah Packages"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                        lineNumber: 92,
-                                        columnNumber: 37
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                    lineNumber: 91,
-                                    columnNumber: 33
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-567b750e56d1b593" + " " + "row g-4 mb-5",
-                                    children: groupedPackages[rating].map((pkg)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-567b750e56d1b593" + " " + "col-xl-4 col-lg-6 col-md-6",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-567b750e56d1b593" + " " + "package-card",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                width: "20",
+                                                height: "20",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                strokeWidth: "2",
+                                                className: "jsx-66db96b3d94b1058" + " " + "filter-icon",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-567b750e56d1b593" + " " + "package-image-wrapper",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: pkg.image,
-                                                                alt: pkg.package_name,
-                                                                width: 400,
-                                                                height: 250,
-                                                                className: "package-image",
-                                                                priority: false,
-                                                                unoptimized: true
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 102,
-                                                                columnNumber: 53
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-567b750e56d1b593" + " " + "package-duration",
-                                                                children: [
-                                                                    pkg.duration_nights,
-                                                                    " NIGHTS"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 111,
-                                                                columnNumber: 53
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "jsx-567b750e56d1b593" + " " + "package-star-rating",
-                                                                children: [
-                                                                    pkg.star_rating,
-                                                                    " ⭐"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 112,
-                                                                columnNumber: 53
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                                        x: "3",
+                                                        y: "4",
+                                                        width: "18",
+                                                        height: "18",
+                                                        rx: "2",
+                                                        ry: "2",
+                                                        className: "jsx-66db96b3d94b1058"
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                        lineNumber: 101,
-                                                        columnNumber: 49
+                                                        lineNumber: 93,
+                                                        columnNumber: 33
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-567b750e56d1b593" + " " + "package-content",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: "jsx-567b750e56d1b593" + " " + "package-title",
-                                                                children: pkg.package_name
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 116,
-                                                                columnNumber: 53
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "jsx-567b750e56d1b593" + " " + "package-description",
-                                                                children: pkg.description
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 117,
-                                                                columnNumber: 53
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "jsx-567b750e56d1b593" + " " + "package-locations",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "jsx-567b750e56d1b593" + " " + "location-item",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                                                width: "20",
-                                                                                height: "20",
-                                                                                viewBox: "0 0 24 24",
-                                                                                fill: "none",
-                                                                                stroke: "currentColor",
-                                                                                strokeWidth: "2",
-                                                                                className: "jsx-567b750e56d1b593" + " " + "location-icon",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                                        d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z",
-                                                                                        className: "jsx-567b750e56d1b593"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                        lineNumber: 122,
-                                                                                        columnNumber: 65
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                                                                        cx: "12",
-                                                                                        cy: "10",
-                                                                                        r: "3",
-                                                                                        className: "jsx-567b750e56d1b593"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                        lineNumber: 123,
-                                                                                        columnNumber: 65
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 121,
-                                                                                columnNumber: 61
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "jsx-567b750e56d1b593",
-                                                                                children: [
-                                                                                    "Makkah ",
-                                                                                    pkg.makkah_nights,
-                                                                                    " Nights"
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 125,
-                                                                                columnNumber: 61
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                        lineNumber: 120,
-                                                                        columnNumber: 57
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "jsx-567b750e56d1b593" + " " + "location-item",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                                                width: "20",
-                                                                                height: "20",
-                                                                                viewBox: "0 0 24 24",
-                                                                                fill: "none",
-                                                                                stroke: "currentColor",
-                                                                                strokeWidth: "2",
-                                                                                className: "jsx-567b750e56d1b593" + " " + "location-icon",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                                        d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z",
-                                                                                        className: "jsx-567b750e56d1b593"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                        lineNumber: 129,
-                                                                                        columnNumber: 65
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                                                                        cx: "12",
-                                                                                        cy: "10",
-                                                                                        r: "3",
-                                                                                        className: "jsx-567b750e56d1b593"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                        lineNumber: 130,
-                                                                                        columnNumber: 65
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 128,
-                                                                                columnNumber: 61
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "jsx-567b750e56d1b593",
-                                                                                children: [
-                                                                                    "Madinah ",
-                                                                                    pkg.madinah_nights,
-                                                                                    " Nights"
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 132,
-                                                                                columnNumber: 61
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                        lineNumber: 127,
-                                                                        columnNumber: 57
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 119,
-                                                                columnNumber: 53
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "jsx-567b750e56d1b593" + " " + "package-includes",
-                                                                children: pkg.package_inclusions.slice(0, 4).map((inclusion, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "jsx-567b750e56d1b593" + " " + "include-item",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                                                width: "16",
-                                                                                height: "16",
-                                                                                viewBox: "0 0 24 24",
-                                                                                fill: "currentColor",
-                                                                                className: "jsx-567b750e56d1b593" + " " + "include-icon",
-                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                                    d: "M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
-                                                                                    className: "jsx-567b750e56d1b593"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                    lineNumber: 140,
-                                                                                    columnNumber: 69
-                                                                                }, this)
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 139,
-                                                                                columnNumber: 65
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "jsx-567b750e56d1b593",
-                                                                                children: inclusion.split(':')[0]
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 142,
-                                                                                columnNumber: 65
-                                                                            }, this)
-                                                                        ]
-                                                                    }, idx, true, {
-                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                        lineNumber: 138,
-                                                                        columnNumber: 61
-                                                                    }, this))
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 136,
-                                                                columnNumber: 53
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "jsx-567b750e56d1b593" + " " + "package-footer",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "jsx-567b750e56d1b593" + " " + "package-price",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "jsx-567b750e56d1b593" + " " + "price-amount",
-                                                                                children: [
-                                                                                    pkg.currency,
-                                                                                    pkg.price_per_person.toLocaleString()
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 149,
-                                                                                columnNumber: 61
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "jsx-567b750e56d1b593" + " " + "price-unit",
-                                                                                children: "/person"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                                lineNumber: 150,
-                                                                                columnNumber: 61
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                        lineNumber: 148,
-                                                                        columnNumber: 57
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        onClick: ()=>handleViewDetails(pkg.id),
-                                                                        className: "jsx-567b750e56d1b593" + " " + "view-details-btn",
-                                                                        children: "View Details"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                        lineNumber: 152,
-                                                                        columnNumber: 57
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                                lineNumber: 147,
-                                                                columnNumber: 53
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                                        x1: "16",
+                                                        y1: "2",
+                                                        x2: "16",
+                                                        y2: "6",
+                                                        className: "jsx-66db96b3d94b1058"
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                        lineNumber: 115,
-                                                        columnNumber: 49
+                                                        lineNumber: 94,
+                                                        columnNumber: 33
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                                        x1: "8",
+                                                        y1: "2",
+                                                        x2: "8",
+                                                        y2: "6",
+                                                        className: "jsx-66db96b3d94b1058"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                        lineNumber: 95,
+                                                        columnNumber: 33
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                                        x1: "3",
+                                                        y1: "10",
+                                                        x2: "21",
+                                                        y2: "10",
+                                                        className: "jsx-66db96b3d94b1058"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                        lineNumber: 96,
+                                                        columnNumber: 33
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                                lineNumber: 100,
-                                                columnNumber: 45
-                                            }, this)
-                                        }, pkg.id, false, {
-                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                            lineNumber: 99,
-                                            columnNumber: 41
-                                        }, this))
+                                                lineNumber: 92,
+                                                columnNumber: 29
+                                            }, this),
+                                            "Month"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                        lineNumber: 91,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                        id: "month-filter",
+                                        value: selectedMonth,
+                                        onChange: (e)=>setSelectedMonth(e.target.value),
+                                        className: "jsx-66db96b3d94b1058" + " " + "filter-select",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "all",
+                                                className: "jsx-66db96b3d94b1058",
+                                                children: "All Months"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                lineNumber: 106,
+                                                columnNumber: 29
+                                            }, this),
+                                            uniqueMonths.map((month)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: month,
+                                                    className: "jsx-66db96b3d94b1058",
+                                                    children: month
+                                                }, month, false, {
+                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                    lineNumber: 108,
+                                                    columnNumber: 33
+                                                }, this))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                        lineNumber: 100,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                lineNumber: 90,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-66db96b3d94b1058" + " " + "filter-group",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "rating-filter",
+                                        className: "jsx-66db96b3d94b1058" + " " + "filter-label",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                width: "20",
+                                                height: "20",
+                                                viewBox: "0 0 24 24",
+                                                fill: "currentColor",
+                                                className: "jsx-66db96b3d94b1058" + " " + "filter-icon",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    d: "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z",
+                                                    className: "jsx-66db96b3d94b1058"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                    lineNumber: 116,
+                                                    columnNumber: 33
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                lineNumber: 115,
+                                                columnNumber: 29
+                                            }, this),
+                                            "Rating"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                        lineNumber: 114,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                        id: "rating-filter",
+                                        value: selectedRating,
+                                        onChange: (e)=>setSelectedRating(e.target.value),
+                                        className: "jsx-66db96b3d94b1058" + " " + "filter-select",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "all",
+                                                className: "jsx-66db96b3d94b1058",
+                                                children: "All Ratings"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                lineNumber: 126,
+                                                columnNumber: 29
+                                            }, this),
+                                            uniqueRatings.map((rating)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: rating,
+                                                    className: "jsx-66db96b3d94b1058",
+                                                    children: rating
+                                                }, rating, false, {
+                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                    lineNumber: 128,
+                                                    columnNumber: 33
+                                                }, this))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                        lineNumber: 120,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                lineNumber: 113,
+                                columnNumber: 21
+                            }, this),
+                            (selectedMonth !== 'all' || selectedRating !== 'all') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>{
+                                    setSelectedMonth('all');
+                                    setSelectedRating('all');
+                                },
+                                className: "jsx-66db96b3d94b1058" + " " + "clear-filters-btn",
+                                children: "Clear Filters"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                lineNumber: 134,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                        lineNumber: 89,
+                        columnNumber: 17
+                    }, this),
+                    loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-66db96b3d94b1058" + " " + "text-center py-5",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                role: "status",
+                                className: "jsx-66db96b3d94b1058" + " " + "spinner-border text-primary",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "jsx-66db96b3d94b1058" + " " + "visually-hidden",
+                                    children: "Loading..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                                    lineNumber: 97,
-                                    columnNumber: 33
+                                    lineNumber: 149,
+                                    columnNumber: 29
                                 }, this)
-                            ]
-                        }, rating, true, {
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                lineNumber: 148,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "jsx-66db96b3d94b1058" + " " + "mt-3",
+                                children: "Loading packages..."
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                lineNumber: 151,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                        lineNumber: 147,
+                        columnNumber: 21
+                    }, this) : filteredPackages.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                        children: sortedRatings.map((rating)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-66db96b3d94b1058" + " " + "rating-group",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-66db96b3d94b1058" + " " + "section-title-area text-center mb-5",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "jsx-66db96b3d94b1058" + " " + "section-title wow fadeInUp",
+                                            children: [
+                                                rating,
+                                                " Umrah Packages"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                            lineNumber: 158,
+                                            columnNumber: 37
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                        lineNumber: 157,
+                                        columnNumber: 33
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-66db96b3d94b1058" + " " + "row g-4 mb-5",
+                                        children: groupedPackages[rating].map((pkg)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-66db96b3d94b1058" + " " + "col-xl-4 col-lg-6 col-md-6",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "jsx-66db96b3d94b1058" + " " + "package-card",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "jsx-66db96b3d94b1058" + " " + "package-image-wrapper",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                    src: pkg.image || '/assets/img/Umrah/Umrah page 4.png',
+                                                                    alt: pkg["Package Name"],
+                                                                    width: 400,
+                                                                    height: 250,
+                                                                    className: "package-image",
+                                                                    priority: false,
+                                                                    unoptimized: true
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                    lineNumber: 168,
+                                                                    columnNumber: 53
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "jsx-66db96b3d94b1058" + " " + "package-duration",
+                                                                    children: [
+                                                                        pkg["Duration (Nights)"],
+                                                                        " NIGHTS"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                    lineNumber: 177,
+                                                                    columnNumber: 53
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "jsx-66db96b3d94b1058" + " " + "package-month-badge",
+                                                                    children: pkg.Month
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                    lineNumber: 178,
+                                                                    columnNumber: 53
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                            lineNumber: 167,
+                                                            columnNumber: 49
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "jsx-66db96b3d94b1058" + " " + "package-content",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "jsx-66db96b3d94b1058" + " " + "package-header",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "package-title",
+                                                                            children: pkg["Package Name"]
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 183,
+                                                                            columnNumber: 57
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "package-star-rating",
+                                                                            children: pkg["Star Rating"]
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 184,
+                                                                            columnNumber: 57
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                    lineNumber: 182,
+                                                                    columnNumber: 53
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "jsx-66db96b3d94b1058" + " " + "package-hotels",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "hotel-item",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                    width: "18",
+                                                                                    height: "18",
+                                                                                    viewBox: "0 0 24 24",
+                                                                                    fill: "none",
+                                                                                    stroke: "currentColor",
+                                                                                    strokeWidth: "2",
+                                                                                    className: "jsx-66db96b3d94b1058" + " " + "hotel-icon",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                            d: "M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+                                                                                            className: "jsx-66db96b3d94b1058"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 190,
+                                                                                            columnNumber: 65
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
+                                                                                            points: "9 22 9 12 15 12 15 22",
+                                                                                            className: "jsx-66db96b3d94b1058"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 191,
+                                                                                            columnNumber: 65
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                    lineNumber: 189,
+                                                                                    columnNumber: 61
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    className: "jsx-66db96b3d94b1058" + " " + "hotel-info",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            className: "jsx-66db96b3d94b1058" + " " + "hotel-label",
+                                                                                            children: [
+                                                                                                "Makkah (",
+                                                                                                pkg["Makkah Nights"],
+                                                                                                " Nights)"
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 194,
+                                                                                            columnNumber: 65
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            className: "jsx-66db96b3d94b1058" + " " + "hotel-name",
+                                                                                            children: pkg["Makkah Hotel"]
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 195,
+                                                                                            columnNumber: 65
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                    lineNumber: 193,
+                                                                                    columnNumber: 61
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 188,
+                                                                            columnNumber: 57
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "hotel-item",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                    width: "18",
+                                                                                    height: "18",
+                                                                                    viewBox: "0 0 24 24",
+                                                                                    fill: "none",
+                                                                                    stroke: "currentColor",
+                                                                                    strokeWidth: "2",
+                                                                                    className: "jsx-66db96b3d94b1058" + " " + "hotel-icon",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                            d: "M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+                                                                                            className: "jsx-66db96b3d94b1058"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 200,
+                                                                                            columnNumber: 65
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
+                                                                                            points: "9 22 9 12 15 12 15 22",
+                                                                                            className: "jsx-66db96b3d94b1058"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 201,
+                                                                                            columnNumber: 65
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                    lineNumber: 199,
+                                                                                    columnNumber: 61
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    className: "jsx-66db96b3d94b1058" + " " + "hotel-info",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            className: "jsx-66db96b3d94b1058" + " " + "hotel-label",
+                                                                                            children: [
+                                                                                                "Madinah (",
+                                                                                                pkg["Madinah Nights"],
+                                                                                                " Nights)"
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 204,
+                                                                                            columnNumber: 65
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            className: "jsx-66db96b3d94b1058" + " " + "hotel-name",
+                                                                                            children: pkg["Madinah Hotel"]
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 205,
+                                                                                            columnNumber: 65
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                    lineNumber: 203,
+                                                                                    columnNumber: 61
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 198,
+                                                                            columnNumber: 57
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                    lineNumber: 187,
+                                                                    columnNumber: 53
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "jsx-66db96b3d94b1058" + " " + "package-includes",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "includes-title",
+                                                                            children: "Package Includes:"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 211,
+                                                                            columnNumber: 57
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "includes-list",
+                                                                            children: pkg.Includes.split(',').map((inclusion, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    className: "jsx-66db96b3d94b1058" + " " + "include-item",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                            width: "16",
+                                                                                            height: "16",
+                                                                                            viewBox: "0 0 24 24",
+                                                                                            fill: "currentColor",
+                                                                                            className: "jsx-66db96b3d94b1058" + " " + "include-icon",
+                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                                d: "M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
+                                                                                                className: "jsx-66db96b3d94b1058"
+                                                                                            }, void 0, false, {
+                                                                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                                lineNumber: 216,
+                                                                                                columnNumber: 73
+                                                                                            }, this)
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 215,
+                                                                                            columnNumber: 69
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            className: "jsx-66db96b3d94b1058",
+                                                                                            children: inclusion
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                            lineNumber: 218,
+                                                                                            columnNumber: 69
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, idx, true, {
+                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                    lineNumber: 214,
+                                                                                    columnNumber: 65
+                                                                                }, this))
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 212,
+                                                                            columnNumber: 57
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                    lineNumber: 210,
+                                                                    columnNumber: 53
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "jsx-66db96b3d94b1058" + " " + "package-footer",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "package-price",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "jsx-66db96b3d94b1058" + " " + "price-amount",
+                                                                                    children: [
+                                                                                        pkg.currency,
+                                                                                        pkg["Price (£)"]
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                    lineNumber: 226,
+                                                                                    columnNumber: 61
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "jsx-66db96b3d94b1058" + " " + "price-unit",
+                                                                                    children: "/person"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                                    lineNumber: 227,
+                                                                                    columnNumber: 61
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 225,
+                                                                            columnNumber: 57
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            onClick: ()=>handleViewDetails(pkg.id),
+                                                                            className: "jsx-66db96b3d94b1058" + " " + "view-details-btn",
+                                                                            children: "View Details"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                            lineNumber: 229,
+                                                                            columnNumber: 57
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                                    lineNumber: 224,
+                                                                    columnNumber: 53
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                            lineNumber: 181,
+                                                            columnNumber: 49
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                    lineNumber: 166,
+                                                    columnNumber: 45
+                                                }, this)
+                                            }, pkg.id, false, {
+                                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                                lineNumber: 165,
+                                                columnNumber: 41
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                        lineNumber: 163,
+                                        columnNumber: 33
+                                    }, this)
+                                ]
+                            }, rating, true, {
+                                fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
+                                lineNumber: 156,
+                                columnNumber: 29
+                            }, this))
+                    }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-66db96b3d94b1058" + " " + "text-center py-5",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "jsx-66db96b3d94b1058",
+                            children: "No packages available for the selected filters."
+                        }, void 0, false, {
                             fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                            lineNumber: 90,
-                            columnNumber: 29
-                        }, this))
-                }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-567b750e56d1b593" + " " + "text-center py-5",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "jsx-567b750e56d1b593",
-                        children: "No packages available at the moment."
+                            lineNumber: 246,
+                            columnNumber: 25
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                        lineNumber: 169,
-                        columnNumber: 25
+                        lineNumber: 245,
+                        columnNumber: 21
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                    lineNumber: 168,
-                    columnNumber: 21
-                }, this)
-            }, void 0, false, {
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-                lineNumber: 79,
+                lineNumber: 87,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "567b750e56d1b593",
-                children: ".umrah-packages-section.jsx-567b750e56d1b593{background-color:#f8f9fa;width:100%;padding:80px 0}.rating-group.jsx-567b750e56d1b593{margin-bottom:60px}.rating-group.jsx-567b750e56d1b593:last-child{margin-bottom:0}.section-title.jsx-567b750e56d1b593{color:#1a1a1a;margin-bottom:2rem;font-size:2.5rem;font-weight:700}.package-card.jsx-567b750e56d1b593{background:#fff;border-radius:12px;height:100%;margin-left:20px;transition:transform .3s,box-shadow .3s;overflow:hidden;box-shadow:0 4px 15px #00000014}.package-card.jsx-567b750e56d1b593:hover{transform:translateY(-5px);box-shadow:0 8px 25px #0000001f}.package-image-wrapper.jsx-567b750e56d1b593{height:250px;position:relative;overflow:hidden}.package-image.jsx-567b750e56d1b593{object-fit:cover;width:100%;height:100%}.package-duration.jsx-567b750e56d1b593{color:#1a1a1a;background:#fff;border-radius:25px;padding:8px 20px;font-size:.875rem;font-weight:600;position:absolute;top:20px;right:20px}.package-star-rating.jsx-567b750e56d1b593{color:#1a1a1a;background:#fff;border-radius:25px;padding:8px 16px;font-size:.875rem;font-weight:600;position:absolute;top:20px;left:20px}.package-description.jsx-567b750e56d1b593{color:#666;margin-bottom:20px;font-size:.9rem;line-height:1.5}.package-content.jsx-567b750e56d1b593{padding:25px}.package-title.jsx-567b750e56d1b593{color:#1a1a1a;margin-bottom:15px;font-size:1.375rem;font-weight:700}.package-locations.jsx-567b750e56d1b593{flex-wrap:wrap;gap:20px;margin-bottom:20px;display:flex}.location-item.jsx-567b750e56d1b593{color:#666;align-items:center;gap:8px;font-size:.9rem;display:flex}.location-icon.jsx-567b750e56d1b593{color:#4a5568}.package-includes.jsx-567b750e56d1b593{border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;flex-wrap:wrap;gap:15px;margin-bottom:25px;padding:20px 0;display:flex}.include-item.jsx-567b750e56d1b593{color:#4a5568;align-items:center;gap:6px;font-size:.9rem;font-weight:500;display:flex}.include-icon.jsx-567b750e56d1b593{color:#2563eb}.package-footer.jsx-567b750e56d1b593{justify-content:space-between;align-items:center;display:flex}.package-price.jsx-567b750e56d1b593{align-items:baseline;gap:4px;display:flex}.price-amount.jsx-567b750e56d1b593{color:#1a1a1a;font-size:1.875rem;font-weight:700}.price-unit.jsx-567b750e56d1b593{color:#666;font-size:.9rem}.view-details-btn.jsx-567b750e56d1b593{color:#fff;cursor:pointer;background-color:#28aae2;border:none;border-radius:8px;padding:12px 28px;font-size:.95rem;font-weight:600;transition:background-color .3s}.view-details-btn.jsx-567b750e56d1b593:hover{background-color:#1f8fc7}@media (width<=768px){.section-title.jsx-567b750e56d1b593{font-size:2rem}.package-title.jsx-567b750e56d1b593{font-size:1.25rem}.price-amount.jsx-567b750e56d1b593{font-size:1.5rem}}"
+                id: "66db96b3d94b1058",
+                children: ".umrah-packages-section.jsx-66db96b3d94b1058{background-color:#f8f9fa;width:100%;padding:80px 0}.filters-container.jsx-66db96b3d94b1058{background:#fff;border-radius:12px;flex-wrap:wrap;align-items:flex-end;gap:20px;margin-bottom:50px;padding:30px;display:flex;box-shadow:0 2px 10px #0000000d}.filter-group.jsx-66db96b3d94b1058{flex-direction:column;flex:1;gap:8px;min-width:200px;display:flex}.filter-label.jsx-66db96b3d94b1058{color:#1a1a1a;align-items:center;gap:8px;font-size:.95rem;font-weight:600;display:flex}.filter-icon.jsx-66db96b3d94b1058{color:#28aae2}.filter-select.jsx-66db96b3d94b1058{color:#1a1a1a;cursor:pointer;background:#fff;border:2px solid #e5e7eb;border-radius:8px;padding:12px 16px;font-size:1rem;transition:border-color .3s}.filter-select.jsx-66db96b3d94b1058:focus{border-color:#28aae2;outline:none}.clear-filters-btn.jsx-66db96b3d94b1058{color:#4a5568;cursor:pointer;background-color:#f3f4f6;border:none;border-radius:8px;height:fit-content;padding:12px 24px;font-weight:600;transition:background-color .3s}.clear-filters-btn.jsx-66db96b3d94b1058:hover{background-color:#e5e7eb}.rating-group.jsx-66db96b3d94b1058{margin-bottom:60px}.rating-group.jsx-66db96b3d94b1058:last-child{margin-bottom:0}.section-title.jsx-66db96b3d94b1058{color:#1a1a1a;margin-bottom:2rem;font-size:2.5rem;font-weight:700}.package-card.jsx-66db96b3d94b1058{background:#fff;border-radius:12px;height:100%;margin-left:20px;transition:transform .3s,box-shadow .3s;overflow:hidden;box-shadow:0 4px 15px #00000014}.package-card.jsx-66db96b3d94b1058:hover{transform:translateY(-5px);box-shadow:0 8px 25px #0000001f}.package-image-wrapper.jsx-66db96b3d94b1058{height:250px;position:relative;overflow:hidden}.package-image.jsx-66db96b3d94b1058{object-fit:cover;width:100%;height:100%}.package-duration.jsx-66db96b3d94b1058{color:#1a1a1a;background:#fff;border-radius:25px;padding:8px 20px;font-size:.875rem;font-weight:600;position:absolute;top:20px;right:20px}.package-month-badge.jsx-66db96b3d94b1058{color:#fff;background:#28aae2;border-radius:25px;padding:8px 16px;font-size:.875rem;font-weight:600;position:absolute;top:20px;left:20px}.package-content.jsx-66db96b3d94b1058{padding:25px}.package-header.jsx-66db96b3d94b1058{justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:20px;display:flex}.package-title.jsx-66db96b3d94b1058{color:#1a1a1a;flex:1;font-size:1.25rem;font-weight:700;line-height:1.3}.package-star-rating.jsx-66db96b3d94b1058{color:#92400e;white-space:nowrap;background:#fef3c7;border-radius:20px;padding:6px 12px;font-size:.8rem;font-weight:600}.package-hotels.jsx-66db96b3d94b1058{background:#f8f9fa;border-radius:8px;flex-direction:column;gap:15px;margin-bottom:20px;padding:20px;display:flex}.hotel-item.jsx-66db96b3d94b1058{align-items:flex-start;gap:12px;display:flex}.hotel-icon.jsx-66db96b3d94b1058{color:#28aae2;flex-shrink:0;margin-top:2px}.hotel-info.jsx-66db96b3d94b1058{flex-direction:column;gap:4px;display:flex}.hotel-label.jsx-66db96b3d94b1058{color:#666;text-transform:uppercase;letter-spacing:.5px;font-size:.8rem;font-weight:600}.hotel-name.jsx-66db96b3d94b1058{color:#1a1a1a;font-size:.95rem;font-weight:500}.package-includes.jsx-66db96b3d94b1058{border-bottom:1px solid #e5e7eb;margin-bottom:25px;padding-bottom:25px}.includes-title.jsx-66db96b3d94b1058{color:#1a1a1a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;font-size:.9rem;font-weight:700}.includes-list.jsx-66db96b3d94b1058{flex-direction:column;gap:10px;display:flex}.include-item.jsx-66db96b3d94b1058{color:#4a5568;align-items:center;gap:8px;font-size:.9rem;display:flex}.include-icon.jsx-66db96b3d94b1058{color:#28aae2;flex-shrink:0}.package-footer.jsx-66db96b3d94b1058{justify-content:space-between;align-items:center;display:flex}.package-price.jsx-66db96b3d94b1058{align-items:baseline;gap:4px;display:flex}.price-amount.jsx-66db96b3d94b1058{color:#1a1a1a;font-size:1.875rem;font-weight:700}.price-unit.jsx-66db96b3d94b1058{color:#666;font-size:.9rem}.view-details-btn.jsx-66db96b3d94b1058{color:#fff;cursor:pointer;background-color:#28aae2;border:none;border-radius:8px;padding:12px 28px;font-size:.95rem;font-weight:600;transition:background-color .3s}.view-details-btn.jsx-66db96b3d94b1058:hover{background-color:#1f8fc7}@media (width<=768px){.filters-container.jsx-66db96b3d94b1058{flex-direction:column;padding:20px}.filter-group.jsx-66db96b3d94b1058{min-width:100%}.section-title.jsx-66db96b3d94b1058{font-size:2rem}.package-title.jsx-66db96b3d94b1058{font-size:1.1rem}.price-amount.jsx-66db96b3d94b1058{font-size:1.5rem}.package-card.jsx-66db96b3d94b1058{margin-left:0}}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/Umrah-Package/UmrahPackages.tsx",
-        lineNumber: 78,
+        lineNumber: 86,
         columnNumber: 9
     }, this);
 };

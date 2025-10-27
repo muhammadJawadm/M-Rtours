@@ -165,13 +165,65 @@ const Footer1 = () => {
                      </div>
                 </div>
                 <div className="footer-bottom">
-                    <div className="footer-wrapper">
-                        <p className="wow fadeInUp" data-wow-delay=".3s">
-                            Copyright © <span>M-Rtours</span> All Rights Reserved.
-                        </p>
-                        
-                    </div>
-                </div>
+    <div className="footer-wrapper">
+        <p className="wow fadeInUp" data-wow-delay=".3s">
+            Copyright © <span>M-Rtours</span> All Rights Reserved.
+        </p>
+        <div className="footer-links" style={{color:'white', display: 'flex', gap: '15px', alignItems: 'center'}}>
+            <a 
+                href="https://www.trustpilot.com/review/m-rtours.co.uk" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                    padding: '8px 16px',
+                    // backgroundColor: '#00b67a',
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '4px',
+                    transition: 'opacity 0.3s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
+                onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
+            >
+                Trustpilot
+            </a>
+            <a 
+                href="https://www.google.com/search?q=m-rtours+reviews" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                    padding: '8px 16px',
+                    // backgroundColor: '#4285f4',
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '4px',
+                    transition: 'opacity 0.3s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
+                onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
+            >
+                Google Review
+            </a>
+            <a 
+                href="https://www.iata.org/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                    padding: '8px 16px',
+                    // backgroundColor: '#003b5c',
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '4px',
+                    transition: 'opacity 0.3s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
+                onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
+            >
+                IATA
+            </a>
+        </div>
+    </div>
+</div>
             </div>
         </footer>
     );

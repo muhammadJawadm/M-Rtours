@@ -256,7 +256,7 @@ const UmrahDetails = ({ packageId })=>{
                             setFormData({
                                 "UmrahDetails.useEffect.fetchPackageDetails": (prev)=>({
                                         ...prev,
-                                        packageName: data.package_name || ''
+                                        packageName: data['Package Name'] || ''
                                     })
                             }["UmrahDetails.useEffect.fetchPackageDetails"]);
                         } else {
@@ -349,7 +349,7 @@ const UmrahDetails = ({ packageId })=>{
                     email: '',
                     phone: '',
                     address: '',
-                    packageName: packageData?.package_name || '',
+                    packageName: packageData?.['Package Name'] || '',
                     travelDate: '',
                     // numAdults: 1,
                     // numChildren: 0,
@@ -393,12 +393,12 @@ const UmrahDetails = ({ packageId })=>{
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                        lineNumber: 251,
+                        lineNumber: 248,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                    lineNumber: 250,
+                    lineNumber: 247,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -406,13 +406,13 @@ const UmrahDetails = ({ packageId })=>{
                     children: "Loading package details..."
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                    lineNumber: 253,
+                    lineNumber: 250,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-            lineNumber: 249,
+            lineNumber: 246,
             columnNumber: 13
         }, this);
     }
@@ -423,12 +423,12 @@ const UmrahDetails = ({ packageId })=>{
                 children: "Package not found."
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                lineNumber: 261,
+                lineNumber: 258,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-            lineNumber: 260,
+            lineNumber: 257,
             columnNumber: 13
         }, this);
     }
@@ -449,17 +449,17 @@ const UmrahDetails = ({ packageId })=>{
                                         className: "jsx-34bbd25f87f56696" + " " + "details-thumb",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: packageData.image || "/assets/img/destails/tour-details.jpg",
-                                            alt: packageData.package_name,
+                                            alt: packageData['Package Name'],
                                             width: 856,
                                             height: 510
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                            lineNumber: 273,
+                                            lineNumber: 270,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                        lineNumber: 272,
+                                        lineNumber: 269,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -473,59 +473,51 @@ const UmrahDetails = ({ packageId })=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "jsx-34bbd25f87f56696" + " " + "badge bg-primary",
                                                             children: [
-                                                                packageData.star_rating,
+                                                                packageData['Star Rating'],
                                                                 " Star Package"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                            lineNumber: 283,
+                                                            lineNumber: 280,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                             className: "jsx-34bbd25f87f56696" + " " + "price-tag text-primary mb-0",
                                                             children: [
-                                                                packageData.currency,
-                                                                packageData.price_per_person,
+                                                                packageData['Currency'],
+                                                                packageData['Price (£)'],
                                                                 " ",
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                                                     className: "jsx-34bbd25f87f56696",
                                                                     children: "/person"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 284,
-                                                                    columnNumber: 138
+                                                                    lineNumber: 281,
+                                                                    columnNumber: 137
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                            lineNumber: 284,
+                                                            lineNumber: 281,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                    lineNumber: 282,
+                                                    lineNumber: 279,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 281,
+                                                lineNumber: 278,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                 className: "jsx-34bbd25f87f56696" + " " + "mb-3",
-                                                children: packageData.package_name
+                                                children: packageData['Package Name']
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 288,
-                                                columnNumber: 33
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "jsx-34bbd25f87f56696" + " " + "lead",
-                                                children: packageData.description
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 289,
+                                                lineNumber: 285,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -541,11 +533,31 @@ const UmrahDetails = ({ packageId })=>{
                                                                     children: "Total Duration:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
+                                                                    lineNumber: 291,
+                                                                    columnNumber: 45
+                                                                }, this),
+                                                                " ",
+                                                                packageData['Duration (Nights)'],
+                                                                " Nights"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
+                                                            lineNumber: 290,
+                                                            columnNumber: 41
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "jsx-34bbd25f87f56696" + " " + "col-md-4",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                    className: "jsx-34bbd25f87f56696",
+                                                                    children: "Makkah:"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
                                                                     lineNumber: 294,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 " ",
-                                                                packageData.duration_nights,
+                                                                packageData['Makkah Nights'],
                                                                 " Nights"
                                                             ]
                                                         }, void 0, true, {
@@ -558,50 +570,30 @@ const UmrahDetails = ({ packageId })=>{
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                                     className: "jsx-34bbd25f87f56696",
-                                                                    children: "Makkah:"
+                                                                    children: "Madinah:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
                                                                     lineNumber: 297,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 " ",
-                                                                packageData.makkah_nights,
+                                                                packageData['Madinah Nights'],
                                                                 " Nights"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
                                                             lineNumber: 296,
                                                             columnNumber: 41
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-34bbd25f87f56696" + " " + "col-md-4",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                    className: "jsx-34bbd25f87f56696",
-                                                                    children: "Madinah:"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 300,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                " ",
-                                                                packageData.madinah_nights,
-                                                                " Nights"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                            lineNumber: 299,
-                                                            columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                    lineNumber: 292,
+                                                    lineNumber: 289,
                                                     columnNumber: 37
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 291,
+                                                lineNumber: 288,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -612,14 +604,14 @@ const UmrahDetails = ({ packageId })=>{
                                                         children: "Package Inclusions"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 306,
+                                                        lineNumber: 303,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "jsx-34bbd25f87f56696" + " " + "activities-item",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                             className: "jsx-34bbd25f87f56696" + " " + "activities-list",
-                                                            children: packageData.package_inclusions.map((inclusion, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            children: packageData.Includes.split(',').map((inclusion, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     className: "jsx-34bbd25f87f56696",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -638,7 +630,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                                     className: "jsx-34bbd25f87f56696"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                                    lineNumber: 312,
+                                                                                    lineNumber: 309,
                                                                                     columnNumber: 57
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -649,37 +641,37 @@ const UmrahDetails = ({ packageId })=>{
                                                                                     className: "jsx-34bbd25f87f56696"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                                    lineNumber: 313,
+                                                                                    lineNumber: 310,
                                                                                     columnNumber: 57
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 311,
+                                                                            lineNumber: 308,
                                                                             columnNumber: 53
                                                                         }, this),
                                                                         inclusion
                                                                     ]
                                                                 }, idx, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 310,
+                                                                    lineNumber: 307,
                                                                     columnNumber: 49
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                            lineNumber: 308,
+                                                            lineNumber: 305,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 307,
+                                                        lineNumber: 304,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 305,
-                                                columnNumber: 33
+                                                lineNumber: 302,
+                                                columnNumber: 34
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "jsx-34bbd25f87f56696" + " " + "hotel-details-section my-4 p-4 bg-light rounded",
@@ -689,7 +681,7 @@ const UmrahDetails = ({ packageId })=>{
                                                         children: "Hotel Accommodation"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 323,
+                                                        lineNumber: 320,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -703,21 +695,21 @@ const UmrahDetails = ({ packageId })=>{
                                                                         children: "Makkah Hotel"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                        lineNumber: 326,
+                                                                        lineNumber: 323,
                                                                         columnNumber: 45
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                         className: "jsx-34bbd25f87f56696",
-                                                                        children: packageData.hotel_details.makkah_hotel
+                                                                        children: packageData['Makkah Hotel']
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                        lineNumber: 327,
+                                                                        lineNumber: 324,
                                                                         columnNumber: 45
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 325,
+                                                                lineNumber: 322,
                                                                 columnNumber: 41
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -728,68 +720,33 @@ const UmrahDetails = ({ packageId })=>{
                                                                         children: "Madinah Hotel"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                        lineNumber: 330,
+                                                                        lineNumber: 327,
                                                                         columnNumber: 45
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                         className: "jsx-34bbd25f87f56696",
-                                                                        children: packageData.hotel_details.madinah_hotel
+                                                                        children: packageData['Madinah Hotel']
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                        lineNumber: 331,
+                                                                        lineNumber: 328,
                                                                         columnNumber: 45
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 329,
+                                                                lineNumber: 326,
                                                                 columnNumber: 41
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 324,
+                                                        lineNumber: 321,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 322,
-                                                columnNumber: 33
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-34bbd25f87f56696" + " " + "important-notes my-4",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "jsx-34bbd25f87f56696",
-                                                        children: "Important Notes"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 337,
-                                                        columnNumber: 37
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                        className: "jsx-34bbd25f87f56696" + " " + "list-styled",
-                                                        children: packageData.notes.map((note, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "jsx-34bbd25f87f56696",
-                                                                children: [
-                                                                    "✓ ",
-                                                                    note
-                                                                ]
-                                                            }, idx, true, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 340,
-                                                                columnNumber: 45
-                                                            }, this))
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 338,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 336,
+                                                lineNumber: 319,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -800,7 +757,7 @@ const UmrahDetails = ({ packageId })=>{
                                                         children: "Frequently Asked Questions"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 346,
+                                                        lineNumber: 336,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -820,12 +777,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                                 children: item.title
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                                lineNumber: 352,
+                                                                                lineNumber: 342,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 351,
+                                                                            lineNumber: 341,
                                                                             columnNumber: 53
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -838,51 +795,51 @@ const UmrahDetails = ({ packageId })=>{
                                                                                     children: item.content
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                                    lineNumber: 358,
+                                                                                    lineNumber: 348,
                                                                                     columnNumber: 61
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                                lineNumber: 357,
+                                                                                lineNumber: 347,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 356,
+                                                                            lineNumber: 346,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     ]
                                                                 }, index, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 350,
+                                                                    lineNumber: 340,
                                                                     columnNumber: 49
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                            lineNumber: 348,
+                                                            lineNumber: 338,
                                                             columnNumber: 41
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 347,
+                                                        lineNumber: 337,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 345,
+                                                lineNumber: 335,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                        lineNumber: 280,
+                                        lineNumber: 277,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                lineNumber: 271,
+                                lineNumber: 268,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -899,12 +856,12 @@ const UmrahDetails = ({ packageId })=>{
                                                     children: "Book Your Umrah Package"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                    lineNumber: 373,
+                                                    lineNumber: 363,
                                                     columnNumber: 41
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 372,
+                                                lineNumber: 362,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -922,12 +879,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     children: "Traveler Details"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 379,
+                                                                    lineNumber: 369,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 378,
+                                                                lineNumber: 368,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -942,12 +899,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     className: "jsx-34bbd25f87f56696" + " " + "form-control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 382,
+                                                                    lineNumber: 372,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 381,
+                                                                lineNumber: 371,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -962,12 +919,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     className: "jsx-34bbd25f87f56696" + " " + "form-control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 393,
+                                                                    lineNumber: 383,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 392,
+                                                                lineNumber: 382,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -982,12 +939,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     className: "jsx-34bbd25f87f56696" + " " + "form-control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 404,
+                                                                    lineNumber: 394,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 403,
+                                                                lineNumber: 393,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1001,12 +958,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     className: "jsx-34bbd25f87f56696" + " " + "form-control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 415,
+                                                                    lineNumber: 405,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 414,
+                                                                lineNumber: 404,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1016,12 +973,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     children: "Travel Information"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 426,
+                                                                    lineNumber: 416,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 425,
+                                                                lineNumber: 415,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1032,6 +989,25 @@ const UmrahDetails = ({ packageId })=>{
                                                                     value: formData.packageName,
                                                                     readOnly: true,
                                                                     placeholder: "Selected Package",
+                                                                    className: "jsx-34bbd25f87f56696" + " " + "form-control"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
+                                                                    lineNumber: 419,
+                                                                    columnNumber: 53
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
+                                                                lineNumber: 418,
+                                                                columnNumber: 49
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "jsx-34bbd25f87f56696" + " " + "col-12",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                    type: "date",
+                                                                    name: "travelDate",
+                                                                    value: formData.travelDate,
+                                                                    onChange: handleInputChange,
+                                                                    required: true,
                                                                     className: "jsx-34bbd25f87f56696" + " " + "form-control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
@@ -1046,25 +1022,6 @@ const UmrahDetails = ({ packageId })=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "jsx-34bbd25f87f56696" + " " + "col-12",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "date",
-                                                                    name: "travelDate",
-                                                                    value: formData.travelDate,
-                                                                    onChange: handleInputChange,
-                                                                    required: true,
-                                                                    className: "jsx-34bbd25f87f56696" + " " + "form-control"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 439,
-                                                                    columnNumber: 53
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 438,
-                                                                columnNumber: 49
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "jsx-34bbd25f87f56696" + " " + "col-12",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                                     type: "text",
                                                                     name: "departureAirport",
                                                                     placeholder: "departure Airport*",
@@ -1074,12 +1031,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     className: "jsx-34bbd25f87f56696" + " " + "form-control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 450,
+                                                                    lineNumber: 440,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 449,
+                                                                lineNumber: 439,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1089,12 +1046,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     children: "Additional Services"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 504,
+                                                                    lineNumber: 494,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 503,
+                                                                lineNumber: 493,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1110,7 +1067,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                             className: "jsx-34bbd25f87f56696"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 508,
+                                                                            lineNumber: 498,
                                                                             columnNumber: 57
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1118,18 +1075,18 @@ const UmrahDetails = ({ packageId })=>{
                                                                             children: "Add Ziyarah Tours in Makkah"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 514,
+                                                                            lineNumber: 504,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 507,
+                                                                    lineNumber: 497,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 506,
+                                                                lineNumber: 496,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1145,7 +1102,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                             className: "jsx-34bbd25f87f56696"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 519,
+                                                                            lineNumber: 509,
                                                                             columnNumber: 57
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1153,18 +1110,18 @@ const UmrahDetails = ({ packageId })=>{
                                                                             children: "Add Ziyarah Tours in Madinah"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 525,
+                                                                            lineNumber: 515,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 518,
+                                                                    lineNumber: 508,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 517,
+                                                                lineNumber: 507,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1180,7 +1137,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                             className: "jsx-34bbd25f87f56696"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 530,
+                                                                            lineNumber: 520,
                                                                             columnNumber: 57
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1188,18 +1145,18 @@ const UmrahDetails = ({ packageId })=>{
                                                                             children: "Request Direct Flights"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 536,
+                                                                            lineNumber: 526,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 529,
+                                                                    lineNumber: 519,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 528,
+                                                                lineNumber: 518,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1215,7 +1172,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                             className: "jsx-34bbd25f87f56696"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 541,
+                                                                            lineNumber: 531,
                                                                             columnNumber: 57
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1223,18 +1180,18 @@ const UmrahDetails = ({ packageId })=>{
                                                                             children: "Request Private Transport Only"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 547,
+                                                                            lineNumber: 537,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 540,
+                                                                    lineNumber: 530,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 539,
+                                                                lineNumber: 529,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1250,7 +1207,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                             className: "jsx-34bbd25f87f56696"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 552,
+                                                                            lineNumber: 542,
                                                                             columnNumber: 57
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1258,18 +1215,18 @@ const UmrahDetails = ({ packageId })=>{
                                                                             children: "Add Travel Insurance"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 558,
+                                                                            lineNumber: 548,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 551,
+                                                                    lineNumber: 541,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 550,
+                                                                lineNumber: 540,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1279,12 +1236,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     children: "Special Requests"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 563,
+                                                                    lineNumber: 553,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 562,
+                                                                lineNumber: 552,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1298,12 +1255,12 @@ const UmrahDetails = ({ packageId })=>{
                                                                     className: "jsx-34bbd25f87f56696" + " " + "form-control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 566,
+                                                                    lineNumber: 556,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 565,
+                                                                lineNumber: 555,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1320,7 +1277,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                             className: "jsx-34bbd25f87f56696"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 578,
+                                                                            lineNumber: 568,
                                                                             columnNumber: 57
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1328,18 +1285,18 @@ const UmrahDetails = ({ packageId })=>{
                                                                             children: "I agree to the Terms & Conditions*"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                            lineNumber: 585,
+                                                                            lineNumber: 575,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                    lineNumber: 577,
+                                                                    lineNumber: 567,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 576,
+                                                                lineNumber: 566,
                                                                 columnNumber: 49
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1355,13 +1312,13 @@ const UmrahDetails = ({ packageId })=>{
                                                                                 className: "jsx-34bbd25f87f56696" + " " + "bi bi-arrow-right"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                                lineNumber: 598,
+                                                                                lineNumber: 588,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                        lineNumber: 590,
+                                                                        lineNumber: 580,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     submitStatus === 'success' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1369,7 +1326,7 @@ const UmrahDetails = ({ packageId })=>{
                                                                         children: "Booking submitted successfully!"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                        lineNumber: 602,
+                                                                        lineNumber: 592,
                                                                         columnNumber: 57
                                                                     }, this),
                                                                     submitStatus === 'error' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1377,61 +1334,61 @@ const UmrahDetails = ({ packageId })=>{
                                                                         children: "There was an error submitting your booking. Please try again."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                        lineNumber: 608,
+                                                                        lineNumber: 598,
                                                                         columnNumber: 57
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                                lineNumber: 589,
+                                                                lineNumber: 579,
                                                                 columnNumber: 49
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                        lineNumber: 377,
+                                                        lineNumber: 367,
                                                         columnNumber: 45
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                    lineNumber: 376,
+                                                    lineNumber: 366,
                                                     columnNumber: 41
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                                lineNumber: 375,
+                                                lineNumber: 365,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                        lineNumber: 371,
+                                        lineNumber: 361,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                    lineNumber: 370,
+                                    lineNumber: 360,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                                lineNumber: 369,
+                                lineNumber: 359,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                        lineNumber: 270,
+                        lineNumber: 267,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                    lineNumber: 269,
+                    lineNumber: 266,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-                lineNumber: 268,
+                lineNumber: 265,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1441,7 +1398,7 @@ const UmrahDetails = ({ packageId })=>{
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/Umrah-Detail/UmrahDetail.tsx",
-        lineNumber: 267,
+        lineNumber: 264,
         columnNumber: 9
     }, this);
 };

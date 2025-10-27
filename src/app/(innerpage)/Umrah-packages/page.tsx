@@ -12,10 +12,10 @@ import UmrahPackages from '../../Components/Umrah-Package/UmrahPackages';
 const page = () => {
   return (
     <div>
-             <BreadCumb
+             {/* <BreadCumb
                 bgimg="/assets/img/header/Umrah page 1.png"
                 Title="Umrah Packages "
-            ></BreadCumb>    
+            ></BreadCumb>     */}
             <UmrahPackages />
              {/* <Story1></Story1>   */}
              {/* <UmrahPackages></UmrahPackages>   */}

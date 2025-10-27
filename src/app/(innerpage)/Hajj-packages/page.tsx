@@ -6,7 +6,7 @@ import FeaturedTour1 from '../../Components/FeaturedTour/FeaturedTour1';
 // import FeaturedFlight from '../../Components/FeaturedFlight/FeaturedFlight';
 import Faq1 from '../../Components/Faq/Faq1';
 import UmrahPackages from '../../Components/Umrah-Package/UmrahPackages';
-import HajjPackages from '../../Components/Hajj-Package/HajjPackages';
+import HajjPackages from '../../Components/Hajj-Package/AllHajjPackages';
 
 const page = () => {
   return (

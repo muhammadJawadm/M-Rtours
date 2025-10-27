@@ -36,10 +36,10 @@ const HeroBanner3 = () => {
         packageType: '',
         departureDate: '',
         departureCity: '',
-        travelers: '1',
+        travelers: '',
         nights: '1',
         fullName: '',
-        phone: '+44',
+        phone: '+',
         email: '',
         specificPackage: ''
     });
@@ -56,7 +56,7 @@ const HeroBanner3 = () => {
         "London", "Birmingham", "Manchester", "Glasgow", "Leeds", 
         "Liverpool", "Newcastle", "Sheffield", "Bristol", "Edinburgh",
         "Leicester", "Bradford", "Cardiff", "Belfast", "Coventry",
-        "Nottingham", "Stoke-on-Trent", "Wolverhampton", "Plymouth", "Derby"
+        "Nottingham", "Stoke-on-Trent", "Wolverhampton", "Plymouth", "Derby",
    ];
 
    // Package types based on selected package category
@@ -138,12 +138,12 @@ const HeroBanner3 = () => {
         }
 
         if (!formData.phone) {
-            errors.phone = "Please enter your phone number";
-            isValid = false;
-        } else if (!/^(\+44|0)7\d{9}$/.test(formData.phone.replace(/\s+/g, ''))) {
-            errors.phone = "Please enter a valid UK phone number (e.g., 07123456789 or +447123456789)";
-            isValid = false;
-        }
+    errors.phone = "Please enter your phone number";
+    isValid = false;
+} else if (!/^\+?\d{7,15}$/.test(formData.phone.replace(/\s+/g, ''))) {
+    errors.phone = "Please enter a valid phone number with 7–15 digits (you can include + at the start)";
+    isValid = false;
+}
 
         if (!formData.email) {
             errors.email = "Please enter your email";
@@ -172,14 +172,12 @@ const HeroBanner3 = () => {
         
         try {
             // Format phone number for consistency
-            const formattedData = {
-                ...formData,
-                phone: formData.phone.startsWith('+44') ? 
-                    formData.phone : 
-                    formData.phone.startsWith('0') ? 
-                        '+44' + formData.phone.substring(1) : 
-                        formData.phone
-            };
+          const formattedData = {
+  ...formData,
+  phone: formData.phone.startsWith('+')
+    ? formData.phone
+    : `+${formData.phone.replace(/^0+/, '')}` // removes leading zeros and adds '+'
+};
             
             // Log that we're starting the form submission
             console.log('Submitting form data:', formattedData);
@@ -440,11 +438,7 @@ const HeroBanner3 = () => {
                                         autoCapitalize='tel'
                                         inputMode='tel'
                                     />
-                                    {formErrors.phone ? (
-                                        <span className="error-message">{formErrors.phone}</span>
-                                    ) : (
-                                        <span className="phone-format-help">UK format: 07XXX XXXXXX or +447XXX XXXXXX</span>
-                                    )}
+                                 
                                 </div>
                                 <div className="form-field">
                                     <label htmlFor="email" className="form-label">
@@ -483,18 +477,21 @@ const HeroBanner3 = () => {
                             {/* Second Row - Travel Details and Submit */}
                             <div className="form-grid travel-details-row">
                                 <div className="form-field">
-                                    <select
-                                        name="departureCity"
-                                        value={formData.departureCity}
-                                        onChange={handleInputChange}
-                                        className={`form-input ${formErrors.departureCity ? 'error' : ''}`}
-                                        required
-                                    >
-                                        <option value="">Select Departure City</option>
-                                        {ukCities.map((city, index) => (
-                                            <option key={index} value={city}>{city}</option>
-                                        ))}
-                                    </select>
+                                    <input
+  list="departureCities"
+  name="departureCity"
+  value={formData.departureCity}
+  onChange={handleInputChange}
+  className={`form-input ${formErrors.departureCity ? 'error' : ''}`}
+  placeholder="Select or type Departure City"
+  required
+/>
+
+<datalist id="departureCities">
+  {ukCities.map((city, index) => (
+    <option key={index} value={city} />
+  ))}
+</datalist>
                                     {formErrors.departureCity && <span className="error-message">{formErrors.departureCity}</span>}
                                 </div>
                                 <div className="form-field">
@@ -511,18 +508,15 @@ const HeroBanner3 = () => {
                                     {formErrors.departureDate && <span className="error-message">{formErrors.departureDate}</span>}
                                 </div>
                                 <div className="form-field">
-                                    <select
-                                        name="travelers"
-                                        value={formData.travelers}
-                                        onChange={handleInputChange}
-                                        className={`form-input ${formErrors.travelers ? 'error' : ''}`}
-                                        required
-                                    >
-                                        <option value="">Travelers</option>
-                                        {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
-                                            <option key={num} value={num}>{num} {num === 1 ? 'Traveler' : 'Travelers'}</option>
-                                        ))}
-                                    </select>
+                                    <input
+  type="number"
+  name="travelers"
+  value={formData.travelers}
+  onChange={handleInputChange}
+  className={`form-input ${formErrors.travelers ? 'error' : ''}`}
+  placeholder="Number of Passengers"
+  required
+/>
                                     {formErrors.travelers && <span className="error-message">{formErrors.travelers}</span>}
                                 </div>
                                 <div className="form-field">
@@ -1013,7 +1007,7 @@ const HeroBanner3 = () => {
                     box-shadow: none;
                 }
 
-                /* Success Modal Styles - Fixed */
+                /* Success Modal Styles */
                 .success-modal-overlay {
                     position: fixed;
                     top: 0;
@@ -1024,7 +1018,7 @@ const HeroBanner3 = () => {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    z-index: 99999; /* Increased z-index */
+                    z-index: 9999; /* Increased z-index to be above all other elements */
                 }
                 
                 .success-modal {
@@ -1036,13 +1030,7 @@ const HeroBanner3 = () => {
                     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
                     text-align: center;
                     animation: slideIn 0.4s ease-out;
-                    position: relative;
-                    z-index: 100000; /* Even higher z-index for the modal itself */
-                }
-                
-                .success-modal-content {
-                    position: relative;
-                    z-index: 100001; /* Ensure content is above all */
+                    position: relative; /* Ensure positioning context */
                 }
                 
                 .success-icon {
@@ -1079,8 +1067,6 @@ const HeroBanner3 = () => {
                     font-weight: 600;
                     cursor: pointer;
                     transition: all 0.3s ease;
-                    position: relative; /* Ensure button is clickable */
-                    z-index: 100002; /* Highest z-index for interactive elements */
                 }
                 
                 .close-modal-btn:hover {
