@@ -322,7 +322,7 @@ function Header1({ variant }) {
                                                     lineNumber: 56,
                                                     columnNumber: 17
                                                 }, this),
-                                                " +1 (234) 567-890"
+                                                " +44 7517 240405"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Header/Header1.tsx",

@@ -53,7 +53,7 @@ export default function Header1({ variant } : any ) {
             </div>
             <div className="cs_top_header_right">
               <a href="tel:+1234567890" className="cs_header_contact_number">
-                <i className="bi bi-telephone-fill"></i> +1 (234) 567-890
+                <i className="bi bi-telephone-fill"></i> +44 7517 240405
               </a>
             </div>
           </div>
