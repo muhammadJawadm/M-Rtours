@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     }
     
     // The recipient email address
-    const toAddress = 'malikjawadkanyal@gmail.com';
+    const toAddress = 'info@m-rtours.co.uk';
     
     // Determine which form was submitted and format email accordingly
     let subject, textContent, htmlContent;
