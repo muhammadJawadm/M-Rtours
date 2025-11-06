@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "./assets/main.css";
 import Header1 from "./Components/Header/Header1";
 import Footer1 from "./Components/Footer/Footer1";
+import WhatsAppFAB from "./Components/Common/WhatsAppFAB";
 // import "./assets/custom.css"; // Add this line to import our custom styles
 
 const manrope = Manrope({
@@ -47,10 +48,12 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${manrope.variable} ${work_sans.variable} ${kalam.variable}`}>
         <div className='main-page-area3'>
-                   <Header1></Header1>
-                    {children}
-                    <Footer1></Footer1>
-                </div>
+          <Header1 />
+          {children}
+          <Footer1 />
+        </div>
+        {/* Global Floating WhatsApp Chat Button */}
+        <WhatsAppFAB />
       </body>
     </html>
   );
