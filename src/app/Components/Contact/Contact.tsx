@@ -42,6 +42,9 @@ const Contact = () => {
                 body: JSON.stringify(formData),
             });
             const result = await res.json();
+            if (result.success) {
+                setShowAlert(true);
+            }
             if (!result.success) {
                 alert("Failed to send email. Please try again later.");
             }
@@ -53,7 +56,6 @@ const Contact = () => {
                 message: ''
             });
 
-            setShowAlert(true);
 
             setTimeout(() => {
                 setShowAlert(false);
