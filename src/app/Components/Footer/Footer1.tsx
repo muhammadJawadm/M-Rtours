@@ -144,7 +144,7 @@ const Footer1 = () => {
                                         </div>
                                         <div className="content pt-2">
                                          <h6>
-                                             <a href="mailto:info@touron.com">info@m-rtours.co.uk</a> 
+                                             <a href="mailto:info@m-rtours.co.uk">Info@M-rtours.co.uk</a> 
                                          </h6>
                                       </div>
                                     </div>

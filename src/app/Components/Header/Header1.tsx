@@ -52,9 +52,30 @@ export default function Header1({ variant } : any ) {
               <span className="cs_header_contact_text">Need help? Call us:</span>
             </div>
             <div className="cs_top_header_right">
-              <a href="tel:+442034110076" className="cs_header_contact_number">
-                <i className="bi bi-telephone-fill"></i> +44 20 3411 0076
-              </a>
+              <div className="cs_top_header_actions">
+                <a
+                  href="mailto:Info@M-rtours.co.uk?subject=Travel%20Inquiry&body=Hi%2C%20I%20would%20like%20to%20get%20more%20information%20about%20your%20travel%20packages."
+                  className="cs_header_contact_link"
+                  aria-label="Email us"
+                >
+                  <i className="bi bi-envelope-fill" aria-hidden="true"></i>
+                  <span className="d-none d-md-inline">Info@M-rtours.co.uk</span>
+                </a>
+                <a
+                  href="https://wa.me/447517240405?text=Hi!%20I'd%20like%20to%20inquire%20about%20your%20travel%20packages."
+                  className="cs_header_contact_link"
+                  aria-label="Chat on WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-whatsapp" aria-hidden="true"></i>
+                  <span className="d-none d-md-inline">+44 7517 240405</span>
+                </a>
+                <a href="tel:+442034110076" className="cs_header_contact_link" aria-label="Call us">
+                  <i className="bi bi-telephone-fill" aria-hidden="true"></i>
+                  <span className="d-none d-md-inline">+44 20 3411 0076</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -138,10 +159,29 @@ export default function Header1({ variant } : any ) {
       .cs_header_contact_number i {
         font-size: 16px;
       }
+      /* New top header action links */
+      .cs_top_header_actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .cs_header_contact_link {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        transition: opacity .3s ease;
+      }
+      .cs_header_contact_link i { font-size: 16px; }
+      .cs_header_contact_link:hover { opacity: .8; }
 
       /* Contact page styling for top bar */
       .contact-header .cs_top_header .cs_header_contact_text,
-      .contact-header .cs_top_header .cs_header_contact_number {
+      .contact-header .cs_top_header .cs_header_contact_number,
+      .contact-header .cs_top_header .cs_header_contact_link {
         color: #000;
       }
 
@@ -158,6 +198,8 @@ export default function Header1({ variant } : any ) {
         .cs_header_contact_number {
           font-size: 13px;
         }
+        .cs_header_contact_link { font-size: 13px; }
+        .cs_top_header_actions { gap: 14px; }
       }
 
       /* Contact Page Header Styles */

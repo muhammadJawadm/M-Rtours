@@ -282,22 +282,22 @@ function Header1({ variant }) {
         prevScrollPos
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-61712decf5f7dc62",
+        className: "jsx-9574dba33cf9e4ed",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "jsx-61712decf5f7dc62" + " " + `cs_site_header header_style_2 header_style_2_0 cs_style_1 header_sticky_style1 ${variant ? variant : ''} cs_sticky_header cs_site_header_full_width ${mobileToggle ? 'cs_mobile_toggle_active' : ''} ${isSticky ? isSticky : ''} ${isContactPage ? 'contact-header' : ''}`,
+                className: "jsx-9574dba33cf9e4ed" + " " + `cs_site_header header_style_2 header_style_2_0 cs_style_1 header_sticky_style1 ${variant ? variant : ''} cs_sticky_header cs_site_header_full_width ${mobileToggle ? 'cs_mobile_toggle_active' : ''} ${isSticky ? isSticky : ''} ${isContactPage ? 'contact-header' : ''}`,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-61712decf5f7dc62" + " " + "cs_top_header",
+                        className: "jsx-9574dba33cf9e4ed" + " " + "cs_top_header",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-61712decf5f7dc62" + " " + "container-fluid",
+                            className: "jsx-9574dba33cf9e4ed" + " " + "container-fluid",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-61712decf5f7dc62" + " " + "cs_top_header_in",
+                                className: "jsx-9574dba33cf9e4ed" + " " + "cs_top_header_in",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-61712decf5f7dc62" + " " + "cs_top_header_left",
+                                        className: "jsx-9574dba33cf9e4ed" + " " + "cs_top_header_left",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "jsx-61712decf5f7dc62" + " " + "cs_header_contact_text",
+                                            className: "jsx-9574dba33cf9e4ed" + " " + "cs_header_contact_text",
                                             children: "Need help? Call us:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
@@ -310,19 +310,93 @@ function Header1({ variant }) {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-61712decf5f7dc62" + " " + "cs_top_header_right",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "tel:+442034110076",
-                                            className: "jsx-61712decf5f7dc62" + " " + "cs_header_contact_number",
+                                        className: "jsx-9574dba33cf9e4ed" + " " + "cs_top_header_right",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "jsx-9574dba33cf9e4ed" + " " + "cs_top_header_actions",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "jsx-61712decf5f7dc62" + " " + "bi bi-telephone-fill"
-                                                }, void 0, false, {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "mailto:Info@M-rtours.co.uk?subject=Travel%20Inquiry&body=Hi%2C%20I%20would%20like%20to%20get%20more%20information%20about%20your%20travel%20packages.",
+                                                    "aria-label": "Email us",
+                                                    className: "jsx-9574dba33cf9e4ed" + " " + "cs_header_contact_link",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                            "aria-hidden": "true",
+                                                            className: "jsx-9574dba33cf9e4ed" + " " + "bi bi-envelope-fill"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                            lineNumber: 61,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-9574dba33cf9e4ed" + " " + "d-none d-md-inline",
+                                                            children: "Info@M-rtours.co.uk"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                            lineNumber: 62,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
                                                     lineNumber: 56,
                                                     columnNumber: 17
                                                 }, this),
-                                                " +44 20 3411 0076"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "https://wa.me/447517240405?text=Hi!%20I'd%20like%20to%20inquire%20about%20your%20travel%20packages.",
+                                                    "aria-label": "Chat on WhatsApp",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "jsx-9574dba33cf9e4ed" + " " + "cs_header_contact_link",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                            "aria-hidden": "true",
+                                                            className: "jsx-9574dba33cf9e4ed" + " " + "bi bi-whatsapp"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                            lineNumber: 71,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-9574dba33cf9e4ed" + " " + "d-none d-md-inline",
+                                                            children: "+44 7517 240405"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                            lineNumber: 72,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                    lineNumber: 64,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "tel:+442034110076",
+                                                    "aria-label": "Call us",
+                                                    className: "jsx-9574dba33cf9e4ed" + " " + "cs_header_contact_link",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                            "aria-hidden": "true",
+                                                            className: "jsx-9574dba33cf9e4ed" + " " + "bi bi-telephone-fill"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                            lineNumber: 75,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-9574dba33cf9e4ed" + " " + "d-none d-md-inline",
+                                                            children: "+44 20 3411 0076"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                            lineNumber: 76,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/Header/Header1.tsx",
+                                                    lineNumber: 74,
+                                                    columnNumber: 17
+                                                }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
@@ -351,14 +425,14 @@ function Header1({ variant }) {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-61712decf5f7dc62" + " " + "cs_main_header",
+                        className: "jsx-9574dba33cf9e4ed" + " " + "cs_main_header",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-61712decf5f7dc62" + " " + "container-fluid",
+                            className: "jsx-9574dba33cf9e4ed" + " " + "container-fluid",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-61712decf5f7dc62" + " " + "cs_main_header_in",
+                                className: "jsx-9574dba33cf9e4ed" + " " + "cs_main_header_in",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-61712decf5f7dc62" + " " + "cs_main_header_left",
+                                        className: "jsx-9574dba33cf9e4ed" + " " + "cs_main_header_left",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             className: "cs_site_branding",
                                             href: "/",
@@ -369,71 +443,71 @@ function Header1({ variant }) {
                                                 height: 55
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                                lineNumber: 68,
+                                                lineNumber: 89,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 88,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-61712decf5f7dc62" + " " + "cs_main_header_center",
+                                        className: "jsx-9574dba33cf9e4ed" + " " + "cs_main_header_center",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-61712decf5f7dc62" + " " + `cs_nav cs_primary_font fw-medium ${isContactPage ? 'contact-nav' : ''}`,
+                                            className: "jsx-9574dba33cf9e4ed" + " " + `cs_nav cs_primary_font fw-medium ${isContactPage ? 'contact-nav' : ''}`,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     onClick: ()=>setMobileToggle(!mobileToggle),
-                                                    className: "jsx-61712decf5f7dc62" + " " + ((mobileToggle ? 'cs-munu_toggle cs_teggle_active' : 'cs-munu_toggle') || ""),
+                                                    className: "jsx-9574dba33cf9e4ed" + " " + ((mobileToggle ? 'cs-munu_toggle cs_teggle_active' : 'cs-munu_toggle') || ""),
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "jsx-61712decf5f7dc62"
+                                                        className: "jsx-9574dba33cf9e4ed"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                                        lineNumber: 81,
+                                                        lineNumber: 102,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 94,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Header$2f$Nav$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     setMobileToggle: setMobileToggle
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 104,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 93,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                lineNumber: 65,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                            lineNumber: 64,
+                            lineNumber: 85,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                        lineNumber: 63,
+                        lineNumber: 84,
                         columnNumber: 7
                     }, this)
                 ]
@@ -443,64 +517,64 @@ function Header1({ variant }) {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-61712decf5f7dc62" + " " + `search-wrap ${searchToggle ? 'active' : ''}`,
+                className: "jsx-9574dba33cf9e4ed" + " " + `search-wrap ${searchToggle ? 'active' : ''}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-61712decf5f7dc62" + " " + "search-inner",
+                    className: "jsx-9574dba33cf9e4ed" + " " + "search-inner",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                             onClick: ()=>setSearchToggle(!searchToggle),
                             id: "search-close",
-                            className: "jsx-61712decf5f7dc62" + " " + "bi bi-x-lg search-close"
+                            className: "jsx-9574dba33cf9e4ed" + " " + "bi bi-x-lg search-close"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                            lineNumber: 93,
+                            lineNumber: 114,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-61712decf5f7dc62" + " " + "search-cell",
+                            className: "jsx-9574dba33cf9e4ed" + " " + "search-cell",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                 method: "get",
-                                className: "jsx-61712decf5f7dc62",
+                                className: "jsx-9574dba33cf9e4ed",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-61712decf5f7dc62" + " " + "search-field-holder",
+                                    className: "jsx-9574dba33cf9e4ed" + " " + "search-field-holder",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "search",
                                         placeholder: "Search...",
-                                        className: "jsx-61712decf5f7dc62" + " " + "main-search-input"
+                                        className: "jsx-9574dba33cf9e4ed" + " " + "main-search-input"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 118,
                                         columnNumber: 25
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 117,
                                     columnNumber: 21
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                                lineNumber: 95,
+                                lineNumber: 116,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                            lineNumber: 94,
+                            lineNumber: 115,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                    lineNumber: 92,
+                    lineNumber: 113,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Header/Header1.tsx",
-                lineNumber: 91,
+                lineNumber: 112,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "61712decf5f7dc62",
-                children: ".cs_top_header{color:#fff;padding:10px 0;font-size:14px}.cs_top_header_in{justify-content:space-between;align-items:center;display:flex}.cs_header_contact_text{color:inherit;font-weight:500}.cs_header_contact_number{color:#fff;align-items:center;gap:8px;font-weight:600;text-decoration:none;transition:opacity .3s;display:flex}.cs_header_contact_number:hover{opacity:.8}.cs_header_contact_number i{font-size:16px}.contact-header .cs_top_header .cs_header_contact_text,.contact-header .cs_top_header .cs_header_contact_number{color:#000}@media (width<=767px){.cs_top_header{padding:8px 0}.cs_header_contact_text{font-size:12px}.cs_header_contact_number{font-size:13px}}.contact-header .cs_nav .cs_nav_list>li>a,.contact-header .cs_nav .cs_nav_list>li>a:hover{color:#000!important}.contact-nav .cs_nav_list .submenu li a{color:var(--header)!important}.contact-header.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{color:#000!important}"
+                id: "9574dba33cf9e4ed",
+                children: ".cs_top_header{color:#fff;padding:10px 0;font-size:14px}.cs_top_header_in{justify-content:space-between;align-items:center;display:flex}.cs_header_contact_text{color:inherit;font-weight:500}.cs_header_contact_number{color:#fff;align-items:center;gap:8px;font-weight:600;text-decoration:none;transition:opacity .3s;display:flex}.cs_header_contact_number:hover{opacity:.8}.cs_header_contact_number i{font-size:16px}.cs_top_header_actions{align-items:center;gap:18px;display:flex}.cs_header_contact_link{color:#fff;align-items:center;gap:6px;font-size:14px;font-weight:600;text-decoration:none;transition:opacity .3s;display:flex}.cs_header_contact_link i{font-size:16px}.cs_header_contact_link:hover{opacity:.8}.contact-header .cs_top_header .cs_header_contact_text,.contact-header .cs_top_header .cs_header_contact_number,.contact-header .cs_top_header .cs_header_contact_link{color:#000}@media (width<=767px){.cs_top_header{padding:8px 0}.cs_header_contact_text{font-size:12px}.cs_header_contact_number,.cs_header_contact_link{font-size:13px}.cs_top_header_actions{gap:14px}}.contact-header .cs_nav .cs_nav_list>li>a,.contact-header .cs_nav .cs_nav_list>li>a:hover{color:#000!important}.contact-nav .cs_nav_list .submenu li a{color:var(--header)!important}.contact-header.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{color:#000!important}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
@@ -1194,7 +1268,107 @@ const Footer1 = ()=>{
 };
 const __TURBOPACK__default__export__ = Footer1;
 }}),
+"[project]/src/app/Components/Common/WhatsAppFAB.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+// Floating Contact Action Buttons (Email, Phone, WhatsApp)
+// Stacked in bottom-right corner, accessible labels, uses Bootstrap Icons.
+const WHATSAPP_NUMBER = '447517240405'; // E.164 without leading +
+const PHONE_NUMBER = '+447517240405';
+const EMAIL_ADDRESS = 'Info@M-rtours.co.uk';
+const PREFILL_MESSAGE = "Hi! I'd like to inquire about your travel packages.";
+const EMAIL_SUBJECT = 'Travel Inquiry';
+const EMAIL_BODY = 'Hi, I would like to get more information about your travel packages.';
+const WhatsAppFAB = ()=>{
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(PREFILL_MESSAGE)}`;
+    const phoneUrl = `tel:${PHONE_NUMBER}`;
+    const mailtoUrl = `mailto:${EMAIL_ADDRESS}?subject=${encodeURIComponent(EMAIL_SUBJECT)}&body=${encodeURIComponent(EMAIL_BODY)}`;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "fab-stack",
+        "aria-label": "Quick contact actions",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: mailtoUrl,
+                className: "fab-btn fab-btn--email",
+                "aria-label": "Send us an email",
+                onClick: (e)=>{
+                    // Keep navigation in same tab to let OS/mail client intercept.
+                    // If no handler, show an alert with alternative webmail suggestion.
+                    setTimeout(()=>{
+                        // If focus is still on the page after 1s, likely no handler.
+                        if (document.hasFocus()) {
+                            // Provide quick guidance
+                            alert('It looks like no default email application handled the link.\nSet a default mail app or use: Gmail (https://mail.google.com/mail/?view=cm&to=Info@M-rtours.co.uk&su=Travel%20Inquiry&body=Hi%2C%20I%20would%20like%20to%20get%20more%20information)');
+                        }
+                    }, 1000);
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                    className: "bi bi-envelope-fill",
+                    "aria-hidden": "true"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/Components/Common/WhatsAppFAB.tsx",
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/Components/Common/WhatsAppFAB.tsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: phoneUrl,
+                className: "fab-btn fab-btn--phone",
+                "aria-label": "Call us",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                    className: "bi bi-telephone-fill",
+                    "aria-hidden": "true"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/Components/Common/WhatsAppFAB.tsx",
+                    lineNumber: 46,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/Components/Common/WhatsAppFAB.tsx",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: whatsappUrl,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                "aria-label": "Chat with us on WhatsApp",
+                className: "fab-btn fab-btn--whatsapp",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                    className: "bi bi-whatsapp",
+                    "aria-hidden": "true"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/Components/Common/WhatsAppFAB.tsx",
+                    lineNumber: 56,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/Components/Common/WhatsAppFAB.tsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/Components/Common/WhatsAppFAB.tsx",
+        lineNumber: 20,
+        columnNumber: 5
+    }, this);
+};
+const __TURBOPACK__default__export__ = WhatsAppFAB;
+}}),
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__59131e0f._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__9ca630da._.js.map
