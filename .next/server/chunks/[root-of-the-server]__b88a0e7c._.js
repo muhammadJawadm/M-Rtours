@@ -210,7 +210,7 @@ async function POST(request) {
             });
         }
         // The recipient email address
-        const toAddress = 'malikjawadkanyal@gmail.com';
+        const toAddress = 'info@m-rtours.co.uk';
         // Determine which form was submitted and format email accordingly
         let subject, textContent, htmlContent;
         if (formData.formType === 'umrahBooking') {

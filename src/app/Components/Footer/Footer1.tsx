@@ -154,7 +154,7 @@ const Footer1 = () => {
                                        </div>
                                        <div className="content pt-2">
                                            <h6>
-                                               <a href="tel:+256214203215">+44 7517 240405 </a> <br/>
+                                               <a href="tel:+442034110076">+44 020 3411 0076 </a> <br/>
                                                {/* <a href="tel:+10987654321">+44 7517 240405 </a> */}
                                            </h6>
                                        </div>

@@ -303,7 +303,7 @@ function Header1({ variant }) {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "jsx-61712decf5f7dc62" + " " + "cs_top_header_right",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "tel:+1234567890",
+                                            href: "tel:+442034110076",
                                             className: "jsx-61712decf5f7dc62" + " " + "cs_header_contact_number",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
@@ -313,7 +313,7 @@ function Header1({ variant }) {
                                                     lineNumber: 56,
                                                     columnNumber: 17
                                                 }, this),
-                                                " +44 7517 240405"
+                                                " +44 20 3411 0076"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Header/Header1.tsx",
@@ -1020,8 +1020,8 @@ const Footer1 = ()=>{
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                            href: "tel:+256214203215",
-                                                                            children: "+44 7517 240405 "
+                                                                            href: "tel:+442034110076",
+                                                                            children: "+44 020 3411 0076 "
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
                                                                             lineNumber: 157,
@@ -1031,7 +1031,7 @@ const Footer1 = ()=>{
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
                                                                             lineNumber: 157,
-                                                                            columnNumber: 97
+                                                                            columnNumber: 99
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
