@@ -76,7 +76,9 @@ const About2 = () => {
                                         <div style={{
                                             display: 'flex',
                                             alignItems: 'center',
-                                            justifyContent: 'center'
+                                            justifyContent: 'center',
+                                            paddingTop: '50px'
+
                                         }}>
                                             <Image 
                                                 src="/assets/img/Waheed.png" 
