@@ -139,7 +139,7 @@ const BlogDetails = () => {
               {/* Blog Description */}
               {blog.description && (
                 <div className="blog-description mb-4">
-                  <p className="lead">{blog.description}</p>
+                  <div dangerouslySetInnerHTML={{ __html: blog.description }} />
                 </div>
               )}
 
