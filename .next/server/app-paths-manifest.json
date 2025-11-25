@@ -1,5 +1,7 @@
 {
-  "/(innerpage)/blog/blog-details/[id]/page": "app/(innerpage)/blog/blog-details/[id]/page.js",
-  "/(innerpage)/blog/page": "app/(innerpage)/blog/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/(innerpage)/Hajj-packages/page": "app/(innerpage)/Hajj-packages/page.js",
+  "/(innerpage)/HajjDetail/[id]/page": "app/(innerpage)/HajjDetail/[id]/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
 }
