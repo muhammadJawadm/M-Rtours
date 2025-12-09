@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Footer1 = () => {
 
@@ -29,7 +28,7 @@ const Footer1 = () => {
                             <div className="single-widget-items text-center">
                                 <div className="widget-head">
                                     <a href="#">
-                                        <Image src="/assets/img/logo/white-logo (2).svg" alt="img" width={350} height={50} />
+                                        <img src="/assets/img/logo/white-logo (2).svg" alt="img" width={350} height={50} />
                                     </a>
                                 </div>
                                 <div className="footer-content">

@@ -15,11 +15,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/firestore/dist/index.esm.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$firebase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/firebase.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
-;
 ;
 ;
 ;
@@ -91,12 +89,12 @@ const HajjPackages = ()=>{
                             children: "Hajj Packages"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                            lineNumber: 82,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                        lineNumber: 81,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this),
                     loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -110,12 +108,12 @@ const HajjPackages = ()=>{
                                     children: "Loading..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 89,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                lineNumber: 89,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -123,13 +121,13 @@ const HajjPackages = ()=>{
                                 children: "Loading packages..."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                lineNumber: 92,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                        lineNumber: 88,
+                        lineNumber: 87,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: packages.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -142,15 +140,13 @@ const HajjPackages = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "jsx-80cddf0845ef18ab" + " " + "package-image-wrapper",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                         src: pkg.image || '/assets/img/Hajj/Hajj page 1.png',
                                                         alt: pkg.package_name,
-                                                        className: "package-image",
-                                                        width: 400,
-                                                        height: 300
+                                                        className: "jsx-80cddf0845ef18ab" + " " + "package-image"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 102,
+                                                        lineNumber: 101,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -161,7 +157,7 @@ const HajjPackages = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 106,
                                                         columnNumber: 25
                                                     }, this),
                                                     pkg.status && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -169,13 +165,13 @@ const HajjPackages = ()=>{
                                                         children: pkg.status
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 108,
                                                         columnNumber: 27
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                lineNumber: 101,
+                                                lineNumber: 100,
                                                 columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -186,7 +182,7 @@ const HajjPackages = ()=>{
                                                         children: pkg.package_name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 116,
+                                                        lineNumber: 113,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -199,12 +195,12 @@ const HajjPackages = ()=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                            lineNumber: 118,
+                                                            lineNumber: 115,
                                                             columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 117,
+                                                        lineNumber: 114,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -227,7 +223,7 @@ const HajjPackages = ()=>{
                                                                                 className: "jsx-80cddf0845ef18ab"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                                lineNumber: 124,
+                                                                                lineNumber: 121,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -237,13 +233,13 @@ const HajjPackages = ()=>{
                                                                                 className: "jsx-80cddf0845ef18ab"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                                lineNumber: 125,
+                                                                                lineNumber: 122,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 123,
+                                                                        lineNumber: 120,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -255,13 +251,13 @@ const HajjPackages = ()=>{
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 127,
+                                                                        lineNumber: 124,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                lineNumber: 122,
+                                                                lineNumber: 119,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -281,7 +277,7 @@ const HajjPackages = ()=>{
                                                                                 className: "jsx-80cddf0845ef18ab"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                                lineNumber: 131,
+                                                                                lineNumber: 128,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -291,13 +287,13 @@ const HajjPackages = ()=>{
                                                                                 className: "jsx-80cddf0845ef18ab"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                                lineNumber: 132,
+                                                                                lineNumber: 129,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 130,
+                                                                        lineNumber: 127,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -309,19 +305,19 @@ const HajjPackages = ()=>{
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 134,
+                                                                        lineNumber: 131,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                lineNumber: 129,
+                                                                lineNumber: 126,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 118,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -340,12 +336,12 @@ const HajjPackages = ()=>{
                                                                             className: "jsx-80cddf0845ef18ab"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                            lineNumber: 142,
+                                                                            lineNumber: 139,
                                                                             columnNumber: 33
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 141,
+                                                                        lineNumber: 138,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -353,18 +349,18 @@ const HajjPackages = ()=>{
                                                                         children: inclusion
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 144,
+                                                                        lineNumber: 141,
                                                                         columnNumber: 31
                                                                     }, this)
                                                                 ]
                                                             }, idx, true, {
                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                lineNumber: 140,
+                                                                lineNumber: 137,
                                                                 columnNumber: 29
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 135,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -381,7 +377,7 @@ const HajjPackages = ()=>{
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 151,
+                                                                        lineNumber: 148,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -389,13 +385,13 @@ const HajjPackages = ()=>{
                                                                         children: "/person"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                        lineNumber: 152,
+                                                                        lineNumber: 149,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                lineNumber: 150,
+                                                                lineNumber: 147,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -404,35 +400,35 @@ const HajjPackages = ()=>{
                                                                 children: "View Details"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                                lineNumber: 154,
+                                                                lineNumber: 151,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 146,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 112,
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 99,
                                         columnNumber: 21
                                     }, this)
                                 }, pkg.id, false, {
                                     fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 98,
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                            lineNumber: 97,
+                            lineNumber: 96,
                             columnNumber: 15
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "jsx-80cddf0845ef18ab" + " " + "text-center py-5",
@@ -441,19 +437,19 @@ const HajjPackages = ()=>{
                                 children: "No packages available at the moment."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                                lineNumber: 168,
+                                lineNumber: 165,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                            lineNumber: 167,
+                            lineNumber: 164,
                             columnNumber: 15
                         }, this)
                     }, void 0, false)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-                lineNumber: 80,
+                lineNumber: 79,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -463,7 +459,7 @@ const HajjPackages = ()=>{
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/Hajj-Package/HajjPackages.tsx",
-        lineNumber: 79,
+        lineNumber: 78,
         columnNumber: 5
     }, this);
 };

@@ -18,7 +18,7 @@ const PrivacyPolicyPage = () => {
                   <h1 className="mb-3">Privacy Policy – M-R Tours</h1>
                   <p className="text-muted"><strong>Last Updated:</strong> December 2025</p>
                   <p>
-                    M-R Tours (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting your privacy and ensuring that your personal data is handled safely, securely, and responsibly. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website, submit a booking inquiry, contact us, or use our services related to Hajj, Umrah, or travel packages.
+                    M-R Tours ("we", "our", "us") is committed to protecting your privacy and ensuring that your personal data is handled safely, securely, and responsibly. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website, submit a booking inquiry, contact us, or use our services related to Hajj, Umrah, or travel packages.
                   </p>
                   <p>
                     By using our website or submitting your information through any platform, you agree to the terms outlined in this Privacy Policy.
@@ -181,7 +181,7 @@ const PrivacyPolicyPage = () => {
                   <ul className="privacy-list">
                     <li>Access your personal data</li>
                     <li>Request correction of data</li>
-                    <li>Request deletion (&quot;right to be forgotten&quot;)</li>
+                    <li>Request deletion ("right to be forgotten")</li>
                     <li>Restrict processing</li>
                     <li>Opt-out of marketing</li>
                     <li>Request a copy of your data</li>
@@ -219,7 +219,7 @@ const PrivacyPolicyPage = () => {
 
                 {/* Section 10 */}
                 <div className="privacy-section mb-5">
-                  <h2 className="section-title mb-4">10. Children&apos;s Privacy</h2>
+                  <h2 className="section-title mb-4">10. Children's Privacy</h2>
                   <p>We do not knowingly collect information from children under 16 unless provided by parents/guardians for Hajj/Umrah bookings.</p>
                 </div>
 
