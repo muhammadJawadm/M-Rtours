@@ -28,7 +28,7 @@ export async function POST(request: Request) {
             );
         }
 
-        const toAddress =  'malikjawadkanyal@gmail.com';
+        const toAddress =  'info@m-rtours.co.uk';
 
         const mailOptions = {
             from: process.env.EMAIL_FROM || 'website@m-rtours.co.uk',

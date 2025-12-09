@@ -383,70 +383,9 @@ const HajjDetails: React.FC<HajjDetailsProps> = ({ packageId }) => {
                                                         className="form-control"
                                                     />
                                                 </div>
-                                                <div className="col-4">
-                                                    <input 
-                                                        type="number" 
-                                                        name="numAdults" 
-                                                        value={formData.numAdults}
-                                                        onChange={handleInputChange}
-                                                        placeholder="Adults*" 
-                                                        min="1"
-                                                        required 
-                                                        className="form-control"
-                                                    />
-                                                </div>
-                                                <div className="col-4">
-                                                    <input 
-                                                        type="number" 
-                                                        name="numChildren" 
-                                                        value={formData.numChildren}
-                                                        onChange={handleInputChange}
-                                                        placeholder="Children" 
-                                                        min="0"
-                                                        className="form-control"
-                                                    />
-                                                </div>
-                                                <div className="col-4">
-                                                    <input 
-                                                        type="number" 
-                                                        name="numInfants" 
-                                                        value={formData.numInfants}
-                                                        onChange={handleInputChange}
-                                                        placeholder="Infants" 
-                                                        min="0"
-                                                        className="form-control"
-                                                    />
-                                                </div>
-                                                <div className="col-12">
-                                                    <select 
-                                                        name="departureAirport" 
-                                                        value={formData.departureAirport}
-                                                        onChange={handleInputChange}
-                                                        required
-                                                        className="form-control"
-                                                    >
-                                                        <option value="">Select Departure Airport*</option>
-                                                        <option value="London Heathrow">London Heathrow</option>
-                                                        <option value="Manchester">Manchester</option>
-                                                        <option value="Birmingham">Birmingham</option>
-                                                        <option value="Glasgow">Glasgow</option>
-                                                        <option value="Edinburgh">Edinburgh</option>
-                                                    </select>
-                                                </div>
-                                                <div className="col-12">
-                                                    <select 
-                                                        name="preferredAirline" 
-                                                        value={formData.preferredAirline}
-                                                        onChange={handleInputChange}
-                                                        className="form-control"
-                                                    >
-                                                        <option value="">Preferred Airline (Optional)</option>
-                                                        <option value="Qatar Airways">Qatar Airways</option>
-                                                        <option value="British Airways">British Airways</option>
-                                                        <option value="Saudi Airlines">Saudi Airlines</option>
-                                                        <option value="Royal Jordanian">Royal Jordanian</option>
-                                                    </select>
-                                                </div>
+                                                
+                                                
+                                              
                                                 <div className="col-6">
                                                     <select 
                                                         name="roomType" 
