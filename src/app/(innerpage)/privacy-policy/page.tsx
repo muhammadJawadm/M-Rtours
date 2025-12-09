@@ -219,7 +219,7 @@ const PrivacyPolicyPage = () => {
 
                 {/* Section 10 */}
                 <div className="privacy-section mb-5">
-                  <h2 className="section-title mb-4">10. Children's Privacy</h2>
+                  <h2 className="section-title mb-4">10. Children&apos;s Privacy</h2>
                   <p>We do not knowingly collect information from children under 16 unless provided by parents/guardians for Hajj/Umrah bookings.</p>
                 </div>
 
