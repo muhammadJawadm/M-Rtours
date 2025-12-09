@@ -561,7 +561,7 @@ const HajjDetails: React.FC<HajjDetailsProps> = ({ packageId }) => {
 
                                                 <div className="col-12">
                                                     <button type="submit" className="theme-btn w-100 text-center">
-                                                        Book My Umrah Package <i className="bi bi-arrow-right"></i>
+                                                        Book My Hajj Package <i className="bi bi-arrow-right"></i>
                                                     </button>
                                                 </div>
                                             </div>
