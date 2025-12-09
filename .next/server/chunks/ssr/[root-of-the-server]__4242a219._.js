@@ -933,6 +933,20 @@ const Footer1 = ()=>{
                                                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
                                                         lineNumber: 83,
                                                         columnNumber: 37
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                            href: "/privacy-policy",
+                                                            children: "Privacy Policy"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                                            lineNumber: 89,
+                                                            columnNumber: 41
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                                        lineNumber: 88,
+                                                        columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
@@ -963,12 +977,12 @@ const Footer1 = ()=>{
                                                     children: "Contact Us"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                    lineNumber: 128,
+                                                    lineNumber: 133,
                                                     columnNumber: 36
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                lineNumber: 127,
+                                                lineNumber: 132,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -983,12 +997,12 @@ const Footer1 = ()=>{
                                                                     className: "bi bi-geo-alt-fill"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                    lineNumber: 133,
+                                                                    lineNumber: 138,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                lineNumber: 132,
+                                                                lineNumber: 137,
                                                                 columnNumber: 41
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -998,25 +1012,25 @@ const Footer1 = ()=>{
                                                                         "140 high road E18 2QS London",
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                            lineNumber: 136,
+                                                                            lineNumber: 141,
                                                                             columnNumber: 77
                                                                         }, this),
                                                                         "United Kingdom"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                    lineNumber: 136,
+                                                                    lineNumber: 141,
                                                                     columnNumber: 45
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                lineNumber: 135,
+                                                                lineNumber: 140,
                                                                 columnNumber: 41
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                        lineNumber: 131,
+                                                        lineNumber: 136,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1028,12 +1042,12 @@ const Footer1 = ()=>{
                                                                     className: "bi bi-envelope-fill"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                    lineNumber: 143,
+                                                                    lineNumber: 148,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                lineNumber: 142,
+                                                                lineNumber: 147,
                                                                 columnNumber: 41
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1044,23 +1058,23 @@ const Footer1 = ()=>{
                                                                         children: "Info@M-rtours.co.uk"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                        lineNumber: 147,
+                                                                        lineNumber: 152,
                                                                         columnNumber: 46
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                    lineNumber: 146,
+                                                                    lineNumber: 151,
                                                                     columnNumber: 42
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                lineNumber: 145,
+                                                                lineNumber: 150,
                                                                 columnNumber: 41
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                        lineNumber: 141,
+                                                        lineNumber: 146,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1072,12 +1086,12 @@ const Footer1 = ()=>{
                                                                     className: "bi bi-telephone-fill"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                    lineNumber: 153,
+                                                                    lineNumber: 158,
                                                                     columnNumber: 40
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                lineNumber: 152,
+                                                                lineNumber: 157,
                                                                 columnNumber: 40
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1089,47 +1103,47 @@ const Footer1 = ()=>{
                                                                             children: "+44 020 3411 0076 "
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                            lineNumber: 157,
+                                                                            lineNumber: 162,
                                                                             columnNumber: 48
                                                                         }, this),
                                                                         " ",
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                            lineNumber: 157,
+                                                                            lineNumber: 162,
                                                                             columnNumber: 99
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                    lineNumber: 156,
+                                                                    lineNumber: 161,
                                                                     columnNumber: 44
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                                lineNumber: 155,
+                                                                lineNumber: 160,
                                                                 columnNumber: 40
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                        lineNumber: 151,
+                                                        lineNumber: 156,
                                                         columnNumber: 37
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 135,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                        lineNumber: 126,
+                                        lineNumber: 131,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 130,
                                     columnNumber: 25
                                 }, this)
                             ]
@@ -1157,14 +1171,26 @@ const Footer1 = ()=>{
                                             children: "M-Rtours"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                            lineNumber: 170,
+                                            lineNumber: 175,
                                             columnNumber: 25
                                         }, this),
-                                        " All Rights Reserved."
+                                        " All Rights Reserved. | ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/privacy-policy",
+                                            style: {
+                                                color: 'white',
+                                                textDecoration: 'none'
+                                            },
+                                            children: "Privacy Policy"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
+                                            lineNumber: 175,
+                                            columnNumber: 70
+                                        }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                    lineNumber: 169,
+                                    lineNumber: 174,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1193,7 +1219,7 @@ const Footer1 = ()=>{
                                             children: "Trustpilot"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 178,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1213,7 +1239,7 @@ const Footer1 = ()=>{
                                             children: "Google Review"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                            lineNumber: 190,
+                                            lineNumber: 195,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1233,24 +1259,24 @@ const Footer1 = ()=>{
                                             children: "IATA"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                            lineNumber: 207,
+                                            lineNumber: 212,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 177,
                                     columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                            lineNumber: 168,
+                            lineNumber: 173,
                             columnNumber: 5
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Footer/Footer1.tsx",
-                        lineNumber: 167,
+                        lineNumber: 172,
                         columnNumber: 17
                     }, this)
                 ]

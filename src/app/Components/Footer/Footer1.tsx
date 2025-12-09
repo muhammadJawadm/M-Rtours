@@ -85,6 +85,11 @@ const Footer1 = () => {
                                             Beat My Price 
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link href="/privacy-policy">
+                                            Privacy Policy
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -167,7 +172,7 @@ const Footer1 = () => {
                 <div className="footer-bottom">
     <div className="footer-wrapper">
         <p className="wow fadeInUp" data-wow-delay=".3s">
-            Copyright © <span>M-Rtours</span> All Rights Reserved.
+            Copyright © <span>M-Rtours</span> All Rights Reserved. | <Link href="/privacy-policy" style={{color: 'white', textDecoration: 'none'}}>Privacy Policy</Link>
         </p>
         <div className="footer-links" style={{color:'white', display: 'flex', gap: '15px', alignItems: 'center'}}>
             <a 

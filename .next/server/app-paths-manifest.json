@@ -1,7 +1,5 @@
 {
-  "/(innerpage)/Hajj-packages/page": "app/(innerpage)/Hajj-packages/page.js",
-  "/(innerpage)/HajjDetail/[id]/page": "app/(innerpage)/HajjDetail/[id]/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
+  "/(innerpage)/privacy-policy/page": "app/(innerpage)/privacy-policy/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
 }
