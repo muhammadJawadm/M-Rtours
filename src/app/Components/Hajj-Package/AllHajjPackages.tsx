@@ -136,10 +136,12 @@ const HajjPackages: React.FC = () => {
                     <div key={pkg.id} className="col-xl-4 col-lg-6 col-md-6">
                       <div className="package-card">
                         <div className="package-image-wrapper">
-                          <img 
+                          <Image 
                             src={pkg.image || '/assets/img/Hajj/Hajj page 1.png'} 
                             alt={pkg.package_name}
                             className="package-image"
+                            width={400}
+                            height={300}
                           />
                           <span className="package-duration">{pkg.duration_nights} NIGHTS</span>
                           {pkg.status && (
