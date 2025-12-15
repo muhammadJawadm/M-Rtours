@@ -6132,10 +6132,7 @@ span {
   width: 50px;
 }
 
-.price-range-wrapper {
-  /* Custom thumb styling */
-  /* Remove the default appearance for sliders in Firefox */
-}
+
 .price-range-wrapper .slider-container {
   position: relative;
   width: 100%;

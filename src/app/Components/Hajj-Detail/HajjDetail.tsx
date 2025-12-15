@@ -63,6 +63,8 @@ interface HajjDetailsProps {
 
 const HajjDetails: React.FC<HajjDetailsProps> = ({ packageId }) => {
     const [packageData, setPackageData] = useState<Package | null>(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
     const [loading, setLoading] = useState<boolean>(true);
     const [formData, setFormData] = useState<BookingFormData>({
         fullName: '',
@@ -178,8 +180,69 @@ const HajjDetails: React.FC<HajjDetailsProps> = ({ packageId }) => {
             return;
         }
 
-        console.log('Booking submitted:', formData);
-        alert('Thank you for your booking request. Our Umrah specialist will contact you within 24 hours to confirm your travel dates and finalize payment.');
+        try {
+                    setIsSubmitting(true);
+                    setSubmitStatus('idle');
+                    
+                  
+                    
+                    // 2. Submit to Google Sheets via our API
+                    const response = await fetch('/api/submit-booking', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            ...formData,
+                        }),
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        console.log('Booking submitted to Google Sheets successfully');
+                        setSubmitStatus('success');
+                        
+                        // Reset form
+                        setFormData({
+                         fullName: '',
+        email: '',
+        phone: '',
+        address: '',
+        packageName: '',
+        travelDate: '',
+        numAdults: 1,
+        numChildren: 0,
+        numInfants: 0,
+        departureAirport: '',
+        preferredAirline: '',
+        roomType: 'Quad',
+        mealPreference: 'Breakfast Only',
+        addZiyarahMakkah: false,
+        addZiyarahMadinah: false,
+        requestDirectFlights: false,
+        requestPrivateTransport: false,
+        addTravelInsurance: false,
+        specialRequests: '',
+        paymentMethod: '',
+        agreeTerms: false
+                        })
+                        
+                        alert('Thank you for your booking request. Our Hajj specialist will contact you within 24 hours to confirm your travel dates and finalize payment.');
+                    } else {
+                        console.error('Error submitting to Google Sheets:', result.message);
+                        setSubmitStatus('error');
+                        alert('There was an issue processing your booking. Please try again or contact us directly.');
+                    }
+                } catch (error) {
+                    console.error('Error submitting form:', error);
+                    setSubmitStatus('error');
+                    alert('There was an error submitting your booking. Please try again later.');
+                } finally {
+                    setIsSubmitting(false);
+                }
+
+        
     };
 
     if (loading) {
@@ -499,9 +562,22 @@ const HajjDetails: React.FC<HajjDetailsProps> = ({ packageId }) => {
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <button type="submit" className="theme-btn w-100 text-center">
-                                                        Book My Hajj Package <i className="bi bi-arrow-right"></i>
+                                                    <button 
+                                                        type="submit" 
+                                                        className="theme-btn w-100 text-center"
+                                                        disabled={isSubmitting}
+                                                    >
+                                                        {isSubmitting ? 
+                                                            'Submitting...' : 
+                                                            'Book My Hajj Package'} 
+                                                        <i className="bi bi-arrow-right"></i>
                                                     </button>
+                                                    
+                                                    {submitStatus === 'success' && (
+                                                        <div className="mt-3 text-success">
+                                                            Booking submitted successfully!
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </div>
                                         </form>
