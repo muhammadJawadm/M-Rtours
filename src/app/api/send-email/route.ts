@@ -166,6 +166,7 @@ export async function POST(request: Request) {
         Departure City: ${formData.departureCity}
         Number of Travelers: ${formData.travelers}
         Number of Nights: ${formData.nights}
+        Package Type: ${formData.packageType}
         
         Contact Information:
         Full Name: ${formData.fullName}
@@ -185,6 +186,7 @@ export async function POST(request: Request) {
           <li><strong>Departure City:</strong> ${formData.departureCity}</li>
           <li><strong>Number of Travelers:</strong> ${formData.travelers}</li>
           <li><strong>Number of Nights:</strong> ${formData.nights}</li>
+          <li><strong>Package Type:</strong> ${formData.packageType}</li>
         </ul>
         
         <h3>Contact Information:</h3>

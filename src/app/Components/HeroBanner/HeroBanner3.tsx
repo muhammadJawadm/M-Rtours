@@ -36,7 +36,7 @@ const HeroBanner3 = () => {
         packageType: '',
         departureDate: '',
         departureCity: '',
-        travelers: '',
+        travelers: '',  
         nights: '1',
         fullName: '',
         phone: '+',
@@ -106,12 +106,12 @@ const HeroBanner3 = () => {
         }
 
         // Reset specific package if package type changes
-        // if (name === 'packageType') {
-        //     setFormData(prev => ({
-        //         ...prev,
-        //         specificPackage: ''
-        //     }));
-        // }
+        if (name === 'packageType') {
+            setFormData(prev => ({
+                ...prev,
+                specificPackage: ''
+            }));
+        }
     };
 
     const validateForm = (): boolean => {
@@ -120,7 +120,10 @@ const HeroBanner3 = () => {
 
         
 
-        
+         if (!formData.packageType) {
+        errors.packageType = "Please select a service type";
+        isValid = false;
+    }
 
         if (!formData.departureDate) {
             errors.departureDate = "Please select a departure date";

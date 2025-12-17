@@ -62,14 +62,14 @@ export default function Header1({ variant } : any ) {
                   <span className="d-none d-md-inline">Info@M-rtours.co.uk</span>
                 </a>
                 <a
-                  href="https://wa.me/447517240405?text=Hi!%20I'd%20like%20to%20inquire%20about%20your%20travel%20packages."
+                  href="https://wa.me/447908967952?text=Hi!%20I'd%20like%20to%20inquire%20about%20your%20travel%20packages."
                   className="cs_header_contact_link"
                   aria-label="Chat on WhatsApp"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="bi bi-whatsapp" aria-hidden="true"></i>
-                  <span className="d-none d-md-inline">+44 7517 240405</span>
+                  <span className="d-none d-md-inline">+44 7908967952</span>
                 </a>
                 <a href="tel:+442034110076" className="cs_header_contact_link" aria-label="Call us">
                   <i className="bi bi-telephone-fill" aria-hidden="true"></i>
