@@ -87,7 +87,7 @@ const Faq1 = () => {
                                 </ul>
                                 <div className="contact-cta mt-4 wow fadeInUp wow" data-wow-delay=".9s">
                                     <p>Have more questions? Contact us or call</p>
-                                    <h4><a href="tel:+441234567890">+44 123 456 7890</a></h4>
+                                    <h4><a href="tel:+441234567890">+44 20 3411 0076</a></h4>
                                     <p>for personalized assistance.</p>
                                 </div>
                             </div>

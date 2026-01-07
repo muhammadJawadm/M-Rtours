@@ -51,7 +51,7 @@ export default function Header3({ variant } : any ) {
                 </li>
                 <li>
                 <i className="bi bi-telephone-fill"></i>
-                  <a href="tel:+990123456789" aria-label="Phone call link">+990 123 456 789</a>
+                  <a href="tel:+442034110076" aria-label="Phone call link">+44 20 3411 0076</a>
                 </li>
                 <li>
                 <i className="bi bi-geo-alt-fill"></i>

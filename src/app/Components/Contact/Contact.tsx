@@ -206,11 +206,11 @@ const Contact = () => {
                                     marginBottom: '15px',
                                     fontWeight: '600'
                                 }}>
-                                    <a href="tel:+447517240405" style={{
+                                    <a href="tel:+442034110076" style={{
                                         color: 'white',
                                         textDecoration: 'none'
                                     }}>
-                                        +44 7517 240405
+                                        +44 20 3411 0076
                                     </a>
                                 </h3>
                                 <p style={{
