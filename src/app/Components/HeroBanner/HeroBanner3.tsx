@@ -71,7 +71,7 @@ const HeroBanner3 = () => {
     img: "/assets/video/start.PNG", 
     video: "/assets/video/Hero1.mp4",
     subtitle: "Book Your Umrah Today",
-    title: "Your 2025 Umrah Journey from the UK Starts Here",
+    title: "Your 2026 Umrah Journey from the UK Starts Here",
     content: "Flexible packages, Haram-view hotels & VIP support for a seamless spiritual experience. Book affordable Umrah packages UK with private transfers and full visa assistance.",
   },
   {

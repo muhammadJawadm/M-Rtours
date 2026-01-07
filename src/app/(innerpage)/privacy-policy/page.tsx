@@ -16,7 +16,7 @@ const PrivacyPolicyPage = () => {
                 {/* Header */}
                 <div className="privacy-header mb-5">
                   <h1 className="mb-3">Privacy Policy – M-R Tours</h1>
-                  <p className="text-muted"><strong>Last Updated:</strong> December 2025</p>
+                  <p className="text-muted"><strong>Last Updated:</strong> December 2026</p>
                   <p>
                     M-R Tours (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting your privacy and ensuring that your personal data is handled safely, securely, and responsibly. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website, submit a booking inquiry, contact us, or use our services related to Hajj, Umrah, or travel packages.
                   </p>

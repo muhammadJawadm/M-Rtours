@@ -32,10 +32,10 @@ const TourCard = () => {
                     <div className="form">
                         <select className="single-select w-100">
                             <option>Umrah </option>
-                            <option>Ramadan Umrah 2025 </option>
+                            <option>Ramadan Umrah 2026 </option>
                             <option>December Umrah </option>
                             <option>Family Umrah packages UK </option>    
-                            <option>Hajj packages 2025 UK</option>
+                            <option>Hajj packages 2026 UK</option>
                         </select>
                     </div>
                 </div>
